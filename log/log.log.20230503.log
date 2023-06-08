@@ -1,0 +1,30 @@
+WARNING, 2023-05-03 08:53:32,041, Run time of job "vul (trigger: interval[0:05:00], next run at: 2023-05-03 08:53:50 KST)" was missed by 0:04:41.160256
+WARNING, 2023-05-03 11:50:11,673, Compare.py - alarm Error 발생
+WARNING, 2023-05-03 11:50:11,674, Error : local variable 'RAM' referenced before assignment
+WARNING, 2023-05-03 11:50:11,674, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-05-03 11:50:11,675, Error : 'NoneType' object is not iterable
+WARNING, 2023-05-03 11:50:11,676, GroupByCount.py - drive_usage_size_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,676, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,677, GroupByCount.py - ram_usage_size_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,678, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,679, GroupByCount.py - cpu_usage_size_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,680, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,681, GroupByCount.py - last_reboot_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,682, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,683, GroupByCount.py - group_ram_usage_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,684, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,686, GroupByCount.py - group_cpu_usage_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,686, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,688, GroupByCount.py - group_listen_port_count_change Error 발생
+WARNING, 2023-05-03 11:50:11,689, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,690, GroupByCount.py - group_established_port_count_change Error 발생
+WARNING, 2023-05-03 11:50:11,691, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,692, GroupByCount.py - group_running_service_count_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,692, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,693, GroupByCount.py - group_last_reboot Error 발생
+WARNING, 2023-05-03 11:50:11,693, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,694, GroupByCount.py - group_drive_usage_size_exceeded Error 발생
+WARNING, 2023-05-03 11:50:11,694, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,695, GroupByCount.py - group_server_count Error 발생
+WARNING, 2023-05-03 11:50:11,695, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-05-03 11:50:11,918, Minutely CMU Module Failcan only concatenate list (not "NoneType") to list

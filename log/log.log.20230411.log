@@ -1,0 +1,210 @@
+WARNING, 2023-04-11 08:49:22,145, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-04-11 08:49:22,148, Sensor ID : 6322
+WARNING, 2023-04-11 08:49:22,148, Minutely CMU Module Fail'NoneType' object is not subscriptable
+WARNING, 2023-04-11 08:50:46,107, Run time of job "vul (trigger: interval[0:05:00], next run at: 2023-04-11 08:53:41 KST)" was missed by 0:02:04.301155
+WARNING, 2023-04-11 16:09:56,257, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:09:56,258, Error : tuple index out of range
+WARNING, 2023-04-11 16:09:56,260, Preprocessing_Dashboard.py - Error 발생
+WARNING, 2023-04-11 16:09:56,260, Error : object of type 'NoneType' has no len()
+WARNING, 2023-04-11 16:09:56,261, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:09:56,261, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:09:56,262, Usage.py - Error 발생
+WARNING, 2023-04-11 16:09:56,263, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:09:56,264, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:09:56,264, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:09:56,265, Compare.py - compare Error 발생
+WARNING, 2023-04-11 16:09:56,265, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:09:56,266, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:09:56,266, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:09:56,267, Normal.py - Error 발생
+WARNING, 2023-04-11 16:09:56,267, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:09:56,268, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:09:56,268, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:09:56,269, Count.py - Error 발생
+WARNING, 2023-04-11 16:09:56,269, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:09:56,270, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:09:56,270, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:09:56,271, Merge.py - Error 발생
+WARNING, 2023-04-11 16:09:56,271, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:09:56,271, Merge.py - Error 발생
+WARNING, 2023-04-11 16:09:56,271, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:09:56,272, Merge.py - Error 발생
+WARNING, 2023-04-11 16:09:56,272, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:10:10,557, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:10:10,558, Error : tuple index out of range
+WARNING, 2023-04-11 16:10:10,558, Preprocessing_Dashboard.py - Error 발생
+WARNING, 2023-04-11 16:10:10,558, Error : object of type 'NoneType' has no len()
+WARNING, 2023-04-11 16:10:10,559, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:10:10,559, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:10,559, Usage.py - Error 발생
+WARNING, 2023-04-11 16:10:10,559, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:10,560, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:10,560, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:10,560, Compare.py - compare Error 발생
+WARNING, 2023-04-11 16:10:10,560, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:10,561, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:10,561, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:10,562, Normal.py - Error 발생
+WARNING, 2023-04-11 16:10:10,562, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:10,562, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:10,563, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:10,563, Count.py - Error 발생
+WARNING, 2023-04-11 16:10:10,563, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:10,563, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:10,564, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:10,564, Merge.py - Error 발생
+WARNING, 2023-04-11 16:10:10,564, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:10:10,564, Merge.py - Error 발생
+WARNING, 2023-04-11 16:10:10,564, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:10:10,564, Merge.py - Error 발생
+WARNING, 2023-04-11 16:10:10,565, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:10:51,383, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:10:51,384, Error : tuple index out of range
+WARNING, 2023-04-11 16:10:51,384, Preprocessing_Dashboard.py - Error 발생
+WARNING, 2023-04-11 16:10:51,384, Error : object of type 'NoneType' has no len()
+WARNING, 2023-04-11 16:10:51,385, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:10:51,385, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:51,386, Usage.py - Error 발생
+WARNING, 2023-04-11 16:10:51,386, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:51,386, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:51,386, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:51,387, Compare.py - compare Error 발생
+WARNING, 2023-04-11 16:10:51,387, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:51,387, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:51,387, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:51,388, Normal.py - Error 발생
+WARNING, 2023-04-11 16:10:51,388, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:51,388, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:51,388, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:51,389, Count.py - Error 발생
+WARNING, 2023-04-11 16:10:51,389, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:10:51,389, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:10:51,389, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:10:51,390, Merge.py - Error 발생
+WARNING, 2023-04-11 16:10:51,390, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:10:51,390, Merge.py - Error 발생
+WARNING, 2023-04-11 16:10:51,390, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:10:51,390, Merge.py - Error 발생
+WARNING, 2023-04-11 16:10:51,390, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:11:12,092, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:11:12,093, Error : tuple index out of range
+WARNING, 2023-04-11 16:11:12,093, Preprocessing_Dashboard.py - Error 발생
+WARNING, 2023-04-11 16:11:12,094, Error : object of type 'NoneType' has no len()
+WARNING, 2023-04-11 16:11:12,094, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:11:12,094, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:12,095, Usage.py - Error 발생
+WARNING, 2023-04-11 16:11:12,095, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:12,096, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:12,096, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:12,096, Compare.py - compare Error 발생
+WARNING, 2023-04-11 16:11:12,097, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:12,097, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:12,097, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:12,098, Normal.py - Error 발생
+WARNING, 2023-04-11 16:11:12,098, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:12,098, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:12,098, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:12,099, Count.py - Error 발생
+WARNING, 2023-04-11 16:11:12,099, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:12,100, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:12,100, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:12,100, Merge.py - Error 발생
+WARNING, 2023-04-11 16:11:12,100, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:11:12,100, Merge.py - Error 발생
+WARNING, 2023-04-11 16:11:12,101, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:11:12,101, Merge.py - Error 발생
+WARNING, 2023-04-11 16:11:12,101, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:11:30,130, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:11:30,130, Error : tuple index out of range
+WARNING, 2023-04-11 16:11:30,131, Preprocessing_Dashboard.py - Error 발생
+WARNING, 2023-04-11 16:11:30,131, Error : object of type 'NoneType' has no len()
+WARNING, 2023-04-11 16:11:30,132, Asset/Part.py - Error 발생
+WARNING, 2023-04-11 16:11:30,132, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:30,132, Usage.py - Error 발생
+WARNING, 2023-04-11 16:11:30,132, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:30,133, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:30,134, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:30,134, Compare.py - compare Error 발생
+WARNING, 2023-04-11 16:11:30,134, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:30,134, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:30,135, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:30,135, Normal.py - Error 발생
+WARNING, 2023-04-11 16:11:30,135, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:30,136, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:30,136, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:30,136, Count.py - Error 발생
+WARNING, 2023-04-11 16:11:30,138, Error : 'NoneType' object has no attribute 'computer_id'
+WARNING, 2023-04-11 16:11:30,138, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:11:30,138, Error : 'NoneType' object is not iterable
+WARNING, 2023-04-11 16:11:30,138, Merge.py - Error 발생
+WARNING, 2023-04-11 16:11:30,138, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:11:30,138, Merge.py - Error 발생
+WARNING, 2023-04-11 16:11:30,138, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:11:30,138, Merge.py - Error 발생
+WARNING, 2023-04-11 16:11:30,138, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:22:00,537, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:22:00,537, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:22:00,541, Merge.py - Error 발생
+WARNING, 2023-04-11 16:22:00,541, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:22:00,541, Merge.py - Error 발생
+WARNING, 2023-04-11 16:22:00,542, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:22:45,650, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:22:45,650, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:22:45,653, Merge.py - Error 발생
+WARNING, 2023-04-11 16:22:45,653, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:22:45,654, Merge.py - Error 발생
+WARNING, 2023-04-11 16:22:45,654, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:23:00,464, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:23:00,464, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:23:00,467, Merge.py - Error 발생
+WARNING, 2023-04-11 16:23:00,468, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:23:00,468, Merge.py - Error 발생
+WARNING, 2023-04-11 16:23:00,468, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:23:25,953, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:23:25,953, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:23:25,956, Merge.py - Error 발생
+WARNING, 2023-04-11 16:23:25,956, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:23:25,957, Merge.py - Error 발생
+WARNING, 2023-04-11 16:23:25,957, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:23:44,422, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:23:44,422, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:23:44,426, Merge.py - Error 발생
+WARNING, 2023-04-11 16:23:44,427, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:23:44,427, Merge.py - Error 발생
+WARNING, 2023-04-11 16:23:44,427, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:27:07,370, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:27:07,371, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:27:07,374, Merge.py - Error 발생
+WARNING, 2023-04-11 16:27:07,375, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:27:07,375, Merge.py - Error 발생
+WARNING, 2023-04-11 16:27:07,375, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:27:14,604, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:27:14,604, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:27:14,607, Merge.py - Error 발생
+WARNING, 2023-04-11 16:27:14,607, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:27:14,607, Merge.py - Error 발생
+WARNING, 2023-04-11 16:27:14,607, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:27:54,318, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:27:54,319, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:27:54,321, Merge.py - Error 발생
+WARNING, 2023-04-11 16:27:54,321, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:27:54,322, Merge.py - Error 발생
+WARNING, 2023-04-11 16:27:54,322, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:28:13,739, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:28:13,739, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:28:13,743, Merge.py - Error 발생
+WARNING, 2023-04-11 16:28:13,743, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:28:13,743, Merge.py - Error 발생
+WARNING, 2023-04-11 16:28:13,743, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:28:58,522, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:28:58,522, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:28:58,525, Merge.py - Error 발생
+WARNING, 2023-04-11 16:28:58,525, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:28:58,526, Merge.py - Error 발생
+WARNING, 2023-04-11 16:28:58,526, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:29:13,133, Statistics/Part.py - Error 발생minutely_statistics_list
+WARNING, 2023-04-11 16:29:13,133, Error : 17 columns passed, passed data had 16 columns
+WARNING, 2023-04-11 16:29:13,136, Merge.py - Error 발생
+WARNING, 2023-04-11 16:29:13,137, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed
+WARNING, 2023-04-11 16:29:13,137, Merge.py - Error 발생
+WARNING, 2023-04-11 16:29:13,137, Error : Can only merge Series or DataFrame objects, a <class 'NoneType'> was passed

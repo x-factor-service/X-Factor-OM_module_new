@@ -1,0 +1,1462 @@
+DEBUG, 2023-03-10 08:32:25,645, Looking for jobs to run
+WARNING, 2023-03-10 08:32:25,652, Run time of job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:34:10 KST)" was missed by 0:03:14.696544
+INFO, 2023-03-10 08:32:25,653, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:35:10 KST)" (scheduled at 2023-03-10 08:30:10+09:00)
+INFO, 2023-03-10 08:32:25,653, Running job "daily (trigger: cron[hour='0', minute='2'], next run at: 2023-03-11 00:02:00 KST)" (scheduled at 2023-03-10 00:02:00+09:00)
+DEBUG, 2023-03-10 08:32:25,654, Next wakeup is due at 2023-03-10 08:34:10.955780+09:00 (in 105.309467 seconds)
+DEBUG, 2023-03-10 08:32:25,666, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:32:25,835, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 08:32:25,836, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 08:32:25,836, Sesstion Key : 1-10262076-57259e4c370b3e12feefd410c814f795b5d71ceba3033e9325b8a761ae51a64f
+DEBUG, 2023-03-10 08:32:25,837, Starting new HTTPS connection (1): 1.223.168.93:49105
+INFO, 2023-03-10 08:32:25,880, Asset Table Select connection - minutely_asset_all성공
+INFO, 2023-03-10 08:32:25,881, Asset/All.py -  DB 성공
+INFO, 2023-03-10 08:32:25,947, Asset Table INSERT connection - daily 성공
+INFO, 2023-03-10 08:32:26,017, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 08:32:26,019, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 08:32:26,087, Statistics List Table INSERT connection - daily성공
+INFO, 2023-03-10 08:32:26,170, Statistics Table Select connection - minutely 성공
+INFO, 2023-03-10 08:32:26,171, Statistics/Part.py -  minutely_statistics/ 성공
+INFO, 2023-03-10 08:32:26,240, Statistics Table INSERT connection - daily성공
+INFO, 2023-03-10 08:32:26,241, Daily CDU Module Succesed!!
+INFO, 2023-03-10 08:32:26,241, Job "daily (trigger: cron[hour='0', minute='2'], next run at: 2023-03-11 00:02:00 KST)" executed successfully
+DEBUG, 2023-03-10 08:32:26,294, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 86171
+INFO, 2023-03-10 08:32:26,312, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 08:32:26,312, Sensor ID : 4872
+INFO, 2023-03-10 08:32:26,316, Asset/All.py -  API 성공
+INFO, 2023-03-10 08:32:26,465, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 08:32:26,536, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 08:32:26,537, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:32:26,547, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 08:32:26,549, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:32:26,550, Usage.py - 성공
+INFO, 2023-03-10 08:32:26,551, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 08:32:26,553, Compare.py -compare 성공
+INFO, 2023-03-10 08:32:26,553, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 08:32:26,555, Normal.py - 성공
+INFO, 2023-03-10 08:32:26,556, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 08:32:26,557, Count.py - 성공
+INFO, 2023-03-10 08:32:26,558, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 08:32:26,559, Merge.py - 성공
+INFO, 2023-03-10 08:32:26,560, Merge.py - 성공
+INFO, 2023-03-10 08:32:26,561, Merge.py - 성공
+INFO, 2023-03-10 08:32:26,656, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:32:26,724, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 08:32:26,895, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 08:32:26,896, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 08:32:26,897, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 08:32:26,900, GroupByCount.py -os 성공
+INFO, 2023-03-10 08:32:26,902, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 08:32:26,904, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 08:32:26,905, GroupByCount.py -asset 성공
+INFO, 2023-03-10 08:32:26,907, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 08:32:26,908, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 08:32:26,912, Compare.py -alarm 성공
+INFO, 2023-03-10 08:32:26,912, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 08:32:26,914, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:32:26,916, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 08:32:26,918, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 08:32:26,919, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 08:32:26,921, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 08:32:26,923, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 08:32:26,925, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 08:32:26,926, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 08:32:26,928, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 08:32:26,930, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 08:32:26,932, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:32:26,934, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 08:32:26,935, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 08:32:26,937, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 08:32:26,944, Compare.py -online 성공
+INFO, 2023-03-10 08:32:26,945, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 08:32:26,947, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 08:32:26,949, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 08:32:27,017, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 08:32:27,018, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:32:27,022, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 08:32:27,023, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:32:27,045, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 08:32:27,049, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 08:32:27,052, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 08:32:27,053, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 08:32:27,055, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 08:32:27,460, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:32:27,462, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 08:32:27,462, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:35:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:34:10,987, Looking for jobs to run
+DEBUG, 2023-03-10 08:34:10,987, Next wakeup is due at 2023-03-10 08:35:10+09:00 (in 59.012491 seconds)
+INFO, 2023-03-10 08:34:10,987, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:39:10 KST)" (scheduled at 2023-03-10 08:34:10.955780+09:00)
+INFO, 2023-03-10 08:34:10,987, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 08:34:10,988, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:39:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:35:10,008, Looking for jobs to run
+DEBUG, 2023-03-10 08:35:10,008, Next wakeup is due at 2023-03-10 08:39:10.955780+09:00 (in 240.947207 seconds)
+INFO, 2023-03-10 08:35:10,008, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:40:10 KST)" (scheduled at 2023-03-10 08:35:10+09:00)
+DEBUG, 2023-03-10 08:35:10,010, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:35:10,084, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 08:35:10,087, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 08:35:10,088, Sesstion Key : 1-10262130-d46a00352c2c31e9d562b6e987554641fc687c7b4d8a0f93a72d6f84b2023c9c
+DEBUG, 2023-03-10 08:35:10,093, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:35:10,555, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 87418
+INFO, 2023-03-10 08:35:10,585, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 08:35:10,586, Sensor ID : 4872
+INFO, 2023-03-10 08:35:10,590, Asset/All.py -  API 성공
+INFO, 2023-03-10 08:35:10,718, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 08:35:10,796, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 08:35:10,798, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:35:10,821, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 08:35:10,823, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:35:10,828, Usage.py - 성공
+INFO, 2023-03-10 08:35:10,830, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 08:35:10,832, Compare.py -compare 성공
+INFO, 2023-03-10 08:35:10,834, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 08:35:10,836, Normal.py - 성공
+INFO, 2023-03-10 08:35:10,837, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 08:35:10,837, Count.py - 성공
+INFO, 2023-03-10 08:35:10,838, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 08:35:10,839, Merge.py - 성공
+INFO, 2023-03-10 08:35:10,840, Merge.py - 성공
+INFO, 2023-03-10 08:35:10,841, Merge.py - 성공
+INFO, 2023-03-10 08:35:10,935, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:35:11,015, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 08:35:11,090, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 08:35:11,091, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 08:35:11,092, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 08:35:11,094, GroupByCount.py -os 성공
+INFO, 2023-03-10 08:35:11,098, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 08:35:11,101, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 08:35:11,103, GroupByCount.py -asset 성공
+INFO, 2023-03-10 08:35:11,105, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 08:35:11,108, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 08:35:11,118, Compare.py -alarm 성공
+INFO, 2023-03-10 08:35:11,119, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 08:35:11,121, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:35:11,123, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 08:35:11,124, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 08:35:11,126, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 08:35:11,128, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 08:35:11,130, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 08:35:11,131, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 08:35:11,133, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 08:35:11,134, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 08:35:11,136, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 08:35:11,137, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:35:11,138, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 08:35:11,140, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 08:35:11,143, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 08:35:11,156, Compare.py -online 성공
+INFO, 2023-03-10 08:35:11,157, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 08:35:11,159, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 08:35:11,161, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 08:35:11,235, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 08:35:11,236, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:35:11,246, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 08:35:11,247, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:35:11,273, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 08:35:11,286, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 08:35:11,292, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 08:35:11,296, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 08:35:11,300, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 08:35:11,597, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:35:11,599, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 08:35:11,599, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:40:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:39:10,963, Looking for jobs to run
+DEBUG, 2023-03-10 08:39:10,965, Next wakeup is due at 2023-03-10 08:40:10+09:00 (in 59.035978 seconds)
+INFO, 2023-03-10 08:39:10,965, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:44:10 KST)" (scheduled at 2023-03-10 08:39:10.955780+09:00)
+INFO, 2023-03-10 08:39:10,966, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 08:39:10,967, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:44:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:40:10,002, Looking for jobs to run
+DEBUG, 2023-03-10 08:40:10,004, Next wakeup is due at 2023-03-10 08:44:10.955780+09:00 (in 240.952547 seconds)
+INFO, 2023-03-10 08:40:10,004, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:45:10 KST)" (scheduled at 2023-03-10 08:40:10+09:00)
+DEBUG, 2023-03-10 08:40:10,012, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:40:10,088, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 08:40:10,089, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 08:40:10,090, Sesstion Key : 1-10262232-0c3930a42fab7c43061901d57d7dcec466c1bbfc7ee5ddffcb27ff9be0a2789b
+DEBUG, 2023-03-10 08:40:10,091, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:40:10,589, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 87593
+INFO, 2023-03-10 08:40:10,606, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 08:40:10,607, Sensor ID : 4872
+INFO, 2023-03-10 08:40:10,610, Asset/All.py -  API 성공
+INFO, 2023-03-10 08:40:10,739, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 08:40:10,809, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 08:40:10,812, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:40:10,828, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 08:40:10,830, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:40:10,833, Usage.py - 성공
+INFO, 2023-03-10 08:40:10,834, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 08:40:10,836, Compare.py -compare 성공
+INFO, 2023-03-10 08:40:10,837, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 08:40:10,862, Normal.py - 성공
+INFO, 2023-03-10 08:40:10,864, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 08:40:10,865, Count.py - 성공
+INFO, 2023-03-10 08:40:10,866, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 08:40:10,868, Merge.py - 성공
+INFO, 2023-03-10 08:40:10,869, Merge.py - 성공
+INFO, 2023-03-10 08:40:10,871, Merge.py - 성공
+INFO, 2023-03-10 08:40:10,958, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:40:11,035, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 08:40:11,111, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 08:40:11,113, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 08:40:11,114, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 08:40:11,115, GroupByCount.py -os 성공
+INFO, 2023-03-10 08:40:11,119, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 08:40:11,122, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 08:40:11,123, GroupByCount.py -asset 성공
+INFO, 2023-03-10 08:40:11,125, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 08:40:11,126, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 08:40:11,131, Compare.py -alarm 성공
+INFO, 2023-03-10 08:40:11,132, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 08:40:11,133, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:40:11,135, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 08:40:11,136, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 08:40:11,138, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 08:40:11,140, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 08:40:11,143, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 08:40:11,149, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 08:40:11,152, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 08:40:11,154, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 08:40:11,156, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 08:40:11,157, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:40:11,158, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 08:40:11,160, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 08:40:11,161, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 08:40:11,173, Compare.py -online 성공
+INFO, 2023-03-10 08:40:11,174, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 08:40:11,176, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 08:40:11,179, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 08:40:11,258, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 08:40:11,260, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:40:11,267, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 08:40:11,268, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:40:11,301, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 08:40:11,305, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 08:40:11,308, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 08:40:11,309, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 08:40:11,310, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 08:40:11,610, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:40:11,614, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 08:40:11,614, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:45:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:44:10,968, Looking for jobs to run
+DEBUG, 2023-03-10 08:44:10,970, Next wakeup is due at 2023-03-10 08:45:10+09:00 (in 59.030835 seconds)
+INFO, 2023-03-10 08:44:10,970, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:49:10 KST)" (scheduled at 2023-03-10 08:44:10.955780+09:00)
+INFO, 2023-03-10 08:44:10,971, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 08:44:10,972, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:49:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:45:10,004, Looking for jobs to run
+DEBUG, 2023-03-10 08:45:10,004, Next wakeup is due at 2023-03-10 08:49:10.955780+09:00 (in 240.951772 seconds)
+INFO, 2023-03-10 08:45:10,005, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:50:10 KST)" (scheduled at 2023-03-10 08:45:10+09:00)
+DEBUG, 2023-03-10 08:45:10,007, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:45:10,066, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 08:45:10,067, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 08:45:10,067, Sesstion Key : 1-10262332-f5600c4dc3008e4d3f14c8fa5df71779f32de4d79ceb49af2e6a4ed435e4b1c9
+DEBUG, 2023-03-10 08:45:10,068, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:45:10,518, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 87496
+INFO, 2023-03-10 08:45:10,539, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 08:45:10,539, Sensor ID : 4872
+INFO, 2023-03-10 08:45:10,543, Asset/All.py -  API 성공
+INFO, 2023-03-10 08:45:10,667, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 08:45:10,738, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 08:45:10,739, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:45:10,751, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 08:45:10,752, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:45:10,754, Usage.py - 성공
+INFO, 2023-03-10 08:45:10,755, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 08:45:10,756, Compare.py -compare 성공
+INFO, 2023-03-10 08:45:10,758, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 08:45:10,760, Normal.py - 성공
+INFO, 2023-03-10 08:45:10,761, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 08:45:10,762, Count.py - 성공
+INFO, 2023-03-10 08:45:10,763, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 08:45:10,764, Merge.py - 성공
+INFO, 2023-03-10 08:45:10,765, Merge.py - 성공
+INFO, 2023-03-10 08:45:10,766, Merge.py - 성공
+INFO, 2023-03-10 08:45:10,847, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:45:10,917, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 08:45:10,988, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 08:45:10,989, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 08:45:10,990, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 08:45:10,992, GroupByCount.py -os 성공
+INFO, 2023-03-10 08:45:10,994, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 08:45:10,995, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 08:45:10,996, GroupByCount.py -asset 성공
+INFO, 2023-03-10 08:45:10,998, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 08:45:11,000, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 08:45:11,006, Compare.py -alarm 성공
+INFO, 2023-03-10 08:45:11,008, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 08:45:11,010, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:45:11,013, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 08:45:11,015, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 08:45:11,017, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 08:45:11,019, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 08:45:11,023, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 08:45:11,025, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 08:45:11,027, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 08:45:11,028, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 08:45:11,030, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 08:45:11,031, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:45:11,032, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 08:45:11,034, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 08:45:11,036, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 08:45:11,044, Compare.py -online 성공
+INFO, 2023-03-10 08:45:11,044, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 08:45:11,047, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 08:45:11,048, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 08:45:11,125, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 08:45:11,126, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:45:11,130, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 08:45:11,131, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:45:11,156, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 08:45:11,160, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 08:45:11,163, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 08:45:11,164, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 08:45:11,167, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 08:45:11,448, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:45:11,451, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 08:45:11,451, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:50:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:49:10,972, Looking for jobs to run
+DEBUG, 2023-03-10 08:49:10,972, Next wakeup is due at 2023-03-10 08:50:10+09:00 (in 59.027523 seconds)
+INFO, 2023-03-10 08:49:10,972, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:54:10 KST)" (scheduled at 2023-03-10 08:49:10.955780+09:00)
+INFO, 2023-03-10 08:49:10,973, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 08:49:10,973, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:54:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:50:10,005, Looking for jobs to run
+DEBUG, 2023-03-10 08:50:10,007, Next wakeup is due at 2023-03-10 08:54:10.955780+09:00 (in 240.949090 seconds)
+INFO, 2023-03-10 08:50:10,007, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:55:10 KST)" (scheduled at 2023-03-10 08:50:10+09:00)
+DEBUG, 2023-03-10 08:50:10,011, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:50:10,096, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 08:50:10,097, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 08:50:10,097, Sesstion Key : 1-10262433-81b41b272c0fa7b58246be8ed143b9b65f9b574fdfba0dc956ff0274b47be310
+DEBUG, 2023-03-10 08:50:10,098, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:50:10,619, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 88513
+INFO, 2023-03-10 08:50:10,644, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 08:50:10,644, Sensor ID : 4872
+INFO, 2023-03-10 08:50:10,649, Asset/All.py -  API 성공
+INFO, 2023-03-10 08:50:10,774, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 08:50:10,856, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 08:50:10,857, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:50:10,868, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 08:50:10,869, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:50:10,872, Usage.py - 성공
+INFO, 2023-03-10 08:50:10,873, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 08:50:10,874, Compare.py -compare 성공
+INFO, 2023-03-10 08:50:10,875, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 08:50:10,877, Normal.py - 성공
+INFO, 2023-03-10 08:50:10,878, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 08:50:10,879, Count.py - 성공
+INFO, 2023-03-10 08:50:10,880, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 08:50:10,881, Merge.py - 성공
+INFO, 2023-03-10 08:50:10,882, Merge.py - 성공
+INFO, 2023-03-10 08:50:10,883, Merge.py - 성공
+INFO, 2023-03-10 08:50:10,975, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:50:11,058, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 08:50:11,132, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 08:50:11,133, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 08:50:11,134, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 08:50:11,136, GroupByCount.py -os 성공
+INFO, 2023-03-10 08:50:11,138, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 08:50:11,139, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 08:50:11,140, GroupByCount.py -asset 성공
+INFO, 2023-03-10 08:50:11,142, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 08:50:11,143, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 08:50:11,147, Compare.py -alarm 성공
+INFO, 2023-03-10 08:50:11,148, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 08:50:11,150, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:50:11,152, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 08:50:11,154, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 08:50:11,156, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 08:50:11,158, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 08:50:11,160, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 08:50:11,161, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 08:50:11,163, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 08:50:11,164, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 08:50:11,166, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 08:50:11,167, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:50:11,169, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 08:50:11,170, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 08:50:11,172, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 08:50:11,179, Compare.py -online 성공
+INFO, 2023-03-10 08:50:11,180, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 08:50:11,182, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 08:50:11,184, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 08:50:11,370, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 08:50:11,371, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:50:11,375, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 08:50:11,375, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:50:11,397, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 08:50:11,402, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 08:50:11,405, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 08:50:11,406, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 08:50:11,408, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 08:50:11,673, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:50:11,676, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 08:50:11,676, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 08:55:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:54:10,960, Looking for jobs to run
+DEBUG, 2023-03-10 08:54:10,961, Next wakeup is due at 2023-03-10 08:55:10+09:00 (in 59.038697 seconds)
+INFO, 2023-03-10 08:54:10,961, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:59:10 KST)" (scheduled at 2023-03-10 08:54:10.955780+09:00)
+INFO, 2023-03-10 08:54:10,962, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 08:54:10,962, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 08:59:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:55:10,004, Looking for jobs to run
+DEBUG, 2023-03-10 08:55:10,006, Next wakeup is due at 2023-03-10 08:59:10.955780+09:00 (in 240.950033 seconds)
+INFO, 2023-03-10 08:55:10,006, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:00:10 KST)" (scheduled at 2023-03-10 08:55:10+09:00)
+DEBUG, 2023-03-10 08:55:10,013, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:55:10,080, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 08:55:10,082, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 08:55:10,083, Sesstion Key : 1-10262532-06041342551ac92320ed03d52409073c05a0d2c50b5fbd6ac81ea2b8e003ceef
+DEBUG, 2023-03-10 08:55:10,084, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 08:55:10,557, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 96349
+INFO, 2023-03-10 08:55:10,589, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 08:55:10,589, Sensor ID : 4872
+INFO, 2023-03-10 08:55:10,593, Asset/All.py -  API 성공
+INFO, 2023-03-10 08:55:10,722, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 08:55:10,800, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 08:55:10,801, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:55:10,814, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 08:55:10,814, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 08:55:10,816, Usage.py - 성공
+INFO, 2023-03-10 08:55:10,818, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 08:55:10,819, Compare.py -compare 성공
+INFO, 2023-03-10 08:55:10,819, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 08:55:10,822, Normal.py - 성공
+INFO, 2023-03-10 08:55:10,823, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 08:55:10,824, Count.py - 성공
+INFO, 2023-03-10 08:55:10,825, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 08:55:10,827, Merge.py - 성공
+INFO, 2023-03-10 08:55:10,828, Merge.py - 성공
+INFO, 2023-03-10 08:55:10,829, Merge.py - 성공
+INFO, 2023-03-10 08:55:11,014, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:55:11,090, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 08:55:11,160, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 08:55:11,162, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 08:55:11,163, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 08:55:11,165, GroupByCount.py -os 성공
+INFO, 2023-03-10 08:55:11,166, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 08:55:11,168, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 08:55:11,170, GroupByCount.py -asset 성공
+INFO, 2023-03-10 08:55:11,171, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 08:55:11,173, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 08:55:11,177, Compare.py -alarm 성공
+INFO, 2023-03-10 08:55:11,178, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 08:55:11,179, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:55:11,181, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 08:55:11,183, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 08:55:11,184, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 08:55:11,186, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 08:55:11,189, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 08:55:11,191, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 08:55:11,193, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 08:55:11,194, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 08:55:11,196, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 08:55:11,197, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 08:55:11,199, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 08:55:11,200, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 08:55:11,202, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 08:55:11,209, Compare.py -online 성공
+INFO, 2023-03-10 08:55:11,210, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 08:55:11,212, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 08:55:11,214, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 08:55:11,287, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 08:55:11,288, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:55:11,292, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 08:55:11,292, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 08:55:11,316, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 08:55:11,321, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 08:55:11,324, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 08:55:11,326, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 08:55:11,328, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 08:55:11,613, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 08:55:11,616, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 08:55:11,617, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:00:10 KST)" executed successfully
+DEBUG, 2023-03-10 08:59:10,965, Looking for jobs to run
+DEBUG, 2023-03-10 08:59:10,965, Next wakeup is due at 2023-03-10 09:00:10+09:00 (in 59.034692 seconds)
+INFO, 2023-03-10 08:59:10,966, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:04:10 KST)" (scheduled at 2023-03-10 08:59:10.955780+09:00)
+INFO, 2023-03-10 08:59:10,966, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 08:59:10,967, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:04:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:00:10,010, Looking for jobs to run
+DEBUG, 2023-03-10 09:00:10,011, Next wakeup is due at 2023-03-10 09:04:10.955780+09:00 (in 240.944619 seconds)
+INFO, 2023-03-10 09:00:10,011, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:05:10 KST)" (scheduled at 2023-03-10 09:00:10+09:00)
+DEBUG, 2023-03-10 09:00:10,015, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:00:10,086, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:00:10,087, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:00:10,087, Sesstion Key : 1-10262638-c9fcd94d4e1cb900fc6c1caef1f008c4188b17ea66f4b2977da8fdde0b772687
+DEBUG, 2023-03-10 09:00:10,088, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:00:10,607, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 98776
+INFO, 2023-03-10 09:00:10,646, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:00:10,647, Sensor ID : 4872
+INFO, 2023-03-10 09:00:10,651, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:00:10,785, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:00:10,859, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:00:10,861, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:00:10,873, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:00:10,874, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:00:10,877, Usage.py - 성공
+INFO, 2023-03-10 09:00:10,878, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:00:10,879, Compare.py -compare 성공
+INFO, 2023-03-10 09:00:10,879, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:00:10,883, Normal.py - 성공
+INFO, 2023-03-10 09:00:10,884, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:00:10,886, Count.py - 성공
+INFO, 2023-03-10 09:00:10,886, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:00:10,888, Merge.py - 성공
+INFO, 2023-03-10 09:00:10,890, Merge.py - 성공
+INFO, 2023-03-10 09:00:10,891, Merge.py - 성공
+INFO, 2023-03-10 09:00:10,981, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:00:11,056, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:00:11,237, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:00:11,238, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:00:11,239, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:00:11,241, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:00:11,243, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:00:11,244, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:00:11,246, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:00:11,248, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:00:11,250, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:00:11,256, Compare.py -alarm 성공
+INFO, 2023-03-10 09:00:11,257, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:00:11,259, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:00:11,260, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:00:11,262, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:00:11,264, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:00:11,267, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:00:11,269, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:00:11,271, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:00:11,273, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:00:11,274, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:00:11,276, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:00:11,277, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:00:11,278, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:00:11,281, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:00:11,285, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:00:11,292, Compare.py -online 성공
+INFO, 2023-03-10 09:00:11,293, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:00:11,295, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:00:11,299, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:00:11,387, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:00:11,388, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:00:11,391, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:00:11,392, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:00:11,417, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:00:11,423, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:00:11,426, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:00:11,427, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:00:11,429, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:00:11,749, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:00:11,752, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:00:11,752, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:05:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:04:10,967, Looking for jobs to run
+DEBUG, 2023-03-10 09:04:10,969, Next wakeup is due at 2023-03-10 09:05:10+09:00 (in 59.031590 seconds)
+INFO, 2023-03-10 09:04:10,969, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:09:10 KST)" (scheduled at 2023-03-10 09:04:10.955780+09:00)
+INFO, 2023-03-10 09:04:10,970, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:04:10,971, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:09:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:05:10,008, Looking for jobs to run
+DEBUG, 2023-03-10 09:05:10,010, Next wakeup is due at 2023-03-10 09:09:10.955780+09:00 (in 240.946623 seconds)
+INFO, 2023-03-10 09:05:10,010, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:10:10 KST)" (scheduled at 2023-03-10 09:05:10+09:00)
+DEBUG, 2023-03-10 09:05:10,014, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:05:10,160, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:05:10,162, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:05:10,162, Sesstion Key : 1-10262737-bca472fb8a8073b6283ba4c2f6a3d2b7258492faeec0b8fdbce7a1650c545bae
+DEBUG, 2023-03-10 09:05:10,164, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:05:10,770, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 105982
+INFO, 2023-03-10 09:05:10,828, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:05:10,828, Sensor ID : 4872
+INFO, 2023-03-10 09:05:10,832, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:05:10,972, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:05:11,052, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:05:11,053, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:05:11,065, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:05:11,067, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:05:11,069, Usage.py - 성공
+INFO, 2023-03-10 09:05:11,070, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:05:11,072, Compare.py -compare 성공
+INFO, 2023-03-10 09:05:11,072, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:05:11,075, Normal.py - 성공
+INFO, 2023-03-10 09:05:11,076, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:05:11,077, Count.py - 성공
+INFO, 2023-03-10 09:05:11,077, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:05:11,078, Merge.py - 성공
+INFO, 2023-03-10 09:05:11,079, Merge.py - 성공
+INFO, 2023-03-10 09:05:11,080, Merge.py - 성공
+INFO, 2023-03-10 09:05:11,157, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:05:11,224, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:05:11,292, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:05:11,293, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:05:11,294, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:05:11,296, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:05:11,297, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:05:11,299, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:05:11,300, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:05:11,302, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:05:11,303, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:05:11,308, Compare.py -alarm 성공
+INFO, 2023-03-10 09:05:11,309, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:05:11,310, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:05:11,312, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:05:11,314, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:05:11,316, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:05:11,317, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:05:11,319, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:05:11,321, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:05:11,322, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:05:11,324, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:05:11,325, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:05:11,327, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:05:11,329, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:05:11,330, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:05:11,332, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:05:11,338, Compare.py -online 성공
+INFO, 2023-03-10 09:05:11,339, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:05:11,341, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:05:11,342, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:05:11,410, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:05:11,411, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:05:11,415, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:05:11,416, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:05:11,441, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:05:11,446, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:05:11,450, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:05:11,452, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:05:11,453, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:05:11,759, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:05:11,761, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:05:11,762, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:10:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:09:10,964, Looking for jobs to run
+DEBUG, 2023-03-10 09:09:10,965, Next wakeup is due at 2023-03-10 09:10:10+09:00 (in 59.034192 seconds)
+INFO, 2023-03-10 09:09:10,966, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:14:10 KST)" (scheduled at 2023-03-10 09:09:10.955780+09:00)
+INFO, 2023-03-10 09:09:10,967, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:09:10,967, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:14:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:10:10,012, Looking for jobs to run
+DEBUG, 2023-03-10 09:10:10,013, Next wakeup is due at 2023-03-10 09:14:10.955780+09:00 (in 240.942921 seconds)
+INFO, 2023-03-10 09:10:10,014, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:15:10 KST)" (scheduled at 2023-03-10 09:10:10+09:00)
+DEBUG, 2023-03-10 09:10:10,017, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:10:10,099, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:10:10,100, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:10:10,101, Sesstion Key : 1-10262840-27225560f228e6040e3281d6e7a936c73e2ac1c3a77602f01b2955289441c14b
+DEBUG, 2023-03-10 09:10:10,102, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:10:10,802, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 108847
+INFO, 2023-03-10 09:10:10,826, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:10:10,826, Sensor ID : 4872
+INFO, 2023-03-10 09:10:10,830, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:10:10,961, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:10:11,034, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:10:11,037, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:10:11,051, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:10:11,052, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:10:11,054, Usage.py - 성공
+INFO, 2023-03-10 09:10:11,055, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:10:11,056, Compare.py -compare 성공
+INFO, 2023-03-10 09:10:11,057, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:10:11,059, Normal.py - 성공
+INFO, 2023-03-10 09:10:11,060, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:10:11,061, Count.py - 성공
+INFO, 2023-03-10 09:10:11,062, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:10:11,063, Merge.py - 성공
+INFO, 2023-03-10 09:10:11,064, Merge.py - 성공
+INFO, 2023-03-10 09:10:11,065, Merge.py - 성공
+INFO, 2023-03-10 09:10:11,146, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:10:11,216, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:10:11,283, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:10:11,284, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:10:11,285, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:10:11,288, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:10:11,290, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:10:11,292, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:10:11,293, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:10:11,295, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:10:11,296, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:10:11,301, Compare.py -alarm 성공
+INFO, 2023-03-10 09:10:11,302, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:10:11,305, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:10:11,307, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:10:11,309, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:10:11,310, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:10:11,312, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:10:11,314, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:10:11,316, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:10:11,318, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:10:11,320, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:10:11,321, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:10:11,323, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:10:11,324, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:10:11,326, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:10:11,328, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:10:11,334, Compare.py -online 성공
+INFO, 2023-03-10 09:10:11,336, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:10:11,338, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:10:11,340, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:10:11,412, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:10:11,413, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:10:11,418, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:10:11,419, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:10:11,445, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:10:11,469, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:10:11,473, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:10:11,475, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:10:11,478, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:10:11,766, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:10:11,768, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:10:11,769, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:15:10 KST)" executed successfully
+INFO, 2023-03-10 09:14:06,243, Module Started
+DEBUG, 2023-03-10 09:14:06,247, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:14:06,330, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:14:06,331, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:14:06,332, Sesstion Key : 1-10262919-9ab9028d7bd11047485cdf829660982a0372c405b13fa12a2d271258ebbda79d
+DEBUG, 2023-03-10 09:14:06,334, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:14:06,789, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 119238
+INFO, 2023-03-10 09:14:06,816, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:14:06,816, Sensor ID : 4872
+INFO, 2023-03-10 09:14:06,820, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:14:06,972, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:14:07,063, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:14:07,065, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:14:07,083, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:14:07,085, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:14:07,088, Usage.py - 성공
+INFO, 2023-03-10 09:14:07,090, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:14:07,091, Compare.py -compare 성공
+INFO, 2023-03-10 09:14:07,092, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:14:07,096, Normal.py - 성공
+INFO, 2023-03-10 09:14:07,097, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:14:07,098, Count.py - 성공
+INFO, 2023-03-10 09:14:07,099, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:14:07,100, Merge.py - 성공
+INFO, 2023-03-10 09:14:07,102, Merge.py - 성공
+INFO, 2023-03-10 09:14:07,103, Merge.py - 성공
+INFO, 2023-03-10 09:14:07,204, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:14:07,284, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:14:07,365, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:14:07,366, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:14:07,367, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:14:07,370, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:14:07,373, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:14:07,375, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:14:07,377, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:14:07,380, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:14:07,382, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:14:07,389, Compare.py -alarm 성공
+INFO, 2023-03-10 09:14:07,392, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:14:07,393, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:14:07,396, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:14:07,399, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:14:07,400, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:14:07,402, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:14:07,405, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:14:07,407, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:14:07,410, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:14:07,412, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:14:07,413, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:14:07,415, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:14:07,417, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:14:07,419, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:14:07,421, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:14:07,436, Compare.py -online 성공
+INFO, 2023-03-10 09:14:07,438, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:14:07,442, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:14:07,444, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:14:07,518, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:14:07,520, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:14:07,524, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:14:07,525, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:14:07,552, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:14:07,559, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:14:07,563, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:14:07,565, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:14:07,568, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:14:07,896, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:14:07,898, Tanium Minutely Module 성공
+INFO, 2023-03-10 09:14:07,898, Tanium VUL cycle 사용여부  : true
+INFO, 2023-03-10 09:14:11,276, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-03-10 09:14:11,277, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-03-10 09:14:11,279, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-03-10 09:14:11,279, Start the Scheduling~
+INFO, 2023-03-10 09:14:11,281, Added job "minutely" to job store "default"
+INFO, 2023-03-10 09:14:11,281, Added job "daily" to job store "default"
+INFO, 2023-03-10 09:14:11,283, Added job "vul" to job store "default"
+INFO, 2023-03-10 09:14:11,283, Scheduler started
+DEBUG, 2023-03-10 09:14:11,283, Looking for jobs to run
+DEBUG, 2023-03-10 09:14:11,283, Next wakeup is due at 2023-03-10 09:15:00+09:00 (in 48.716729 seconds)
+DEBUG, 2023-03-10 09:15:00,008, Looking for jobs to run
+INFO, 2023-03-10 09:15:00,011, Running job "daily (trigger: cron[hour='9', minute='15'], next run at: 2023-03-11 09:15:00 KST)" (scheduled at 2023-03-10 09:15:00+09:00)
+DEBUG, 2023-03-10 09:15:00,012, Next wakeup is due at 2023-03-10 09:15:10+09:00 (in 9.989977 seconds)
+INFO, 2023-03-10 09:15:00,099, Asset Table Select connection - minutely_asset_all성공
+INFO, 2023-03-10 09:15:00,103, Asset/All.py -  DB 성공
+INFO, 2023-03-10 09:15:00,214, Asset Table INSERT connection - daily 성공
+INFO, 2023-03-10 09:15:00,292, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:15:00,294, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:15:00,379, Statistics List Table INSERT connection - daily성공
+INFO, 2023-03-10 09:15:00,469, Statistics Table Select connection - minutely 성공
+INFO, 2023-03-10 09:15:00,470, Statistics/Part.py -  minutely_statistics/ 성공
+INFO, 2023-03-10 09:15:00,783, Statistics Table INSERT connection - daily성공
+INFO, 2023-03-10 09:15:00,783, Daily CDU Module Succesed!!
+INFO, 2023-03-10 09:15:00,783, Job "daily (trigger: cron[hour='9', minute='15'], next run at: 2023-03-11 09:15:00 KST)" executed successfully
+DEBUG, 2023-03-10 09:15:10,006, Looking for jobs to run
+DEBUG, 2023-03-10 09:15:10,007, Next wakeup is due at 2023-03-10 09:19:11.279692+09:00 (in 241.273283 seconds)
+INFO, 2023-03-10 09:15:10,007, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:20:10 KST)" (scheduled at 2023-03-10 09:15:10+09:00)
+DEBUG, 2023-03-10 09:15:10,014, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:15:10,124, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:15:10,126, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:15:10,127, Sesstion Key : 1-10262942-dc037dc22e8b5e8ffc1e52dea8b851415391ca607ad4348b52dadeef02821cf9
+DEBUG, 2023-03-10 09:15:10,130, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:15:10,812, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 128593
+INFO, 2023-03-10 09:15:10,843, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:15:10,844, Sensor ID : 4872
+INFO, 2023-03-10 09:15:10,850, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:15:10,998, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:15:11,084, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:15:11,086, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:15:11,104, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:15:11,106, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:15:11,108, Usage.py - 성공
+INFO, 2023-03-10 09:15:11,109, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:15:11,110, Compare.py -compare 성공
+INFO, 2023-03-10 09:15:11,111, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:15:11,114, Normal.py - 성공
+INFO, 2023-03-10 09:15:11,115, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:15:11,116, Count.py - 성공
+INFO, 2023-03-10 09:15:11,117, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:15:11,118, Merge.py - 성공
+INFO, 2023-03-10 09:15:11,119, Merge.py - 성공
+INFO, 2023-03-10 09:15:11,120, Merge.py - 성공
+INFO, 2023-03-10 09:15:11,210, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:15:11,288, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:15:11,358, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:15:11,360, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:15:11,362, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:15:11,365, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:15:11,367, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:15:11,369, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:15:11,370, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:15:11,372, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:15:11,373, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:15:11,379, Compare.py -alarm 성공
+INFO, 2023-03-10 09:15:11,381, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:15:11,383, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:15:11,385, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:15:11,387, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:15:11,390, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:15:11,392, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:15:11,394, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:15:11,396, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:15:11,398, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:15:11,400, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:15:11,402, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:15:11,403, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:15:11,406, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:15:11,408, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:15:11,411, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:15:11,421, Compare.py -online 성공
+INFO, 2023-03-10 09:15:11,423, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:15:11,427, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:15:11,431, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:15:11,510, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:15:11,512, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:15:11,517, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:15:11,518, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:15:11,551, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:15:11,558, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:15:11,563, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:15:11,566, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:15:11,569, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:15:11,923, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:15:11,925, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:15:11,925, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:20:10 KST)" executed successfully
+INFO, 2023-03-10 09:17:09,674, Module Started
+DEBUG, 2023-03-10 09:17:09,678, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:17:09,780, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:17:09,782, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:17:09,782, Sesstion Key : 1-10262986-a5c7fb7aea7f5c17822a0cb1b6ce09020215f33d1002668fd6138e8da99fe871
+DEBUG, 2023-03-10 09:17:09,784, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:17:10,453, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 128403
+INFO, 2023-03-10 09:17:10,481, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:17:10,482, Sensor ID : 4872
+INFO, 2023-03-10 09:17:10,485, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:17:10,623, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:17:10,697, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:17:10,698, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:17:10,715, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:17:10,717, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:17:10,719, Usage.py - 성공
+INFO, 2023-03-10 09:17:10,720, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:17:10,722, Compare.py -compare 성공
+INFO, 2023-03-10 09:17:10,722, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:17:10,726, Normal.py - 성공
+INFO, 2023-03-10 09:17:10,727, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:17:10,728, Count.py - 성공
+INFO, 2023-03-10 09:17:10,729, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:17:10,730, Merge.py - 성공
+INFO, 2023-03-10 09:17:10,731, Merge.py - 성공
+INFO, 2023-03-10 09:17:10,732, Merge.py - 성공
+INFO, 2023-03-10 09:17:10,817, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:17:10,889, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:17:10,965, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:17:10,966, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:17:10,967, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:17:10,969, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:17:10,970, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:17:10,973, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:17:10,974, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:17:10,977, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:17:10,979, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:17:10,985, Compare.py -alarm 성공
+INFO, 2023-03-10 09:17:10,985, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:17:10,987, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:17:10,989, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:17:10,991, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:17:10,993, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:17:10,995, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:17:10,997, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:17:10,999, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:17:11,000, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:17:11,002, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:17:11,004, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:17:11,006, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:17:11,007, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:17:11,010, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:17:11,011, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:17:11,019, Compare.py -online 성공
+INFO, 2023-03-10 09:17:11,020, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:17:11,022, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:17:11,024, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:17:11,100, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:17:11,101, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:17:11,105, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:17:11,106, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:17:11,135, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:17:11,142, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:17:11,147, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:17:11,149, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:17:11,151, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:17:11,498, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:17:11,500, Tanium Minutely Module 성공
+INFO, 2023-03-10 09:17:11,500, Tanium VUL cycle 사용여부  : true
+INFO, 2023-03-10 09:17:14,694, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-03-10 09:17:14,695, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-03-10 09:17:14,696, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-03-10 09:17:14,696, Start the Scheduling~
+INFO, 2023-03-10 09:17:14,697, Added job "minutely" to job store "default"
+INFO, 2023-03-10 09:17:14,698, Added job "daily" to job store "default"
+INFO, 2023-03-10 09:17:14,698, Added job "vul" to job store "default"
+INFO, 2023-03-10 09:17:14,698, Scheduler started
+DEBUG, 2023-03-10 09:17:14,698, Looking for jobs to run
+DEBUG, 2023-03-10 09:17:14,699, Next wakeup is due at 2023-03-10 09:20:10+09:00 (in 175.300448 seconds)
+DEBUG, 2023-03-10 09:20:10,014, Looking for jobs to run
+INFO, 2023-03-10 09:20:10,015, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:25:10 KST)" (scheduled at 2023-03-10 09:20:10+09:00)
+DEBUG, 2023-03-10 09:20:10,016, Next wakeup is due at 2023-03-10 09:22:14.696561+09:00 (in 124.681559 seconds)
+DEBUG, 2023-03-10 09:20:10,020, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:20:10,123, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:20:10,124, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:20:10,125, Sesstion Key : 1-10263043-cf67649eadd8164ce89161f97875ec2f904cc16c38c47f724a515de732d1556e
+DEBUG, 2023-03-10 09:20:10,127, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:20:10,760, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 129303
+INFO, 2023-03-10 09:20:10,792, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:20:10,793, Sensor ID : 4872
+INFO, 2023-03-10 09:20:10,798, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:20:11,069, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:20:11,146, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:20:11,149, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:20:11,177, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:20:11,179, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:20:11,183, Usage.py - 성공
+INFO, 2023-03-10 09:20:11,184, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:20:11,186, Compare.py -compare 성공
+INFO, 2023-03-10 09:20:11,187, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:20:11,191, Normal.py - 성공
+INFO, 2023-03-10 09:20:11,193, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:20:11,194, Count.py - 성공
+INFO, 2023-03-10 09:20:11,196, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:20:11,197, Merge.py - 성공
+INFO, 2023-03-10 09:20:11,198, Merge.py - 성공
+INFO, 2023-03-10 09:20:11,200, Merge.py - 성공
+INFO, 2023-03-10 09:20:11,285, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:20:11,360, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:20:11,534, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:20:11,536, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:20:11,538, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:20:11,542, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:20:11,545, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:20:11,548, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:20:11,550, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:20:11,552, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:20:11,554, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:20:11,561, Compare.py -alarm 성공
+INFO, 2023-03-10 09:20:11,563, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:20:11,565, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:20:11,567, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:20:11,569, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:20:11,571, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:20:11,573, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:20:11,577, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:20:11,581, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:20:11,585, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:20:11,588, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:20:11,591, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:20:11,594, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:20:11,597, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:20:11,602, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:20:11,606, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:20:11,629, Compare.py -online 성공
+INFO, 2023-03-10 09:20:11,631, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:20:11,635, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:20:11,641, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:20:11,723, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:20:11,724, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:20:11,730, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:20:11,731, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:20:11,773, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:20:11,786, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:20:11,797, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:20:11,802, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:20:11,808, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:20:12,163, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:20:12,166, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:20:12,166, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:25:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:22:14,713, Looking for jobs to run
+DEBUG, 2023-03-10 09:22:14,713, Next wakeup is due at 2023-03-10 09:25:10+09:00 (in 175.286346 seconds)
+INFO, 2023-03-10 09:22:14,713, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:27:14 KST)" (scheduled at 2023-03-10 09:22:14.696561+09:00)
+INFO, 2023-03-10 09:22:14,713, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:22:14,715, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:27:14 KST)" executed successfully
+DEBUG, 2023-03-10 09:25:10,001, Looking for jobs to run
+DEBUG, 2023-03-10 09:25:10,002, Next wakeup is due at 2023-03-10 09:27:14.696561+09:00 (in 124.695450 seconds)
+INFO, 2023-03-10 09:25:10,002, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:30:10 KST)" (scheduled at 2023-03-10 09:25:10+09:00)
+DEBUG, 2023-03-10 09:25:10,005, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:25:10,186, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:25:10,189, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:25:10,189, Sesstion Key : 1-10263147-88682740ca9a24859d7014ecc389bdcb2835385f55a24eaa5d024c54992a47a6
+DEBUG, 2023-03-10 09:25:10,193, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:25:10,794, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 134131
+INFO, 2023-03-10 09:25:10,821, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:25:10,822, Sensor ID : 4872
+INFO, 2023-03-10 09:25:10,827, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:25:10,986, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:25:11,081, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:25:11,083, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:25:11,110, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:25:11,112, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:25:11,116, Usage.py - 성공
+INFO, 2023-03-10 09:25:11,117, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:25:11,120, Compare.py -compare 성공
+INFO, 2023-03-10 09:25:11,121, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:25:11,126, Normal.py - 성공
+INFO, 2023-03-10 09:25:11,128, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:25:11,130, Count.py - 성공
+INFO, 2023-03-10 09:25:11,131, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:25:11,133, Merge.py - 성공
+INFO, 2023-03-10 09:25:11,135, Merge.py - 성공
+INFO, 2023-03-10 09:25:11,136, Merge.py - 성공
+INFO, 2023-03-10 09:25:11,274, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:25:11,390, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:25:11,504, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:25:11,506, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:25:11,508, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:25:11,511, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:25:11,515, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:25:11,518, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:25:11,520, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:25:11,523, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:25:11,526, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:25:11,535, Compare.py -alarm 성공
+INFO, 2023-03-10 09:25:11,536, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:25:11,539, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:25:11,542, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:25:11,545, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:25:11,548, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:25:11,551, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:25:11,553, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:25:11,556, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:25:11,560, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:25:11,563, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:25:11,566, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:25:11,568, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:25:11,571, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:25:11,573, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:25:11,576, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:25:11,590, Compare.py -online 성공
+INFO, 2023-03-10 09:25:11,592, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:25:11,595, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:25:11,598, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:25:11,808, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:25:11,810, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:25:11,817, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:25:11,818, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:25:11,857, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:25:11,866, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:25:11,871, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:25:11,874, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:25:11,879, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:25:12,435, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:25:12,437, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:25:12,438, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:30:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:27:14,708, Looking for jobs to run
+DEBUG, 2023-03-10 09:27:14,709, Next wakeup is due at 2023-03-10 09:30:10+09:00 (in 175.290906 seconds)
+INFO, 2023-03-10 09:27:14,709, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:32:14 KST)" (scheduled at 2023-03-10 09:27:14.696561+09:00)
+INFO, 2023-03-10 09:27:14,710, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:27:14,710, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:32:14 KST)" executed successfully
+DEBUG, 2023-03-10 09:30:10,001, Looking for jobs to run
+DEBUG, 2023-03-10 09:30:10,002, Next wakeup is due at 2023-03-10 09:32:14.696561+09:00 (in 124.694526 seconds)
+INFO, 2023-03-10 09:30:10,002, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:35:10 KST)" (scheduled at 2023-03-10 09:30:10+09:00)
+DEBUG, 2023-03-10 09:30:10,005, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:30:10,083, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:30:10,084, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:30:10,085, Sesstion Key : 1-10263244-d4d8b0ca7b4c902597f3eb0864e52b4f9fe1f0866040e43ea4b04304d6b1e21d
+DEBUG, 2023-03-10 09:30:10,086, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:30:10,626, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 138449
+INFO, 2023-03-10 09:30:10,658, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:30:10,659, Sensor ID : 4872
+INFO, 2023-03-10 09:30:10,664, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:30:10,819, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:30:10,901, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:30:10,903, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:30:10,932, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:30:10,934, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:30:10,937, Usage.py - 성공
+INFO, 2023-03-10 09:30:10,937, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:30:10,940, Compare.py -compare 성공
+INFO, 2023-03-10 09:30:10,941, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:30:10,945, Normal.py - 성공
+INFO, 2023-03-10 09:30:10,946, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:30:10,948, Count.py - 성공
+INFO, 2023-03-10 09:30:10,948, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:30:10,950, Merge.py - 성공
+INFO, 2023-03-10 09:30:10,952, Merge.py - 성공
+INFO, 2023-03-10 09:30:10,954, Merge.py - 성공
+INFO, 2023-03-10 09:30:11,062, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:30:11,162, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:30:11,247, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:30:11,249, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:30:11,250, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:30:11,254, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:30:11,257, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:30:11,259, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:30:11,262, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:30:11,268, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:30:11,275, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:30:11,292, Compare.py -alarm 성공
+INFO, 2023-03-10 09:30:11,293, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:30:11,297, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:30:11,301, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:30:11,304, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:30:11,309, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:30:11,315, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:30:11,318, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:30:11,347, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:30:11,355, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:30:11,361, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:30:11,369, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:30:11,374, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:30:11,379, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:30:11,384, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:30:11,389, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:30:11,404, Compare.py -online 성공
+INFO, 2023-03-10 09:30:11,405, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:30:11,409, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:30:11,412, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:30:11,504, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:30:11,507, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:30:11,518, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:30:11,520, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:30:11,590, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:30:11,614, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:30:11,634, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:30:11,641, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:30:11,649, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:30:12,120, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:30:12,123, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:30:12,124, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:35:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:32:14,711, Looking for jobs to run
+DEBUG, 2023-03-10 09:32:14,711, Next wakeup is due at 2023-03-10 09:35:10+09:00 (in 175.288594 seconds)
+INFO, 2023-03-10 09:32:14,711, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:37:14 KST)" (scheduled at 2023-03-10 09:32:14.696561+09:00)
+INFO, 2023-03-10 09:32:14,712, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:32:14,712, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:37:14 KST)" executed successfully
+DEBUG, 2023-03-10 09:35:10,005, Looking for jobs to run
+DEBUG, 2023-03-10 09:35:10,007, Next wakeup is due at 2023-03-10 09:37:14.696561+09:00 (in 124.689825 seconds)
+INFO, 2023-03-10 09:35:10,008, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:40:10 KST)" (scheduled at 2023-03-10 09:35:10+09:00)
+DEBUG, 2023-03-10 09:35:10,011, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:35:10,091, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:35:10,092, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:35:10,092, Sesstion Key : 1-10263348-e37176cd9879c3cdc3f4c4b5c3387f8e603556618441f4fe1ebbb118aacc970e
+DEBUG, 2023-03-10 09:35:10,093, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:35:10,748, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 140180
+INFO, 2023-03-10 09:35:10,808, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:35:10,848, Sensor ID : 4872
+INFO, 2023-03-10 09:35:10,863, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:35:11,079, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:35:11,209, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:35:11,211, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:35:11,235, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:35:11,237, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:35:11,242, Usage.py - 성공
+INFO, 2023-03-10 09:35:11,243, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:35:11,245, Compare.py -compare 성공
+INFO, 2023-03-10 09:35:11,246, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:35:11,250, Normal.py - 성공
+INFO, 2023-03-10 09:35:11,252, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:35:11,253, Count.py - 성공
+INFO, 2023-03-10 09:35:11,253, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:35:11,255, Merge.py - 성공
+INFO, 2023-03-10 09:35:11,257, Merge.py - 성공
+INFO, 2023-03-10 09:35:11,258, Merge.py - 성공
+INFO, 2023-03-10 09:35:11,379, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:35:11,482, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:35:11,563, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:35:11,565, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:35:11,566, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:35:11,568, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:35:11,570, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:35:11,572, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:35:11,574, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:35:11,577, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:35:11,579, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:35:11,585, Compare.py -alarm 성공
+INFO, 2023-03-10 09:35:11,587, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:35:11,590, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:35:11,593, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:35:11,595, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:35:11,597, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:35:11,599, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:35:11,602, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:35:11,604, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:35:11,606, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:35:11,608, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:35:11,611, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:35:11,613, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:35:11,615, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:35:11,617, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:35:11,619, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:35:11,635, Compare.py -online 성공
+INFO, 2023-03-10 09:35:11,637, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:35:11,641, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:35:11,644, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:35:11,751, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:35:11,753, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:35:11,760, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:35:11,762, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:35:11,803, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:35:11,817, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:35:11,827, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:35:11,829, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:35:11,833, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:35:12,302, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:35:12,305, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:35:12,305, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:40:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:37:14,704, Looking for jobs to run
+DEBUG, 2023-03-10 09:37:14,705, Next wakeup is due at 2023-03-10 09:40:10+09:00 (in 175.295843 seconds)
+INFO, 2023-03-10 09:37:14,705, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:42:14 KST)" (scheduled at 2023-03-10 09:37:14.696561+09:00)
+INFO, 2023-03-10 09:37:14,706, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:37:14,706, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:42:14 KST)" executed successfully
+DEBUG, 2023-03-10 09:40:10,015, Looking for jobs to run
+DEBUG, 2023-03-10 09:40:10,016, Next wakeup is due at 2023-03-10 09:42:14.696561+09:00 (in 124.680404 seconds)
+INFO, 2023-03-10 09:40:10,017, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:45:10 KST)" (scheduled at 2023-03-10 09:40:10+09:00)
+DEBUG, 2023-03-10 09:40:10,020, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:40:10,107, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:40:10,108, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:40:10,109, Sesstion Key : 1-10263448-a42052db0a2f4dcd9e3b8adfe6c79c7a8e0984511fd436d44ba4e0c4fcb0666a
+DEBUG, 2023-03-10 09:40:10,110, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:40:10,656, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 151851
+INFO, 2023-03-10 09:40:10,680, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:40:10,680, Sensor ID : 4872
+INFO, 2023-03-10 09:40:10,684, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:40:10,846, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:40:10,926, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:40:10,927, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:40:10,948, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:40:10,950, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:40:10,955, Usage.py - 성공
+INFO, 2023-03-10 09:40:10,956, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:40:10,959, Compare.py -compare 성공
+INFO, 2023-03-10 09:40:10,959, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:40:10,963, Normal.py - 성공
+INFO, 2023-03-10 09:40:10,964, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:40:10,965, Count.py - 성공
+INFO, 2023-03-10 09:40:10,966, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:40:10,967, Merge.py - 성공
+INFO, 2023-03-10 09:40:10,968, Merge.py - 성공
+INFO, 2023-03-10 09:40:10,970, Merge.py - 성공
+INFO, 2023-03-10 09:40:11,058, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:40:11,131, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:40:11,203, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:40:11,205, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:40:11,206, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:40:11,208, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:40:11,210, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:40:11,212, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:40:11,213, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:40:11,215, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:40:11,216, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:40:11,222, Compare.py -alarm 성공
+INFO, 2023-03-10 09:40:11,223, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:40:11,225, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:40:11,227, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:40:11,228, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:40:11,230, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:40:11,231, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:40:11,233, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:40:11,236, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:40:11,238, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:40:11,240, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:40:11,242, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:40:11,244, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:40:11,245, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:40:11,247, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:40:11,249, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:40:11,257, Compare.py -online 성공
+INFO, 2023-03-10 09:40:11,258, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:40:11,260, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:40:11,262, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:40:11,334, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:40:11,336, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:40:11,341, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:40:11,342, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:40:11,371, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:40:11,379, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:40:11,383, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:40:11,386, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:40:11,392, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:40:11,743, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:40:11,746, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:40:11,746, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:45:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:42:14,709, Looking for jobs to run
+DEBUG, 2023-03-10 09:42:14,709, Next wakeup is due at 2023-03-10 09:45:10+09:00 (in 175.290122 seconds)
+INFO, 2023-03-10 09:42:14,709, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:47:14 KST)" (scheduled at 2023-03-10 09:42:14.696561+09:00)
+INFO, 2023-03-10 09:42:14,709, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:42:14,710, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:47:14 KST)" executed successfully
+DEBUG, 2023-03-10 09:45:10,005, Looking for jobs to run
+DEBUG, 2023-03-10 09:45:10,006, Next wakeup is due at 2023-03-10 09:47:14.696561+09:00 (in 124.690532 seconds)
+INFO, 2023-03-10 09:45:10,007, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:50:10 KST)" (scheduled at 2023-03-10 09:45:10+09:00)
+DEBUG, 2023-03-10 09:45:10,010, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:45:10,073, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:45:10,074, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:45:10,074, Sesstion Key : 1-10263552-ae47a37ab4e75b55ca0b31f2c8d82ab81b95e078a1596ec4cfd48f7658484206
+DEBUG, 2023-03-10 09:45:10,076, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:45:10,748, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 152108
+INFO, 2023-03-10 09:45:10,797, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:45:10,797, Sensor ID : 4872
+INFO, 2023-03-10 09:45:10,802, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:45:10,958, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:45:11,033, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:45:11,035, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:45:11,051, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:45:11,053, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:45:11,055, Usage.py - 성공
+INFO, 2023-03-10 09:45:11,056, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:45:11,058, Compare.py -compare 성공
+INFO, 2023-03-10 09:45:11,059, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:45:11,062, Normal.py - 성공
+INFO, 2023-03-10 09:45:11,063, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:45:11,065, Count.py - 성공
+INFO, 2023-03-10 09:45:11,065, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:45:11,066, Merge.py - 성공
+INFO, 2023-03-10 09:45:11,068, Merge.py - 성공
+INFO, 2023-03-10 09:45:11,069, Merge.py - 성공
+INFO, 2023-03-10 09:45:11,155, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:45:11,337, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:45:11,517, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:45:11,520, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:45:11,521, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:45:11,523, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:45:11,525, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:45:11,527, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:45:11,528, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:45:11,530, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:45:11,531, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:45:11,538, Compare.py -alarm 성공
+INFO, 2023-03-10 09:45:11,539, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:45:11,541, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:45:11,542, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:45:11,544, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:45:11,546, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:45:11,549, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:45:11,552, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:45:11,554, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:45:11,557, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:45:11,560, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:45:11,562, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:45:11,563, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:45:11,565, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:45:11,567, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:45:11,570, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:45:11,578, Compare.py -online 성공
+INFO, 2023-03-10 09:45:11,579, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:45:11,584, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:45:11,586, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:45:11,662, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:45:11,663, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:45:11,668, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:45:11,669, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:45:11,699, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:45:11,705, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:45:11,709, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:45:11,711, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:45:11,713, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:45:12,076, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:45:12,079, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:45:12,080, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:50:10 KST)" executed successfully
+DEBUG, 2023-03-10 09:47:14,708, Looking for jobs to run
+DEBUG, 2023-03-10 09:47:14,708, Next wakeup is due at 2023-03-10 09:50:10+09:00 (in 175.291138 seconds)
+INFO, 2023-03-10 09:47:14,708, Running job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:52:14 KST)" (scheduled at 2023-03-10 09:47:14.696561+09:00)
+INFO, 2023-03-10 09:47:14,709, Tanium VUL cycle 사용여부  : false
+INFO, 2023-03-10 09:47:14,709, Job "vul (trigger: interval[0:05:00], next run at: 2023-03-10 09:52:14 KST)" executed successfully
+DEBUG, 2023-03-10 09:50:10,002, Looking for jobs to run
+DEBUG, 2023-03-10 09:50:10,004, Next wakeup is due at 2023-03-10 09:52:14.696561+09:00 (in 124.693024 seconds)
+INFO, 2023-03-10 09:50:10,004, Running job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:55:10 KST)" (scheduled at 2023-03-10 09:50:10+09:00)
+DEBUG, 2023-03-10 09:50:10,009, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:50:10,104, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 98
+INFO, 2023-03-10 09:50:10,106, Tanium API Sesstion Key 호출 성공
+INFO, 2023-03-10 09:50:10,106, Sesstion Key : 1-10263654-ab1e497fe97bf6cc7a6c93d97397c5375036e4441e3ddeed6445f7b252ee1211
+DEBUG, 2023-03-10 09:50:10,109, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-03-10 09:50:10,716, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 149901
+INFO, 2023-03-10 09:50:10,753, Tanium API Sensor 호출 성공
+INFO, 2023-03-10 09:50:10,753, Sensor ID : 4872
+INFO, 2023-03-10 09:50:10,758, Asset/All.py -  API 성공
+INFO, 2023-03-10 09:50:10,944, Asset Table INSERT connection - minutely 성공
+INFO, 2023-03-10 09:50:11,037, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-03-10 09:50:11,039, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:50:11,056, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-03-10 09:50:11,058, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-03-10 09:50:11,061, Usage.py - 성공
+INFO, 2023-03-10 09:50:11,063, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-03-10 09:50:11,065, Compare.py -compare 성공
+INFO, 2023-03-10 09:50:11,067, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-03-10 09:50:11,070, Normal.py - 성공
+INFO, 2023-03-10 09:50:11,073, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-03-10 09:50:11,074, Count.py - 성공
+INFO, 2023-03-10 09:50:11,075, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-03-10 09:50:11,077, Merge.py - 성공
+INFO, 2023-03-10 09:50:11,079, Merge.py - 성공
+INFO, 2023-03-10 09:50:11,081, Merge.py - 성공
+INFO, 2023-03-10 09:50:11,203, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:50:11,305, Statistics List Table Select connection - minutely 성공
+INFO, 2023-03-10 09:50:11,392, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-03-10 09:50:11,393, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-03-10 09:50:11,394, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-03-10 09:50:11,396, GroupByCount.py -os 성공
+INFO, 2023-03-10 09:50:11,398, GroupByCount.py -operating_system 성공
+INFO, 2023-03-10 09:50:11,400, GroupByCount.py -virtual 성공
+INFO, 2023-03-10 09:50:11,402, GroupByCount.py -asset 성공
+INFO, 2023-03-10 09:50:11,404, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-03-10 09:50:11,406, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-03-10 09:50:11,413, Compare.py -alarm 성공
+INFO, 2023-03-10 09:50:11,414, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-03-10 09:50:11,416, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:50:11,418, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-03-10 09:50:11,420, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-03-10 09:50:11,422, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-03-10 09:50:11,424, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-03-10 09:50:11,428, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-03-10 09:50:11,430, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-03-10 09:50:11,434, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-03-10 09:50:11,437, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-03-10 09:50:11,440, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-03-10 09:50:11,442, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-03-10 09:50:11,444, GroupByCount.py -group_server_count 성공
+INFO, 2023-03-10 09:50:11,445, GroupByCount.py -manufacturer 성공
+INFO, 2023-03-10 09:50:11,447, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-03-10 09:50:11,455, Compare.py -online 성공
+INFO, 2023-03-10 09:50:11,456, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-03-10 09:50:11,459, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-03-10 09:50:11,461, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-03-10 09:50:11,540, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-03-10 09:50:11,541, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:50:11,546, Preprocessing.py - minutely_asset 성공
+INFO, 2023-03-10 09:50:11,547, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-03-10 09:50:11,580, GroupByCount.py -installed_applications 성공
+INFO, 2023-03-10 09:50:11,588, GroupByCount.py -running_service 성공
+INFO, 2023-03-10 09:50:11,594, GroupByCount.py -session_ip 성공
+INFO, 2023-03-10 09:50:11,596, GroupByCount.py -online_asset 성공
+INFO, 2023-03-10 09:50:11,598, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-03-10 09:50:11,983, Statistics Table INSERT connection - minutely성공
+INFO, 2023-03-10 09:50:11,987, Minutely CMU Module Succesed!!
+INFO, 2023-03-10 09:50:11,987, Job "minutely (trigger: cron[minute='*/5', second='10'], next run at: 2023-03-10 09:55:10 KST)" executed successfully

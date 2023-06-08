@@ -1,0 +1,368 @@
+INFO, 20230214091844, Module Started
+DEBUG, 20230214091844, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214091844, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 20230214091844, Tanium API Sesstion Key 龋免 己傍
+INFO, 20230214091844, Sesstion Key : 1-9517687-e902b3610cdee050ccff4c568977b662ce940ab82c2d81ac3dbe6d863ff78e9d
+DEBUG, 20230214091844, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214091844, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 214303
+INFO, 20230214091844, Tanium API Sensor 龋免 己傍
+INFO, 20230214091844, Sensor ID : 4872
+INFO, 20230214091844, Asset/All.py -  API 己傍
+INFO, 20230214091845, Asset Table INSERT connection - minutely 己傍
+INFO, 20230214091845, Asset Table Select connection - minutely_daily_asset己傍
+INFO, 20230214091845, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214091845, Preprocessing.py - minutely_daily_asset 己傍
+INFO, 20230214091845, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214091845, Usage.py - 己傍
+INFO, 20230214091845, Statistics/Part.py -  minutely_statistics_list/usage 己傍
+INFO, 20230214091845, Compare.py -compare 己傍
+INFO, 20230214091845, Statistics/Part.py -  minutely_statistics_list/compare 己傍
+INFO, 20230214091845, Normal.py - 己傍
+INFO, 20230214091845, Statistics/Part.py -  minutely_statistics_list/normal 己傍
+INFO, 20230214091845, Count.py - 己傍
+INFO, 20230214091845, Statistics/Part.py -  minutely_statistics_list/count 己傍
+INFO, 20230214091845, Merge.py - 己傍
+INFO, 20230214091845, Merge.py - 己傍
+INFO, 20230214091845, Merge.py - 己傍
+INFO, 20230214091845, Statistics List Table INSERT connection - minutely己傍
+INFO, 20230214091845, Statistics List Table Select connection - minutely 己傍
+INFO, 20230214091845, Statistics List Table Select connection - minutely_statistics_list_online 己傍
+INFO, 20230214091845, Statistics/All.py -  DB/minutely_statistics_list 己傍
+INFO, 20230214091845, Statistics/Part.py -  minutely_statistics_list_online/normal 己傍
+INFO, 20230214091845, GroupByCount.py -os 己傍
+INFO, 20230214091845, GroupByCount.py -operating_system 己傍
+INFO, 20230214091845, GroupByCount.py -virtual 己傍
+INFO, 20230214091845, GroupByCount.py -asset 己傍
+INFO, 20230214091845, GroupByCount.py -listen_port_count_change 己傍
+INFO, 20230214091845, GroupByCount.py -established_port_count_change 己傍
+INFO, 20230214091845, Compare.py -alarm 己傍
+INFO, 20230214091845, Statistics/Part.py -  minutely_statistics_list/alarm 己傍
+INFO, 20230214091845, GroupByCount.py -drive_usage_size_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -ram_usage_size_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -cpu_usage_size_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -last_reboot_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -group_ram_usage_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -group_cpu_usage_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -group_listen_port_count_change 己傍
+INFO, 20230214091845, GroupByCount.py -group_established_port_count_change 己傍
+INFO, 20230214091845, GroupByCount.py -group_running_service_count_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -group_last_reboot 己傍
+INFO, 20230214091845, GroupByCount.py -group_drive_usage_size_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -group_server_count 己傍
+INFO, 20230214091845, GroupByCount.py -manufacturer 己傍
+INFO, 20230214091845, GroupByCount.py -nvidia_smi 己傍
+INFO, 20230214091845, Compare.py -online 己傍
+INFO, 20230214091845, Statistics/Part.py -  minutely_statistics_list_online/count 己傍
+INFO, 20230214091845, GroupByCount.py -group_last_online_time_exceeded 己傍
+INFO, 20230214091845, GroupByCount.py -last_online_time_exceeded 己傍
+INFO, 20230214091845, Asset Table Select connection - minutely_asset_part己傍
+INFO, 20230214091845, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214091845, Preprocessing.py - minutely_asset 己傍
+INFO, 20230214091845, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214091845, GroupByCount.py -installed_applications 己傍
+INFO, 20230214091845, GroupByCount.py -running_service 己傍
+INFO, 20230214091845, GroupByCount.py -session_ip 己傍
+INFO, 20230214091845, GroupByCount.py -online_asset 己傍
+INFO, 20230214091845, Statistics/All.py -  DB/minutely_statistics 己傍
+INFO, 20230214092001, Module Started
+DEBUG, 20230214092001, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092001, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 20230214092001, Tanium API Sesstion Key 龋免 己傍
+INFO, 20230214092001, Sesstion Key : 1-9517723-fd2c55cd19ac43f97e18842b71de67d6529dffd595ed636121bf9219fee90836
+DEBUG, 20230214092001, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092002, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 214305
+INFO, 20230214092002, Tanium API Sensor 龋免 己傍
+INFO, 20230214092002, Sensor ID : 4872
+INFO, 20230214092002, Asset/All.py -  API 己傍
+INFO, 20230214092002, Asset Table INSERT connection - minutely 己傍
+INFO, 20230214092002, Asset Table Select connection - minutely_daily_asset己傍
+INFO, 20230214092002, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214092002, Preprocessing.py - minutely_daily_asset 己傍
+INFO, 20230214092002, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214092002, Usage.py - 己傍
+INFO, 20230214092002, Statistics/Part.py -  minutely_statistics_list/usage 己傍
+INFO, 20230214092002, Compare.py -compare 己傍
+INFO, 20230214092002, Statistics/Part.py -  minutely_statistics_list/compare 己傍
+INFO, 20230214092002, Normal.py - 己傍
+INFO, 20230214092002, Statistics/Part.py -  minutely_statistics_list/normal 己傍
+INFO, 20230214092002, Count.py - 己傍
+INFO, 20230214092002, Statistics/Part.py -  minutely_statistics_list/count 己傍
+INFO, 20230214092002, Merge.py - 己傍
+INFO, 20230214092002, Merge.py - 己傍
+INFO, 20230214092002, Merge.py - 己傍
+INFO, 20230214092003, Statistics List Table INSERT connection - minutely己傍
+INFO, 20230214092003, Statistics List Table Select connection - minutely 己傍
+INFO, 20230214092003, Statistics List Table Select connection - minutely_statistics_list_online 己傍
+INFO, 20230214092003, Statistics/All.py -  DB/minutely_statistics_list 己傍
+INFO, 20230214092003, Statistics/Part.py -  minutely_statistics_list_online/normal 己傍
+INFO, 20230214092003, GroupByCount.py -os 己傍
+INFO, 20230214092003, GroupByCount.py -operating_system 己傍
+INFO, 20230214092003, GroupByCount.py -virtual 己傍
+INFO, 20230214092003, GroupByCount.py -asset 己傍
+INFO, 20230214092003, GroupByCount.py -listen_port_count_change 己傍
+INFO, 20230214092003, GroupByCount.py -established_port_count_change 己傍
+INFO, 20230214092003, Compare.py -alarm 己傍
+INFO, 20230214092003, Statistics/Part.py -  minutely_statistics_list/alarm 己傍
+INFO, 20230214092003, GroupByCount.py -drive_usage_size_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -ram_usage_size_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -cpu_usage_size_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -last_reboot_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -group_ram_usage_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -group_cpu_usage_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -group_listen_port_count_change 己傍
+INFO, 20230214092003, GroupByCount.py -group_established_port_count_change 己傍
+INFO, 20230214092003, GroupByCount.py -group_running_service_count_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -group_last_reboot 己傍
+INFO, 20230214092003, GroupByCount.py -group_drive_usage_size_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -group_server_count 己傍
+INFO, 20230214092003, GroupByCount.py -manufacturer 己傍
+INFO, 20230214092003, GroupByCount.py -nvidia_smi 己傍
+INFO, 20230214092003, Compare.py -online 己傍
+INFO, 20230214092003, Statistics/Part.py -  minutely_statistics_list_online/count 己傍
+INFO, 20230214092003, GroupByCount.py -group_last_online_time_exceeded 己傍
+INFO, 20230214092003, GroupByCount.py -last_online_time_exceeded 己傍
+INFO, 20230214092003, Asset Table Select connection - minutely_asset_part己傍
+INFO, 20230214092003, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214092003, Preprocessing.py - minutely_asset 己傍
+INFO, 20230214092003, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214092003, GroupByCount.py -installed_applications 己傍
+INFO, 20230214092003, GroupByCount.py -running_service 己傍
+INFO, 20230214092003, GroupByCount.py -session_ip 己傍
+INFO, 20230214092003, GroupByCount.py -online_asset 己傍
+INFO, 20230214092003, Statistics/All.py -  DB/minutely_statistics 己傍
+INFO, 20230214092133, Module Started
+DEBUG, 20230214092133, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092133, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 20230214092133, Tanium API Sesstion Key 龋免 己傍
+INFO, 20230214092133, Sesstion Key : 1-9517762-5bfee2d27847f13f7aa3799ecf8b0e590391bdd01b4e7d14b437b8cfe477350a
+DEBUG, 20230214092133, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092133, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 214685
+INFO, 20230214092133, Tanium API Sensor 龋免 己傍
+INFO, 20230214092133, Sensor ID : 4872
+INFO, 20230214092133, Asset/All.py -  API 己傍
+INFO, 20230214092134, Asset Table INSERT connection - minutely 己傍
+INFO, 20230214092134, Asset Table Select connection - minutely_daily_asset己傍
+INFO, 20230214092134, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214092134, Preprocessing.py - minutely_daily_asset 己傍
+INFO, 20230214092134, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214092134, Usage.py - 己傍
+INFO, 20230214092134, Statistics/Part.py -  minutely_statistics_list/usage 己傍
+INFO, 20230214092134, Compare.py -compare 己傍
+INFO, 20230214092134, Statistics/Part.py -  minutely_statistics_list/compare 己傍
+INFO, 20230214092134, Normal.py - 己傍
+INFO, 20230214092134, Statistics/Part.py -  minutely_statistics_list/normal 己傍
+INFO, 20230214092134, Count.py - 己傍
+INFO, 20230214092134, Statistics/Part.py -  minutely_statistics_list/count 己傍
+INFO, 20230214092134, Merge.py - 己傍
+INFO, 20230214092134, Merge.py - 己傍
+INFO, 20230214092134, Merge.py - 己傍
+INFO, 20230214092134, Statistics List Table INSERT connection - minutely己傍
+INFO, 20230214092134, Statistics List Table Select connection - minutely 己傍
+INFO, 20230214092134, Statistics List Table Select connection - minutely_statistics_list_online 己傍
+INFO, 20230214092134, Statistics/All.py -  DB/minutely_statistics_list 己傍
+INFO, 20230214092134, Statistics/Part.py -  minutely_statistics_list_online/normal 己傍
+INFO, 20230214092134, GroupByCount.py -os 己傍
+INFO, 20230214092134, GroupByCount.py -operating_system 己傍
+INFO, 20230214092134, GroupByCount.py -virtual 己傍
+INFO, 20230214092134, GroupByCount.py -asset 己傍
+INFO, 20230214092134, GroupByCount.py -listen_port_count_change 己傍
+INFO, 20230214092134, GroupByCount.py -established_port_count_change 己傍
+INFO, 20230214092134, Compare.py -alarm 己傍
+INFO, 20230214092134, Statistics/Part.py -  minutely_statistics_list/alarm 己傍
+INFO, 20230214092134, GroupByCount.py -drive_usage_size_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -ram_usage_size_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -cpu_usage_size_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -last_reboot_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -group_ram_usage_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -group_cpu_usage_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -group_listen_port_count_change 己傍
+INFO, 20230214092134, GroupByCount.py -group_established_port_count_change 己傍
+INFO, 20230214092134, GroupByCount.py -group_running_service_count_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -group_last_reboot 己傍
+INFO, 20230214092134, GroupByCount.py -group_drive_usage_size_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -group_server_count 己傍
+INFO, 20230214092134, GroupByCount.py -manufacturer 己傍
+INFO, 20230214092134, GroupByCount.py -nvidia_smi 己傍
+INFO, 20230214092134, Compare.py -online 己傍
+INFO, 20230214092134, Statistics/Part.py -  minutely_statistics_list_online/count 己傍
+INFO, 20230214092134, GroupByCount.py -group_last_online_time_exceeded 己傍
+INFO, 20230214092134, GroupByCount.py -last_online_time_exceeded 己傍
+INFO, 20230214092134, Asset Table Select connection - minutely_asset_part己傍
+INFO, 20230214092134, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214092134, Preprocessing.py - minutely_asset 己傍
+INFO, 20230214092134, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214092134, GroupByCount.py -installed_applications 己傍
+INFO, 20230214092134, GroupByCount.py -running_service 己傍
+INFO, 20230214092134, GroupByCount.py -session_ip 己傍
+INFO, 20230214092134, GroupByCount.py -online_asset 己傍
+INFO, 20230214092134, Statistics/All.py -  DB/minutely_statistics 己傍
+INFO, 20230214092135, Statistics Table INSERT connection - minutely己傍
+INFO, 20230214092135, Tanium Minutely Module 己傍
+INFO, 20230214092135, Asset Table Select connection - minutely_asset_all己傍
+INFO, 20230214092135, Asset/All.py -  DB 己傍
+INFO, 20230214092135, Asset Table INSERT connection - daily 己傍
+INFO, 20230214092135, Statistics List Table Select connection - minutely 己傍
+INFO, 20230214092135, Statistics/All.py -  DB/minutely_statistics_list 己傍
+INFO, 20230214092135, Statistics List Table INSERT connection - daily己傍
+INFO, 20230214092135, Statistics Table Select connection - minutely 己傍
+INFO, 20230214092135, Statistics/Part.py -  minutely_statistics/ 己傍
+INFO, 20230214092135, Statistics Table INSERT connection - daily己傍
+INFO, 20230214092135, Tanium Daily Module 己傍
+DEBUG, 20230214092137, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092137, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 20230214092137, Tanium API Sesstion Key 龋免 己傍
+INFO, 20230214092137, Sesstion Key : 1-9517763-f4675e9fdf7e17dca1968b26140cac3b310bf666f4dbc8e85d5bbb00a3a057b9
+DEBUG, 20230214092137, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092138, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 58077
+INFO, 20230214092138, Tanium API Sensor 龋免 己傍
+INFO, 20230214092138, Sensor ID : 4356
+INFO, 20230214092138, recived SessionKey is  Succesed!!
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092138, Tanium VUL Data API Call Success
+INFO, 20230214092138, recived VUL Data is  Succesed!!
+INFO, 20230214092138, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 20230214092138, Completing list operations for putting into a data frame
+INFO, 20230214092138, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 20230214092138, Trans DataFrame is Successed!!
+INFO, 20230214092138, Start the process : VUL 
+INFO, 20230214092139, Insert VUL Process is finish 
+INFO, 20230214092139, DB Data is Insert
+INFO, 20230214092139, Module Finished
+INFO, 20230214092243, Module Started
+INFO, 20230214092243, Asset Table Select connection - minutely_daily_asset己傍
+INFO, 20230214092243, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214092243, Preprocessing.py - minutely_daily_asset 己傍
+INFO, 20230214092243, Asset/Part.py -  DB/minutely_daily_asset 己傍
+INFO, 20230214092243, Usage.py - 己傍
+INFO, 20230214092243, Statistics/Part.py -  minutely_statistics_list/usage 己傍
+INFO, 20230214092243, Compare.py -compare 己傍
+INFO, 20230214092243, Statistics/Part.py -  minutely_statistics_list/compare 己傍
+INFO, 20230214092243, Normal.py - 己傍
+INFO, 20230214092243, Statistics/Part.py -  minutely_statistics_list/normal 己傍
+INFO, 20230214092243, Count.py - 己傍
+INFO, 20230214092243, Statistics/Part.py -  minutely_statistics_list/count 己傍
+INFO, 20230214092243, Merge.py - 己傍
+INFO, 20230214092243, Merge.py - 己傍
+INFO, 20230214092243, Merge.py - 己傍
+INFO, 20230214092243, Statistics List Table INSERT connection - minutely己傍
+INFO, 20230214092243, Statistics List Table Select connection - minutely 己傍
+INFO, 20230214092243, Statistics List Table Select connection - minutely_statistics_list_online 己傍
+INFO, 20230214092243, Statistics/All.py -  DB/minutely_statistics_list 己傍
+INFO, 20230214092243, Statistics/Part.py -  minutely_statistics_list_online/normal 己傍
+INFO, 20230214092243, GroupByCount.py -os 己傍
+INFO, 20230214092243, GroupByCount.py -operating_system 己傍
+INFO, 20230214092243, GroupByCount.py -virtual 己傍
+INFO, 20230214092243, GroupByCount.py -asset 己傍
+INFO, 20230214092243, GroupByCount.py -listen_port_count_change 己傍
+INFO, 20230214092243, GroupByCount.py -established_port_count_change 己傍
+INFO, 20230214092243, Compare.py -alarm 己傍
+INFO, 20230214092243, Statistics/Part.py -  minutely_statistics_list/alarm 己傍
+INFO, 20230214092243, GroupByCount.py -drive_usage_size_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -ram_usage_size_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -cpu_usage_size_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -last_reboot_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -group_ram_usage_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -group_cpu_usage_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -group_listen_port_count_change 己傍
+INFO, 20230214092243, GroupByCount.py -group_established_port_count_change 己傍
+INFO, 20230214092243, GroupByCount.py -group_running_service_count_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -group_last_reboot 己傍
+INFO, 20230214092243, GroupByCount.py -group_drive_usage_size_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -group_server_count 己傍
+INFO, 20230214092243, GroupByCount.py -manufacturer 己傍
+INFO, 20230214092243, GroupByCount.py -nvidia_smi 己傍
+INFO, 20230214092243, Compare.py -online 己傍
+INFO, 20230214092243, Statistics/Part.py -  minutely_statistics_list_online/count 己傍
+INFO, 20230214092243, GroupByCount.py -group_last_online_time_exceeded 己傍
+INFO, 20230214092243, GroupByCount.py -last_online_time_exceeded 己傍
+INFO, 20230214092243, Asset Table Select connection - minutely_asset_part己傍
+INFO, 20230214092243, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214092243, Preprocessing.py - minutely_asset 己傍
+INFO, 20230214092243, Asset/Part.py -  DB/minutely_asset 己傍
+INFO, 20230214092243, GroupByCount.py -installed_applications 己傍
+INFO, 20230214092243, GroupByCount.py -running_service 己傍
+INFO, 20230214092243, GroupByCount.py -session_ip 己傍
+INFO, 20230214092243, GroupByCount.py -online_asset 己傍
+INFO, 20230214092243, Statistics/All.py -  DB/minutely_statistics 己傍
+INFO, 20230214092244, Statistics Table INSERT connection - minutely己傍
+INFO, 20230214092244, Tanium Minutely Module 己傍
+INFO, 20230214092244, Asset Table Select connection - minutely_asset_all己傍
+INFO, 20230214092244, Asset/All.py -  DB 己傍
+INFO, 20230214092244, Asset Table INSERT connection - daily 己傍
+INFO, 20230214092244, Statistics List Table Select connection - minutely 己傍
+INFO, 20230214092244, Statistics/All.py -  DB/minutely_statistics_list 己傍
+INFO, 20230214092244, Statistics List Table INSERT connection - daily己傍
+INFO, 20230214092244, Statistics Table Select connection - minutely 己傍
+INFO, 20230214092244, Statistics/Part.py -  minutely_statistics/ 己傍
+INFO, 20230214092245, Statistics Table INSERT connection - daily己傍
+INFO, 20230214092245, Tanium Daily Module 己傍
+DEBUG, 20230214092246, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092246, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 20230214092246, Tanium API Sesstion Key 龋免 己傍
+INFO, 20230214092246, Sesstion Key : 1-9517789-ecd7740b1b1f97d64314a13be21cb0bf8e061a703326c1f42a52acfc8ddfee54
+DEBUG, 20230214092246, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 20230214092247, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 58499
+INFO, 20230214092247, Tanium API Sensor 龋免 己傍
+INFO, 20230214092247, Sensor ID : 4356
+INFO, 20230214092247, recived SessionKey is  Succesed!!
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  3151709023 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  55396160 has [current result unavailable]
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 20230214092247, Tanium VUL Data API Call Success
+INFO, 20230214092247, recived VUL Data is  Succesed!!
+INFO, 20230214092247, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 20230214092247, Completing list operations for putting into a data frame
+INFO, 20230214092247, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 20230214092247, Trans DataFrame is Successed!!
+INFO, 20230214092247, Start the process : VUL 
+INFO, 20230214092248, Insert VUL Process is finish 
+INFO, 20230214092248, DB Data is Insert
+INFO, 20230214092248, Module Finished
+INFO, 20230214092526, Module Started
+INFO, 20230214092526, Asset Table Select connection - minutely_daily_asset己傍
+INFO, 20230214092526, Asset/Part.py -  DB/minutely_daily_asset 己傍
+WARNING, 20230214092526, Preprocessing_Dashboard.py - Error 惯积

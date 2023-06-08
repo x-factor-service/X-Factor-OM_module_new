@@ -1,0 +1,8 @@
+WARNING, 2023-05-25 09:54:06,938, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-05-25 09:54:06,940, Sensor ID : 6609
+WARNING, 2023-05-25 13:16:18,101, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-05-25 13:16:18,101, Sensor ID : 6609
+WARNING, 2023-05-25 13:20:10,851, Minutely CMU Module Failname 'CIDBPTAOPI' is not defined
+WARNING, 2023-05-25 13:25:11,617, Minutely CMU Module Failname 'CIDBPTAOPI' is not defined
+WARNING, 2023-05-25 13:30:10,770, Minutely CMU Module Failname 'CIDBPTAOPI' is not defined
+WARNING, 2023-05-25 13:35:10,913, Minutely CMU Module Failname 'CIDBPTAOPI' is not defined

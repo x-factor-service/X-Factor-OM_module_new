@@ -1,0 +1,2530 @@
+INFO, 2023-02-24 13:30:53,843, Module Started
+INFO, 2023-02-24 13:30:53,862, Auto Create Table Start
+INFO, 2023-02-24 13:30:53,874, DROP TABLE minutely_asset is Successed!!  (1//4)
+INFO, 2023-02-24 13:30:53,890, DROP SEQ minutely_asset is Successed!!  (2//4)
+INFO, 2023-02-24 13:30:53,906, CREATE SEQ minutely_asset is Successed!!  (3//4)
+INFO, 2023-02-24 13:30:53,933, CREATE TABLE minutely_asset is Successed!!  (4//4)
+INFO, 2023-02-24 13:30:53,940, minutely_asset Table Create Successed!!
+INFO, 2023-02-24 13:30:53,941, minutely_asset Table Create Successed!!
+INFO, 2023-02-24 13:30:53,978, Auto Create Table Start
+INFO, 2023-02-24 13:30:53,991, DROP TABLE daily_asset is Successed!!  (1//4)
+INFO, 2023-02-24 13:30:54,005, DROP SEQ daily_asset is Successed!!  (2//4)
+INFO, 2023-02-24 13:30:54,023, CREATE SEQ daily_asset is Successed!!  (3//4)
+INFO, 2023-02-24 13:30:54,045, CREATE TABLE daily_asset is Successed!!  (4//4)
+INFO, 2023-02-24 13:30:54,051, daily_asset Table Create Successed!!
+INFO, 2023-02-24 13:30:54,052, daily_asset Table Create Successed!!
+INFO, 2023-02-24 13:30:54,088, Auto Create Table Start
+INFO, 2023-02-24 13:30:54,101, DROP TABLE minutely_statistics_list is Successed!!  (1//4)
+INFO, 2023-02-24 13:30:54,120, DROP SEQ minutely_statistics_list is Successed!!  (2//4)
+INFO, 2023-02-24 13:30:54,138, CREATE SEQ minutely_statistics_list is Successed!!  (3//4)
+INFO, 2023-02-24 13:30:54,161, CREATE TABLE minutely_statistics_list is Successed!!  (4//4)
+INFO, 2023-02-24 13:30:54,166, minutely_statistics_list Table Create Successed!!
+INFO, 2023-02-24 13:30:54,168, minutely_statistics_list Table Create Successed!!
+INFO, 2023-02-24 13:30:54,209, Auto Create Table Start
+INFO, 2023-02-24 13:30:54,221, DROP TABLE daily_statistics_list is Successed!!  (1//4)
+INFO, 2023-02-24 13:30:54,238, DROP SEQ daily_statistics_list is Successed!!  (2//4)
+INFO, 2023-02-24 13:30:54,254, CREATE SEQ daily_statistics_list is Successed!!  (3//4)
+INFO, 2023-02-24 13:30:54,274, CREATE TABLE daily_statistics_list is Successed!!  (4//4)
+INFO, 2023-02-24 13:30:54,279, daily_statistics_list Table Create Successed!!
+INFO, 2023-02-24 13:30:54,281, daily_statistics_list Table Create Successed!!
+INFO, 2023-02-24 13:30:54,301, Auto Create Table Start
+INFO, 2023-02-24 13:30:54,313, DROP TABLE minutely_statistics is Successed!!  (1//4)
+INFO, 2023-02-24 13:30:54,331, DROP SEQ minutely_statistics is Successed!!  (2//4)
+INFO, 2023-02-24 13:30:54,350, CREATE SEQ minutely_statistics is Successed!!  (3//4)
+INFO, 2023-02-24 13:30:54,370, CREATE TABLE minutely_statistics is Successed!!  (4//4)
+INFO, 2023-02-24 13:30:54,377, minutely_statistics Table Create Successed!!
+INFO, 2023-02-24 13:30:54,379, minutely_statistics Table Create Successed!!
+INFO, 2023-02-24 13:30:54,409, Auto Create Table Start
+INFO, 2023-02-24 13:30:54,421, DROP TABLE daily_statistics is Successed!!  (1//4)
+INFO, 2023-02-24 13:30:54,439, DROP SEQ daily_statistics is Successed!!  (2//4)
+INFO, 2023-02-24 13:30:54,455, CREATE SEQ daily_statistics is Successed!!  (3//4)
+INFO, 2023-02-24 13:30:54,475, CREATE TABLE daily_statistics is Successed!!  (4//4)
+INFO, 2023-02-24 13:30:54,481, daily_statistics Table Create Successed!!
+INFO, 2023-02-24 13:30:54,483, daily_statistics Table Create Successed!!
+INFO, 2023-02-24 13:30:54,484, AutoCreate Success!!!
+DEBUG, 2023-02-24 13:30:54,493, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 13:30:54,633, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 13:30:54,636, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 13:30:54,637, Sesstion Key : 1-9839047-07a1e030d2a167c500de160f391d281a1758f15db34b98e0c35f06e8a93cfec2
+DEBUG, 2023-02-24 13:30:54,641, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 13:30:55,217, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 194667
+INFO, 2023-02-24 13:30:55,260, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 13:30:55,260, Sensor ID : 4872
+INFO, 2023-02-24 13:30:55,282, Asset/All.py -  API 성공
+INFO, 2023-02-24 13:30:56,587, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 13:30:56,857, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 13:30:56,861, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 13:30:56,892, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 13:30:56,893, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 13:30:56,896, Usage.py - 성공
+INFO, 2023-02-24 13:30:56,897, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 13:30:56,899, Compare.py -compare 성공
+INFO, 2023-02-24 13:30:56,900, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 13:30:56,904, Normal.py - 성공
+INFO, 2023-02-24 13:30:56,905, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 13:30:56,906, Count.py - 성공
+INFO, 2023-02-24 13:30:56,907, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 13:30:56,913, Merge.py - 성공
+INFO, 2023-02-24 13:30:56,914, Merge.py - 성공
+INFO, 2023-02-24 13:30:56,915, Merge.py - 성공
+INFO, 2023-02-24 13:30:57,321, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 13:30:57,369, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 13:30:57,405, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 13:30:57,406, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 13:30:57,407, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 13:30:57,410, GroupByCount.py -os 성공
+INFO, 2023-02-24 13:30:57,412, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 13:30:57,414, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 13:30:57,416, GroupByCount.py -asset 성공
+INFO, 2023-02-24 13:30:57,417, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 13:30:57,419, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 13:30:57,430, Compare.py -alarm 성공
+INFO, 2023-02-24 13:30:57,431, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 13:30:57,433, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 13:30:57,435, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 13:30:57,438, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 13:30:57,439, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 13:30:57,443, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 13:30:57,445, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 13:30:57,447, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 13:30:57,449, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 13:30:57,451, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 13:30:57,453, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 13:30:57,454, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 13:30:57,456, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 13:30:57,461, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 13:30:57,464, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 13:30:57,471, Compare.py -online 성공
+INFO, 2023-02-24 13:30:57,472, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 13:30:57,475, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 13:30:57,477, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 13:30:57,740, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 13:30:57,741, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 13:30:57,756, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 13:30:57,757, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 13:30:57,795, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 13:30:57,801, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 13:30:57,806, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 13:30:57,807, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 13:30:57,812, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 13:31:10,849, Statistics Table INSERT connection - minutely성공
+INFO, 2023-02-24 13:31:10,852, Tanium Minutely Module 성공
+INFO, 2023-02-24 13:31:10,855, Start the process : question 
+WARNING, 2023-02-24 13:31:10,888, Error : duplicate key value violates unique constraint "vulnerability_list_un"
+DETAIL:  Key (vulnerability_code)=(SW1-01) already exists.
+ 
+DEBUG, 2023-02-24 13:31:10,892, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 13:31:11,020, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 13:31:11,023, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 13:31:11,024, Sesstion Key : 1-9839050-e51be07d201e3437a57f42fe90b4ce901a3d600854bbc81e5ae743d2788d0bbb
+DEBUG, 2023-02-24 13:31:11,025, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 13:31:11,777, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 56296
+INFO, 2023-02-24 13:31:11,791, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 13:31:11,791, Sensor ID : 4356
+INFO, 2023-02-24 13:31:11,791, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 13:31:11,792, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,792, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,792, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,792, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,792, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,792, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,793, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,793, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 13:31:11,834, Tanium VUL Data API Call Success
+INFO, 2023-02-24 13:31:11,834, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 13:31:11,834, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 13:31:11,849, Completing list operations for putting into a data frame
+INFO, 2023-02-24 13:31:11,857, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 13:31:11,857, Trans DataFrame is Successed!!
+INFO, 2023-02-24 13:31:11,858, Start the process : VUL 
+INFO, 2023-02-24 13:31:31,603, Insert VUL Process is finish 
+INFO, 2023-02-24 13:31:31,604, DB Data is Insert
+INFO, 2023-02-24 13:31:31,606, Tanium VUL Module 성공
+INFO, 2023-02-24 13:31:34,837, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-02-24 13:31:34,844, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-02-24 13:31:34,844, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-02-24 13:31:34,845, Start the Scheduling~
+INFO, 2023-02-24 13:31:34,847, Added job "minutely" to job store "default"
+INFO, 2023-02-24 13:31:34,847, Added job "daily" to job store "default"
+INFO, 2023-02-24 13:31:34,848, Added job "vul" to job store "default"
+INFO, 2023-02-24 13:31:34,848, Scheduler started
+DEBUG, 2023-02-24 13:31:34,848, Looking for jobs to run
+DEBUG, 2023-02-24 13:31:34,848, Next wakeup is due at 2023-02-24 13:36:34.837559+09:00 (in 299.989253 seconds)
+INFO, 2023-02-24 14:20:58,955, Module Started
+INFO, 2023-02-24 14:20:59,181, Auto Create Table Start
+INFO, 2023-02-24 14:20:59,204, DROP TABLE minutely_asset is Successed!!  (1//4)
+INFO, 2023-02-24 14:20:59,215, DROP SEQ minutely_asset is Successed!!  (2//4)
+INFO, 2023-02-24 14:20:59,225, CREATE SEQ minutely_asset is Successed!!  (3//4)
+INFO, 2023-02-24 14:20:59,245, CREATE TABLE minutely_asset is Successed!!  (4//4)
+INFO, 2023-02-24 14:20:59,246, minutely_asset Table Create Successed!!
+INFO, 2023-02-24 14:20:59,246, minutely_asset Table Create Successed!!
+INFO, 2023-02-24 14:20:59,328, Auto Create Table Start
+INFO, 2023-02-24 14:20:59,335, DROP TABLE daily_asset is Successed!!  (1//4)
+INFO, 2023-02-24 14:20:59,344, DROP SEQ daily_asset is Successed!!  (2//4)
+INFO, 2023-02-24 14:20:59,348, CREATE SEQ daily_asset is Successed!!  (3//4)
+INFO, 2023-02-24 14:20:59,357, CREATE TABLE daily_asset is Successed!!  (4//4)
+INFO, 2023-02-24 14:20:59,357, daily_asset Table Create Successed!!
+INFO, 2023-02-24 14:20:59,358, daily_asset Table Create Successed!!
+INFO, 2023-02-24 14:20:59,447, Auto Create Table Start
+INFO, 2023-02-24 14:20:59,453, DROP TABLE minutely_statistics_list is Successed!!  (1//4)
+INFO, 2023-02-24 14:20:59,460, DROP SEQ minutely_statistics_list is Successed!!  (2//4)
+INFO, 2023-02-24 14:20:59,464, CREATE SEQ minutely_statistics_list is Successed!!  (3//4)
+INFO, 2023-02-24 14:20:59,477, CREATE TABLE minutely_statistics_list is Successed!!  (4//4)
+INFO, 2023-02-24 14:20:59,478, minutely_statistics_list Table Create Successed!!
+INFO, 2023-02-24 14:20:59,478, minutely_statistics_list Table Create Successed!!
+INFO, 2023-02-24 14:20:59,594, Auto Create Table Start
+INFO, 2023-02-24 14:20:59,600, DROP TABLE daily_statistics_list is Successed!!  (1//4)
+INFO, 2023-02-24 14:20:59,609, DROP SEQ daily_statistics_list is Successed!!  (2//4)
+INFO, 2023-02-24 14:20:59,615, CREATE SEQ daily_statistics_list is Successed!!  (3//4)
+INFO, 2023-02-24 14:20:59,627, CREATE TABLE daily_statistics_list is Successed!!  (4//4)
+INFO, 2023-02-24 14:20:59,628, daily_statistics_list Table Create Successed!!
+INFO, 2023-02-24 14:20:59,629, daily_statistics_list Table Create Successed!!
+INFO, 2023-02-24 14:20:59,780, Auto Create Table Start
+INFO, 2023-02-24 14:20:59,787, DROP TABLE minutely_statistics is Successed!!  (1//4)
+INFO, 2023-02-24 14:20:59,801, DROP SEQ minutely_statistics is Successed!!  (2//4)
+INFO, 2023-02-24 14:20:59,805, CREATE SEQ minutely_statistics is Successed!!  (3//4)
+INFO, 2023-02-24 14:20:59,821, CREATE TABLE minutely_statistics is Successed!!  (4//4)
+INFO, 2023-02-24 14:20:59,823, minutely_statistics Table Create Successed!!
+INFO, 2023-02-24 14:20:59,825, minutely_statistics Table Create Successed!!
+INFO, 2023-02-24 14:20:59,981, Auto Create Table Start
+INFO, 2023-02-24 14:20:59,988, DROP TABLE daily_statistics is Successed!!  (1//4)
+INFO, 2023-02-24 14:21:00,000, DROP SEQ daily_statistics is Successed!!  (2//4)
+INFO, 2023-02-24 14:21:00,008, CREATE SEQ daily_statistics is Successed!!  (3//4)
+INFO, 2023-02-24 14:21:00,022, CREATE TABLE daily_statistics is Successed!!  (4//4)
+INFO, 2023-02-24 14:21:00,023, daily_statistics Table Create Successed!!
+INFO, 2023-02-24 14:21:00,024, daily_statistics Table Create Successed!!
+INFO, 2023-02-24 14:21:00,025, AutoCreate Success!!!
+DEBUG, 2023-02-24 14:21:00,030, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:21:00,152, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:21:00,154, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:21:00,155, Sesstion Key : 1-9840166-35b861337d79dcb8ff799a00f994ac07d48da3c4abcdefd88ec27a8cbded395f
+DEBUG, 2023-02-24 14:21:00,158, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:21:00,908, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 202415
+INFO, 2023-02-24 14:21:00,972, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:21:00,973, Sensor ID : 4872
+INFO, 2023-02-24 14:21:00,982, Asset/All.py -  API 성공
+INFO, 2023-02-24 14:21:01,369, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:21:01,574, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:21:01,577, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:21:01,650, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:21:01,654, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:21:01,668, Usage.py - 성공
+INFO, 2023-02-24 14:21:01,671, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:21:01,678, Compare.py -compare 성공
+INFO, 2023-02-24 14:21:01,680, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:21:01,702, Normal.py - 성공
+INFO, 2023-02-24 14:21:01,707, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:21:01,713, Count.py - 성공
+INFO, 2023-02-24 14:21:01,717, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:21:01,723, Merge.py - 성공
+INFO, 2023-02-24 14:21:01,728, Merge.py - 성공
+INFO, 2023-02-24 14:21:01,733, Merge.py - 성공
+INFO, 2023-02-24 14:21:02,167, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:21:02,393, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:21:02,616, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:21:02,619, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:21:02,623, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:21:02,629, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:21:02,635, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:21:02,641, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:21:02,646, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:21:02,650, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:21:02,656, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:21:02,686, Compare.py -alarm 성공
+INFO, 2023-02-24 14:21:02,688, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:21:02,691, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:21:02,695, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:21:02,699, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:21:02,705, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:21:02,712, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:21:02,717, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:21:02,723, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:21:02,728, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:21:02,735, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:21:02,740, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:21:02,743, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:21:02,749, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:21:02,755, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:21:02,763, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:21:02,777, Compare.py -online 성공
+INFO, 2023-02-24 14:21:02,779, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:21:02,784, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:21:02,788, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:21:02,997, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:21:02,999, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:21:03,046, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:21:03,047, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:21:03,172, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:21:03,183, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:21:03,192, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:21:03,197, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:21:03,204, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:21:04,269, Statistics Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:21:04,274, Tanium Minutely Module 성공
+INFO, 2023-02-24 14:21:04,280, Start the process : question 
+WARNING, 2023-02-24 14:21:04,450, Error : 오류:  중복된 키 값이 "vulnerability_list_un" 고유 제약 조건을 위반함
+DETAIL:  (vulnerability_code)=(SW1-01) 키가 이미 있습니다.
+ 
+DEBUG, 2023-02-24 14:21:04,454, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:21:04,560, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:21:04,562, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:21:04,562, Sesstion Key : 1-9840173-200486c01aa23baf536a017dddd0fca9bba4319cb4491768cd14f0e51b438679
+DEBUG, 2023-02-24 14:21:04,564, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:21:05,156, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 56118
+INFO, 2023-02-24 14:21:05,173, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:21:05,173, Sensor ID : 4356
+INFO, 2023-02-24 14:21:05,174, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:21:05,174, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,174, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,175, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,176, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,176, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,176, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,176, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,176, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:21:05,176, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,176, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,177, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,177, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,177, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,178, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,178, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,179, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:21:05,237, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:21:05,238, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:21:05,238, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:21:05,260, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:21:05,270, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:21:05,270, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:21:05,270, Start the process : VUL 
+INFO, 2023-02-24 14:21:06,536, Insert VUL Process is finish 
+INFO, 2023-02-24 14:21:06,536, DB Data is Insert
+INFO, 2023-02-24 14:21:06,538, Tanium VUL Module 성공
+INFO, 2023-02-24 14:21:09,837, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-02-24 14:21:09,844, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-02-24 14:21:09,845, Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO, 2023-02-24 14:21:09,845, Start the Scheduling~
+INFO, 2023-02-24 14:21:09,848, Added job "minutely" to job store "default"
+INFO, 2023-02-24 14:21:09,848, Added job "daily" to job store "default"
+INFO, 2023-02-24 14:21:09,849, Added job "vul" to job store "default"
+INFO, 2023-02-24 14:21:09,849, Scheduler started
+DEBUG, 2023-02-24 14:21:09,849, Looking for jobs to run
+DEBUG, 2023-02-24 14:21:09,850, Next wakeup is due at 2023-02-24 14:26:09.837558+09:00 (in 299.987307 seconds)
+DEBUG, 2023-02-24 14:26:09,849, Looking for jobs to run
+INFO, 2023-02-24 14:26:09,849, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:31:09 KST)" (scheduled at 2023-02-24 14:26:09.837558+09:00)
+INFO, 2023-02-24 14:26:09,850, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:31:09 KST)" (scheduled at 2023-02-24 14:26:09.845691+09:00)
+DEBUG, 2023-02-24 14:26:09,850, Next wakeup is due at 2023-02-24 14:31:09.837558+09:00 (in 299.987876 seconds)
+DEBUG, 2023-02-24 14:26:09,852, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:26:09,853, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:26:09,947, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:26:09,948, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:26:09,949, Sesstion Key : 1-9840284-aed5afdc6466d225eca94f5a10814d7005485215b770ac7a8cd4b0d6bc424e3c
+DEBUG, 2023-02-24 14:26:09,950, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:26:09,976, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:26:09,980, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:26:09,981, Sesstion Key : 1-9840285-e28e1fbf73d7c78d26b0093a7cbdeec5373786976070f888bcbdf68b0e74c24a
+DEBUG, 2023-02-24 14:26:09,982, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:26:10,739, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 202181
+INFO, 2023-02-24 14:26:10,773, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:26:10,773, Sensor ID : 4872
+INFO, 2023-02-24 14:26:10,779, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 14:26:10,878, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55787
+INFO, 2023-02-24 14:26:10,891, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:26:10,893, Sensor ID : 4356
+INFO, 2023-02-24 14:26:10,893, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:26:10,894, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,895, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,895, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,895, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,895, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,896, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,896, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,896, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:10,897, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,899, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,900, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,900, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,900, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,900, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,901, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,901, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:10,964, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:26:10,966, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:26:10,966, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:26:10,987, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:26:11,002, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:26:11,004, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:26:11,005, Start the process : VUL 
+INFO, 2023-02-24 14:26:11,064, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:26:11,161, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:26:11,163, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:26:11,198, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:26:11,200, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:26:11,205, Usage.py - 성공
+INFO, 2023-02-24 14:26:11,206, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:26:11,209, Compare.py -compare 성공
+INFO, 2023-02-24 14:26:11,211, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:26:11,216, Normal.py - 성공
+INFO, 2023-02-24 14:26:11,217, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:26:11,219, Count.py - 성공
+INFO, 2023-02-24 14:26:11,220, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:26:11,222, Merge.py - 성공
+INFO, 2023-02-24 14:26:11,223, Merge.py - 성공
+INFO, 2023-02-24 14:26:11,224, Merge.py - 성공
+INFO, 2023-02-24 14:26:11,327, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:26:11,422, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:26:11,513, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:26:11,515, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:26:11,516, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:26:11,519, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:26:11,521, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:26:11,524, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:26:11,526, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:26:11,529, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:26:11,532, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:26:11,542, Compare.py -alarm 성공
+INFO, 2023-02-24 14:26:11,544, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:26:11,547, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:26:11,550, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:26:11,553, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:26:11,556, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:26:11,559, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:26:11,562, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:26:11,565, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:26:11,569, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:26:11,571, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:26:11,573, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:26:11,575, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:26:11,578, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:26:11,580, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:26:11,584, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:26:11,592, Compare.py -online 성공
+INFO, 2023-02-24 14:26:11,593, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:26:11,596, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:26:11,599, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:26:11,688, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:26:11,690, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:26:11,706, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:26:11,707, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:26:11,760, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:26:11,767, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:26:11,774, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:26:11,776, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:26:11,803, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:26:12,232, Insert VUL Process is finish 
+INFO, 2023-02-24 14:26:12,232, DB Data is Insert
+INFO, 2023-02-24 14:26:12,234, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 14:26:12,234, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:31:09 KST)" executed successfully
+INFO, 2023-02-24 14:26:12,370, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 14:26:12,375, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:26:12,490, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:26:12,491, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:26:12,492, Sesstion Key : 1-9840286-5c9765a89cfcffb2fdfe3acf01e9d6150cfff3c74a6d820cadd401455bd07295
+DEBUG, 2023-02-24 14:26:12,494, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:26:13,154, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55787
+INFO, 2023-02-24 14:26:13,168, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:26:13,168, Sensor ID : 4356
+INFO, 2023-02-24 14:26:13,169, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:26:13,169, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,169, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,170, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,170, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,170, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,170, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,170, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,170, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:26:13,171, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,171, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,171, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,171, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,171, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,172, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,172, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,172, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:26:13,232, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:26:13,232, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:26:13,232, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:26:13,254, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:26:13,266, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:26:13,266, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:26:13,267, Start the process : VUL 
+INFO, 2023-02-24 14:26:14,164, Insert VUL Process is finish 
+INFO, 2023-02-24 14:26:14,165, DB Data is Insert
+INFO, 2023-02-24 14:26:14,167, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 14:26:14,167, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:31:09 KST)" executed successfully
+DEBUG, 2023-02-24 14:31:09,850, Looking for jobs to run
+DEBUG, 2023-02-24 14:31:09,850, Next wakeup is due at 2023-02-24 14:36:09.837558+09:00 (in 299.987194 seconds)
+INFO, 2023-02-24 14:31:09,850, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:36:09 KST)" (scheduled at 2023-02-24 14:31:09.837558+09:00)
+INFO, 2023-02-24 14:31:09,850, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:36:09 KST)" (scheduled at 2023-02-24 14:31:09.845691+09:00)
+DEBUG, 2023-02-24 14:31:09,853, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:31:09,853, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:31:09,996, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:31:09,998, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:31:09,998, Sesstion Key : 1-9840397-d2d32563ab1cb1110890a41a2cd3639671ee6a11859f48d6b0ac2d7ba150bae2
+DEBUG, 2023-02-24 14:31:10,000, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:31:10,033, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:31:10,034, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:31:10,034, Sesstion Key : 1-9840398-be978bf0ffbd73e91850ba2b0cd67bbbfb9b5801687bc30d3901c9f8a28705a5
+DEBUG, 2023-02-24 14:31:10,035, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:31:10,689, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 198010
+INFO, 2023-02-24 14:31:10,718, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:31:10,718, Sensor ID : 4872
+INFO, 2023-02-24 14:31:10,725, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 14:31:10,860, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55373
+INFO, 2023-02-24 14:31:10,873, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:31:10,875, Sensor ID : 4356
+INFO, 2023-02-24 14:31:10,875, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:31:10,876, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,876, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,876, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,877, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,878, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,878, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,878, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,879, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:10,879, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,880, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,880, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,880, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,881, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,882, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,882, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,882, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:10,934, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:31:10,935, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:31:10,936, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:31:10,955, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:31:10,967, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:31:10,968, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:31:10,968, Start the process : VUL 
+INFO, 2023-02-24 14:31:10,994, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:31:11,071, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:31:11,072, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:31:11,106, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:31:11,107, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:31:11,112, Usage.py - 성공
+INFO, 2023-02-24 14:31:11,113, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:31:11,115, Compare.py -compare 성공
+INFO, 2023-02-24 14:31:11,117, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:31:11,122, Normal.py - 성공
+INFO, 2023-02-24 14:31:11,124, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:31:11,125, Count.py - 성공
+INFO, 2023-02-24 14:31:11,126, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:31:11,128, Merge.py - 성공
+INFO, 2023-02-24 14:31:11,129, Merge.py - 성공
+INFO, 2023-02-24 14:31:11,131, Merge.py - 성공
+INFO, 2023-02-24 14:31:11,232, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:31:11,315, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:31:11,503, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:31:11,505, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:31:11,506, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:31:11,508, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:31:11,510, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:31:11,513, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:31:11,515, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:31:11,517, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:31:11,519, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:31:11,528, Compare.py -alarm 성공
+INFO, 2023-02-24 14:31:11,530, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:31:11,534, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:31:11,536, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:31:11,539, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:31:11,541, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:31:11,543, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:31:11,546, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:31:11,550, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:31:11,553, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:31:11,555, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:31:11,558, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:31:11,560, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:31:11,563, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:31:11,566, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:31:11,568, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:31:11,576, Compare.py -online 성공
+INFO, 2023-02-24 14:31:11,578, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:31:11,582, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:31:11,584, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:31:11,675, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:31:11,677, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:31:11,692, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:31:11,694, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:31:11,745, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:31:11,757, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:31:11,766, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:31:11,769, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:31:11,771, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:31:12,155, Insert VUL Process is finish 
+INFO, 2023-02-24 14:31:12,155, DB Data is Insert
+INFO, 2023-02-24 14:31:12,157, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 14:31:12,157, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:36:09 KST)" executed successfully
+INFO, 2023-02-24 14:31:12,351, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 14:31:12,357, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:31:12,437, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:31:12,439, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:31:12,439, Sesstion Key : 1-9840400-3a7665672db1cf00e57c60c4e00ed17e4561952d7feb275de17fa618c6367a88
+DEBUG, 2023-02-24 14:31:12,441, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:31:12,994, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55373
+INFO, 2023-02-24 14:31:13,006, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:31:13,007, Sensor ID : 4356
+INFO, 2023-02-24 14:31:13,007, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:31:13,007, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,007, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,007, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,007, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,008, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,008, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,008, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,008, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:31:13,008, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,009, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,009, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,009, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,009, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,009, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,009, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,010, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:31:13,069, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:31:13,069, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:31:13,069, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:31:13,095, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:31:13,108, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:31:13,109, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:31:13,109, Start the process : VUL 
+INFO, 2023-02-24 14:31:13,967, Insert VUL Process is finish 
+INFO, 2023-02-24 14:31:13,967, DB Data is Insert
+INFO, 2023-02-24 14:31:13,969, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 14:31:13,969, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:36:09 KST)" executed successfully
+DEBUG, 2023-02-24 14:36:09,848, Looking for jobs to run
+DEBUG, 2023-02-24 14:36:09,849, Next wakeup is due at 2023-02-24 14:41:09.837558+09:00 (in 299.988149 seconds)
+INFO, 2023-02-24 14:36:09,849, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:41:09 KST)" (scheduled at 2023-02-24 14:36:09.837558+09:00)
+INFO, 2023-02-24 14:36:09,849, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:41:09 KST)" (scheduled at 2023-02-24 14:36:09.845691+09:00)
+DEBUG, 2023-02-24 14:36:09,852, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:36:09,852, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:36:09,934, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 14:36:09,934, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:36:09,936, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:36:09,937, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:36:09,937, Sesstion Key : 1-9840509-826bea5702fcdfcb2a4ead8fa901245ccc98518a941df4b285e6984c87bf6039
+INFO, 2023-02-24 14:36:09,937, Sesstion Key : 1-9840510-0fd2eccb541f24a4d7133aab882fd041a7abea1c460c0627870f195acc1a13d2
+DEBUG, 2023-02-24 14:36:09,938, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:36:09,939, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:36:10,521, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 56010
+INFO, 2023-02-24 14:36:10,548, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:36:10,548, Sensor ID : 4356
+INFO, 2023-02-24 14:36:10,548, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:36:10,548, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,549, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,549, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,549, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,549, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,549, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,549, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,550, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:10,595, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:36:10,595, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:36:10,596, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:36:10,612, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:36:10,621, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:36:10,621, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:36:10,621, Start the process : VUL 
+DEBUG, 2023-02-24 14:36:10,732, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 202125
+INFO, 2023-02-24 14:36:10,784, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:36:10,786, Sensor ID : 4872
+INFO, 2023-02-24 14:36:10,791, Asset/All.py -  API 성공
+INFO, 2023-02-24 14:36:11,090, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:36:11,175, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:36:11,177, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:36:11,205, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:36:11,207, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:36:11,210, Usage.py - 성공
+INFO, 2023-02-24 14:36:11,211, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:36:11,213, Compare.py -compare 성공
+INFO, 2023-02-24 14:36:11,214, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:36:11,219, Normal.py - 성공
+INFO, 2023-02-24 14:36:11,220, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:36:11,222, Count.py - 성공
+INFO, 2023-02-24 14:36:11,223, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:36:11,225, Merge.py - 성공
+INFO, 2023-02-24 14:36:11,226, Merge.py - 성공
+INFO, 2023-02-24 14:36:11,228, Merge.py - 성공
+INFO, 2023-02-24 14:36:11,417, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:36:11,492, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:36:11,562, Insert VUL Process is finish 
+INFO, 2023-02-24 14:36:11,562, DB Data is Insert
+INFO, 2023-02-24 14:36:11,564, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 14:36:11,565, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:41:09 KST)" executed successfully
+INFO, 2023-02-24 14:36:11,570, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:36:11,571, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:36:11,572, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:36:11,574, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:36:11,577, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:36:11,579, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:36:11,580, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:36:11,582, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:36:11,585, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:36:11,594, Compare.py -alarm 성공
+INFO, 2023-02-24 14:36:11,595, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:36:11,597, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:36:11,599, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:36:11,602, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:36:11,604, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:36:11,606, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:36:11,608, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:36:11,609, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:36:11,612, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:36:11,613, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:36:11,616, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:36:11,617, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:36:11,619, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:36:11,621, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:36:11,622, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:36:11,629, Compare.py -online 성공
+INFO, 2023-02-24 14:36:11,630, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:36:11,633, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:36:11,635, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:36:11,711, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:36:11,712, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:36:11,725, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:36:11,726, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:36:11,778, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:36:11,784, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:36:11,789, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:36:11,792, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:36:11,794, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:36:12,170, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 14:36:12,175, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:36:12,241, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:36:12,243, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:36:12,243, Sesstion Key : 1-9840511-2506588d0e0f1f11c1c421522679dc36ff2772bc42a1291d94f1a578ffaa4d5b
+DEBUG, 2023-02-24 14:36:12,245, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:36:12,811, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 56011
+INFO, 2023-02-24 14:36:12,824, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:36:12,824, Sensor ID : 4356
+INFO, 2023-02-24 14:36:12,825, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,825, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:36:12,872, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:36:12,872, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:36:12,872, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:36:12,890, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:36:12,898, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:36:12,898, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:36:12,899, Start the process : VUL 
+INFO, 2023-02-24 14:36:13,665, Insert VUL Process is finish 
+INFO, 2023-02-24 14:36:13,665, DB Data is Insert
+INFO, 2023-02-24 14:36:13,666, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 14:36:13,667, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:41:09 KST)" executed successfully
+DEBUG, 2023-02-24 14:41:09,841, Looking for jobs to run
+DEBUG, 2023-02-24 14:41:09,843, Next wakeup is due at 2023-02-24 14:41:09.845691+09:00 (in 0.002877 seconds)
+INFO, 2023-02-24 14:41:09,843, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:46:09 KST)" (scheduled at 2023-02-24 14:41:09.837558+09:00)
+DEBUG, 2023-02-24 14:41:09,849, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:41:09,878, Looking for jobs to run
+DEBUG, 2023-02-24 14:41:09,880, Next wakeup is due at 2023-02-24 14:46:09.837558+09:00 (in 299.956653 seconds)
+INFO, 2023-02-24 14:41:09,880, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:46:09 KST)" (scheduled at 2023-02-24 14:41:09.845691+09:00)
+DEBUG, 2023-02-24 14:41:09,883, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:41:09,933, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:41:09,935, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:41:09,935, Sesstion Key : 1-9840616-c5b20a1d2f91345afb4c9ed5da5a31cb4ca7b6a26e6a0a276951e0a94a56caa1
+DEBUG, 2023-02-24 14:41:09,936, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:41:09,962, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:41:09,963, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:41:09,963, Sesstion Key : 1-9840617-bd9a8c24bc237f61861f6b2b63ff9aacc85be6c6966a70bd47b560ff743d29a0
+DEBUG, 2023-02-24 14:41:09,965, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:41:10,486, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 188094
+INFO, 2023-02-24 14:41:10,537, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:41:10,537, Sensor ID : 4872
+INFO, 2023-02-24 14:41:10,542, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 14:41:10,638, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57041
+INFO, 2023-02-24 14:41:10,649, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:41:10,651, Sensor ID : 4356
+INFO, 2023-02-24 14:41:10,651, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:41:10,652, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:10,652, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:10,652, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:10,652, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:10,652, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:10,654, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:10,654, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:10,654, ComputerID :  258561666 has TSE-Error: Python is disabled
+WARNING, 2023-02-24 14:41:10,655, Asset/All.py - Error 발생
+ERROR, 2023-02-24 14:41:10,660, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:46:09 KST)" raised an exception
+Traceback (most recent call last):
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 48, in plug_in
+    dict = literal_eval(j['text'])
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {TSE-Error: Failed to send to sensor child process: timed out}
+                ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\X-FACTOR\X-Factor-Asset_module\main.py", line 47, in vul
+    CTVMPI('')
+  File "C:\X-FACTOR\X-Factor-Asset_module\CORE\Tanium\Vul.py", line 26, in minutely_plug_in
+    VUDDFT = CTDAAPI(VDIPDL, 'API', 'VUL')
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 79, in plug_in
+    logger.warning('Error : ' + e)
+TypeError: can only concatenate str (not "SyntaxError") to str
+INFO, 2023-02-24 14:41:10,714, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:41:10,788, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:41:10,789, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:41:10,816, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:41:10,817, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:41:10,821, Usage.py - 성공
+INFO, 2023-02-24 14:41:10,821, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:41:10,823, Compare.py -compare 성공
+INFO, 2023-02-24 14:41:10,824, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:41:10,829, Normal.py - 성공
+INFO, 2023-02-24 14:41:10,829, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:41:10,831, Count.py - 성공
+INFO, 2023-02-24 14:41:10,831, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:41:10,832, Merge.py - 성공
+INFO, 2023-02-24 14:41:10,834, Merge.py - 성공
+INFO, 2023-02-24 14:41:10,835, Merge.py - 성공
+INFO, 2023-02-24 14:41:10,922, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:41:10,989, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:41:11,056, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:41:11,058, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:41:11,059, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:41:11,061, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:41:11,063, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:41:11,064, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:41:11,066, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:41:11,067, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:41:11,069, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:41:11,077, Compare.py -alarm 성공
+INFO, 2023-02-24 14:41:11,078, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:41:11,080, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:41:11,081, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:41:11,083, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:41:11,084, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:41:11,086, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:41:11,089, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:41:11,091, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:41:11,093, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:41:11,095, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:41:11,097, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:41:11,098, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:41:11,100, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:41:11,102, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:41:11,104, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:41:11,110, Compare.py -online 성공
+INFO, 2023-02-24 14:41:11,111, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:41:11,113, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:41:11,115, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:41:11,184, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:41:11,185, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:41:11,198, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:41:11,199, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:41:11,237, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:41:11,243, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:41:11,248, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:41:11,250, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:41:11,252, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:41:11,624, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 14:41:11,631, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:41:11,706, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:41:11,707, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:41:11,708, Sesstion Key : 1-9840619-182304888393c65c3187bb595e216a6048e61564d28928540cf0eeca28a7a4c3
+DEBUG, 2023-02-24 14:41:11,709, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:41:12,358, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57041
+INFO, 2023-02-24 14:41:12,370, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:41:12,370, Sensor ID : 4356
+INFO, 2023-02-24 14:41:12,370, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:41:12,371, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:12,371, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:12,371, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:12,371, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:12,371, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:12,371, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:12,372, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:41:12,372, ComputerID :  258561666 has TSE-Error: Python is disabled
+WARNING, 2023-02-24 14:41:12,372, Asset/All.py - Error 발생
+ERROR, 2023-02-24 14:41:12,373, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:46:09 KST)" raised an exception
+Traceback (most recent call last):
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 48, in plug_in
+    dict = literal_eval(j['text'])
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {TSE-Error: Failed to send to sensor child process: timed out}
+                ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\X-FACTOR\X-Factor-Asset_module\main.py", line 27, in minutely
+    CTVMPI('used')
+  File "C:\X-FACTOR\X-Factor-Asset_module\CORE\Tanium\Vul.py", line 26, in minutely_plug_in
+    VUDDFT = CTDAAPI(VDIPDL, 'API', 'VUL')
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 79, in plug_in
+    logger.warning('Error : ' + e)
+TypeError: can only concatenate str (not "SyntaxError") to str
+DEBUG, 2023-02-24 14:46:09,845, Looking for jobs to run
+DEBUG, 2023-02-24 14:46:09,846, Next wakeup is due at 2023-02-24 14:51:09.837558+09:00 (in 299.991074 seconds)
+INFO, 2023-02-24 14:46:09,846, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:51:09 KST)" (scheduled at 2023-02-24 14:46:09.837558+09:00)
+INFO, 2023-02-24 14:46:09,846, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:51:09 KST)" (scheduled at 2023-02-24 14:46:09.845691+09:00)
+DEBUG, 2023-02-24 14:46:09,849, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:46:09,849, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:46:09,943, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:46:09,946, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:46:09,946, Sesstion Key : 1-9840735-c069466e2fb0b964f7b6c4e0a32046320a884d5b6a74233aeea81614a17caf30
+DEBUG, 2023-02-24 14:46:09,949, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:46:09,978, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:46:09,979, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:46:09,979, Sesstion Key : 1-9840736-8cd500774038ddf90debc62c4840b66fe4e8e8e4fcc3be030b241578d4cdde65
+DEBUG, 2023-02-24 14:46:09,980, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:46:10,632, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57047
+INFO, 2023-02-24 14:46:10,645, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:46:10,646, Sensor ID : 4356
+INFO, 2023-02-24 14:46:10,646, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:46:10,646, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:10,647, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:10,647, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:10,647, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:10,647, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:10,647, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:10,648, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:10,648, ComputerID :  258561666 has TSE-Error: Python is disabled
+WARNING, 2023-02-24 14:46:10,648, Asset/All.py - Error 발생
+ERROR, 2023-02-24 14:46:10,649, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:51:09 KST)" raised an exception
+Traceback (most recent call last):
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 48, in plug_in
+    dict = literal_eval(j['text'])
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {TSE-Error: Failed to send to sensor child process: timed out}
+                ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\X-FACTOR\X-Factor-Asset_module\main.py", line 47, in vul
+    CTVMPI('')
+  File "C:\X-FACTOR\X-Factor-Asset_module\CORE\Tanium\Vul.py", line 26, in minutely_plug_in
+    VUDDFT = CTDAAPI(VDIPDL, 'API', 'VUL')
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 79, in plug_in
+    logger.warning('Error : ' + e)
+TypeError: can only concatenate str (not "SyntaxError") to str
+DEBUG, 2023-02-24 14:46:10,829, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 190212
+INFO, 2023-02-24 14:46:10,881, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:46:10,881, Sensor ID : 4872
+INFO, 2023-02-24 14:46:10,887, Asset/All.py -  API 성공
+INFO, 2023-02-24 14:46:11,065, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:46:11,150, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:46:11,153, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:46:11,188, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:46:11,190, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:46:11,194, Usage.py - 성공
+INFO, 2023-02-24 14:46:11,195, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:46:11,198, Compare.py -compare 성공
+INFO, 2023-02-24 14:46:11,199, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:46:11,204, Normal.py - 성공
+INFO, 2023-02-24 14:46:11,205, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:46:11,207, Count.py - 성공
+INFO, 2023-02-24 14:46:11,207, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:46:11,209, Merge.py - 성공
+INFO, 2023-02-24 14:46:11,210, Merge.py - 성공
+INFO, 2023-02-24 14:46:11,212, Merge.py - 성공
+INFO, 2023-02-24 14:46:11,336, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:46:11,455, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:46:11,561, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:46:11,562, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:46:11,564, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:46:11,567, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:46:11,570, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:46:11,572, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:46:11,574, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:46:11,576, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:46:11,578, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:46:11,591, Compare.py -alarm 성공
+INFO, 2023-02-24 14:46:11,592, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:46:11,595, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:46:11,598, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:46:11,601, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:46:11,603, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:46:11,606, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:46:11,608, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:46:11,610, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:46:11,614, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:46:11,617, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:46:11,620, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:46:11,623, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:46:11,627, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:46:11,633, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:46:11,637, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:46:11,652, Compare.py -online 성공
+INFO, 2023-02-24 14:46:11,652, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:46:11,655, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:46:11,658, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:46:11,759, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:46:11,760, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:46:11,783, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:46:11,785, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:46:11,847, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:46:11,854, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:46:11,860, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:46:11,862, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:46:11,865, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:46:12,258, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 14:46:12,263, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:46:12,374, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:46:12,376, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:46:12,376, Sesstion Key : 1-9840739-43e2e21a39f5b2974dd4131036adc6635ba189e57c90a2a4a4812dcaa76ce6ff
+DEBUG, 2023-02-24 14:46:12,377, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:46:13,006, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57047
+INFO, 2023-02-24 14:46:13,017, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:46:13,018, Sensor ID : 4356
+INFO, 2023-02-24 14:46:13,018, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:46:13,019, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:13,019, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:13,019, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:13,019, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:13,019, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:13,019, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:13,019, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:46:13,020, ComputerID :  258561666 has TSE-Error: Python is disabled
+WARNING, 2023-02-24 14:46:13,020, Asset/All.py - Error 발생
+ERROR, 2023-02-24 14:46:13,021, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:51:09 KST)" raised an exception
+Traceback (most recent call last):
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 48, in plug_in
+    dict = literal_eval(j['text'])
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "C:\Users\이동주\AppData\Local\Programs\Python\Python310\lib\ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 1
+    {TSE-Error: Failed to send to sensor child process: timed out}
+                ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\X-FACTOR\X-Factor-Asset_module\main.py", line 27, in minutely
+    CTVMPI('used')
+  File "C:\X-FACTOR\X-Factor-Asset_module\CORE\Tanium\Vul.py", line 26, in minutely_plug_in
+    VUDDFT = CTDAAPI(VDIPDL, 'API', 'VUL')
+  File "C:\X-FACTOR\X-Factor-Asset_module\Common\Transform\Dataframe\Vul\All.py", line 79, in plug_in
+    logger.warning('Error : ' + e)
+TypeError: can only concatenate str (not "SyntaxError") to str
+DEBUG, 2023-02-24 14:51:09,839, Looking for jobs to run
+DEBUG, 2023-02-24 14:51:09,839, Next wakeup is due at 2023-02-24 14:51:09.845691+09:00 (in 0.006439 seconds)
+INFO, 2023-02-24 14:51:09,839, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:56:09 KST)" (scheduled at 2023-02-24 14:51:09.837558+09:00)
+DEBUG, 2023-02-24 14:51:09,841, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:51:09,869, Looking for jobs to run
+DEBUG, 2023-02-24 14:51:09,870, Next wakeup is due at 2023-02-24 14:56:09.837558+09:00 (in 299.967475 seconds)
+INFO, 2023-02-24 14:51:09,870, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:56:09 KST)" (scheduled at 2023-02-24 14:51:09.845691+09:00)
+DEBUG, 2023-02-24 14:51:09,872, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:51:09,935, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:51:09,938, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:51:09,938, Sesstion Key : 1-9840852-312310b5d79694472ffe122eb2aa9c77f3124d123901935d1830ffabd0c41c01
+DEBUG, 2023-02-24 14:51:09,940, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:51:09,941, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:51:09,942, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:51:09,942, Sesstion Key : 1-9840853-d5561b7bf9c80ce156ce5348f03e2a794c9acd9e6aedb31b617b79398a570436
+DEBUG, 2023-02-24 14:51:09,943, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:51:10,570, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 191107
+INFO, 2023-02-24 14:51:10,603, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:51:10,604, Sensor ID : 4872
+INFO, 2023-02-24 14:51:10,610, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 14:51:10,713, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54494
+INFO, 2023-02-24 14:51:10,727, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:51:10,728, Sensor ID : 4356
+INFO, 2023-02-24 14:51:10,729, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:51:10,729, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,729, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,729, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,729, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,729, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,730, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,731, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,731, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:10,731, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,732, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,732, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,732, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,732, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,732, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,732, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,734, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:10,780, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:51:10,782, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:51:10,782, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:51:10,799, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:51:10,812, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:51:10,813, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:51:10,815, Start the process : VUL 
+INFO, 2023-02-24 14:51:10,871, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:51:10,948, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:51:10,950, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:51:10,986, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:51:10,987, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:51:10,991, Usage.py - 성공
+INFO, 2023-02-24 14:51:10,992, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:51:10,994, Compare.py -compare 성공
+INFO, 2023-02-24 14:51:10,994, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:51:10,999, Normal.py - 성공
+INFO, 2023-02-24 14:51:11,000, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:51:11,001, Count.py - 성공
+INFO, 2023-02-24 14:51:11,002, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:51:11,003, Merge.py - 성공
+INFO, 2023-02-24 14:51:11,005, Merge.py - 성공
+INFO, 2023-02-24 14:51:11,007, Merge.py - 성공
+INFO, 2023-02-24 14:51:11,096, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:51:11,170, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:51:11,242, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:51:11,244, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:51:11,245, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:51:11,247, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:51:11,249, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:51:11,251, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:51:11,253, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:51:11,255, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:51:11,258, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:51:11,267, Compare.py -alarm 성공
+INFO, 2023-02-24 14:51:11,268, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:51:11,270, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:51:11,273, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:51:11,276, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:51:11,278, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:51:11,281, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:51:11,283, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:51:11,286, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:51:11,288, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:51:11,291, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:51:11,293, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:51:11,295, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:51:11,297, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:51:11,299, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:51:11,301, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:51:11,307, Compare.py -online 성공
+INFO, 2023-02-24 14:51:11,309, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:51:11,311, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:51:11,313, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:51:11,390, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:51:11,391, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:51:11,406, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:51:11,407, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:51:11,447, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:51:11,453, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:51:11,460, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:51:11,462, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:51:11,465, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:51:11,815, Insert VUL Process is finish 
+INFO, 2023-02-24 14:51:11,815, DB Data is Insert
+INFO, 2023-02-24 14:51:11,816, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 14:51:11,817, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 14:56:09 KST)" executed successfully
+INFO, 2023-02-24 14:51:11,918, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 14:51:11,925, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:51:11,987, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:51:11,988, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:51:11,988, Sesstion Key : 1-9840856-aa12e13f38e0254629c30f528761b3c75c8bc94b04a89096a9946f638b97c2b3
+DEBUG, 2023-02-24 14:51:11,990, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:51:12,499, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54494
+INFO, 2023-02-24 14:51:12,521, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:51:12,521, Sensor ID : 4356
+INFO, 2023-02-24 14:51:12,521, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:51:12,521, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,521, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,523, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,523, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,523, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,523, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,523, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,523, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:51:12,524, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,524, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,524, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,524, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,524, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,524, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,524, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,525, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:51:12,585, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:51:12,585, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:51:12,585, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:51:12,600, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:51:12,608, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:51:12,608, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:51:12,609, Start the process : VUL 
+INFO, 2023-02-24 14:51:13,277, Insert VUL Process is finish 
+INFO, 2023-02-24 14:51:13,278, DB Data is Insert
+INFO, 2023-02-24 14:51:13,280, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 14:51:13,280, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 14:56:09 KST)" executed successfully
+DEBUG, 2023-02-24 14:56:09,838, Looking for jobs to run
+DEBUG, 2023-02-24 14:56:09,839, Next wakeup is due at 2023-02-24 14:56:09.845691+09:00 (in 0.006468 seconds)
+INFO, 2023-02-24 14:56:09,839, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:01:09 KST)" (scheduled at 2023-02-24 14:56:09.837558+09:00)
+DEBUG, 2023-02-24 14:56:09,841, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:56:09,869, Looking for jobs to run
+DEBUG, 2023-02-24 14:56:09,870, Next wakeup is due at 2023-02-24 15:01:09.837558+09:00 (in 299.967891 seconds)
+INFO, 2023-02-24 14:56:09,870, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:01:09 KST)" (scheduled at 2023-02-24 14:56:09.845691+09:00)
+DEBUG, 2023-02-24 14:56:09,872, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:56:09,942, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:56:09,943, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:56:09,943, Sesstion Key : 1-9840965-b98ae4a0a7fb13a189f3848ad1ba85bef7afa820d0389a80f3dbf8ed828c7668
+DEBUG, 2023-02-24 14:56:09,945, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:56:09,972, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:56:09,973, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:56:09,973, Sesstion Key : 1-9840966-3b1551f3c9cb7b00900465790c1c70e6fdadbd8c1740250e830ff62b4949a7b2
+DEBUG, 2023-02-24 14:56:09,974, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:56:10,543, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 199133
+INFO, 2023-02-24 14:56:10,584, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:56:10,584, Sensor ID : 4872
+INFO, 2023-02-24 14:56:10,591, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 14:56:10,683, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55489
+INFO, 2023-02-24 14:56:10,698, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:56:10,700, Sensor ID : 4356
+INFO, 2023-02-24 14:56:10,700, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:56:10,700, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,701, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,701, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,701, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,701, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,701, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,703, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,703, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:10,703, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,703, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,704, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,704, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,704, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,704, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,704, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,706, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:10,751, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:56:10,753, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:56:10,753, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:56:10,773, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:56:10,788, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:56:10,790, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:56:10,791, Start the process : VUL 
+INFO, 2023-02-24 14:56:10,852, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 14:56:10,933, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 14:56:10,935, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:56:10,965, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 14:56:10,967, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 14:56:10,971, Usage.py - 성공
+INFO, 2023-02-24 14:56:10,973, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 14:56:10,975, Compare.py -compare 성공
+INFO, 2023-02-24 14:56:10,976, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 14:56:10,981, Normal.py - 성공
+INFO, 2023-02-24 14:56:10,983, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 14:56:10,985, Count.py - 성공
+INFO, 2023-02-24 14:56:10,987, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 14:56:10,988, Merge.py - 성공
+INFO, 2023-02-24 14:56:10,990, Merge.py - 성공
+INFO, 2023-02-24 14:56:10,991, Merge.py - 성공
+INFO, 2023-02-24 14:56:11,082, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 14:56:11,161, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 14:56:11,239, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 14:56:11,241, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 14:56:11,242, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 14:56:11,244, GroupByCount.py -os 성공
+INFO, 2023-02-24 14:56:11,247, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 14:56:11,250, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 14:56:11,253, GroupByCount.py -asset 성공
+INFO, 2023-02-24 14:56:11,255, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 14:56:11,257, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 14:56:11,268, Compare.py -alarm 성공
+INFO, 2023-02-24 14:56:11,270, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 14:56:11,272, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:56:11,275, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 14:56:11,277, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 14:56:11,280, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 14:56:11,282, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 14:56:11,285, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 14:56:11,288, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 14:56:11,291, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 14:56:11,293, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 14:56:11,295, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 14:56:11,297, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 14:56:11,299, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 14:56:11,301, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 14:56:11,304, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 14:56:11,312, Compare.py -online 성공
+INFO, 2023-02-24 14:56:11,313, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 14:56:11,316, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 14:56:11,318, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 14:56:11,405, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 14:56:11,408, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:56:11,425, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 14:56:11,426, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 14:56:11,480, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 14:56:11,488, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 14:56:11,498, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 14:56:11,501, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 14:56:11,504, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 14:56:11,943, Insert VUL Process is finish 
+INFO, 2023-02-24 14:56:11,943, DB Data is Insert
+INFO, 2023-02-24 14:56:11,945, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 14:56:11,945, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:01:09 KST)" executed successfully
+INFO, 2023-02-24 14:56:12,083, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 14:56:12,089, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:56:12,162, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 14:56:12,163, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 14:56:12,164, Sesstion Key : 1-9840967-4143d75cecef7ff714a3dc9fd022ee4db09bcf33a32e6407f068fe4fe177e86d
+DEBUG, 2023-02-24 14:56:12,165, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 14:56:12,718, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55489
+INFO, 2023-02-24 14:56:12,746, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 14:56:12,746, Sensor ID : 4356
+INFO, 2023-02-24 14:56:12,747, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 14:56:12,747, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,747, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,747, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,748, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,748, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,748, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,748, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,748, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 14:56:12,749, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,749, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,749, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,749, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,749, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,749, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,749, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,750, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 14:56:12,795, Tanium VUL Data API Call Success
+INFO, 2023-02-24 14:56:12,796, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 14:56:12,796, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 14:56:12,816, Completing list operations for putting into a data frame
+INFO, 2023-02-24 14:56:12,826, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 14:56:12,827, Trans DataFrame is Successed!!
+INFO, 2023-02-24 14:56:12,827, Start the process : VUL 
+INFO, 2023-02-24 14:56:13,651, Insert VUL Process is finish 
+INFO, 2023-02-24 14:56:13,651, DB Data is Insert
+INFO, 2023-02-24 14:56:13,654, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 14:56:13,654, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:01:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:01:09,847, Looking for jobs to run
+DEBUG, 2023-02-24 15:01:09,848, Next wakeup is due at 2023-02-24 15:06:09.837558+09:00 (in 299.989646 seconds)
+INFO, 2023-02-24 15:01:09,848, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:06:09 KST)" (scheduled at 2023-02-24 15:01:09.837558+09:00)
+INFO, 2023-02-24 15:01:09,848, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:06:09 KST)" (scheduled at 2023-02-24 15:01:09.845691+09:00)
+DEBUG, 2023-02-24 15:01:09,853, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:01:09,853, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:01:09,971, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 15:01:09,971, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:01:09,973, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:01:09,974, Sesstion Key : 1-9841083-4e651e40c22fbe5d0353707c1062476d3e54b84410dd4bad393e7d99d7c30bb3
+INFO, 2023-02-24 15:01:09,973, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:01:09,975, Sesstion Key : 1-9841084-51370fb5209152a8f40bcdc07ae314b87bc6888149de3391e6f641567ebb157b
+DEBUG, 2023-02-24 15:01:09,975, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:01:09,976, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:01:10,583, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57588
+INFO, 2023-02-24 15:01:10,600, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:01:10,600, Sensor ID : 4356
+INFO, 2023-02-24 15:01:10,601, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:01:10,601, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,601, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,601, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,601, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,602, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,602, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,602, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,602, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:10,664, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:01:10,665, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:01:10,665, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:01:10,681, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:01:10,690, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:01:10,690, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:01:10,691, Start the process : VUL 
+DEBUG, 2023-02-24 15:01:10,758, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 193287
+INFO, 2023-02-24 15:01:10,793, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:01:10,794, Sensor ID : 4872
+INFO, 2023-02-24 15:01:10,799, Asset/All.py -  API 성공
+INFO, 2023-02-24 15:01:10,983, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:01:11,059, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:01:11,060, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:01:11,088, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:01:11,090, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:01:11,093, Usage.py - 성공
+INFO, 2023-02-24 15:01:11,094, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:01:11,097, Compare.py -compare 성공
+INFO, 2023-02-24 15:01:11,098, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:01:11,103, Normal.py - 성공
+INFO, 2023-02-24 15:01:11,105, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:01:11,106, Count.py - 성공
+INFO, 2023-02-24 15:01:11,107, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:01:11,109, Merge.py - 성공
+INFO, 2023-02-24 15:01:11,110, Merge.py - 성공
+INFO, 2023-02-24 15:01:11,111, Merge.py - 성공
+INFO, 2023-02-24 15:01:11,212, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:01:11,288, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:01:11,362, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:01:11,363, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:01:11,365, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:01:11,367, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:01:11,369, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:01:11,372, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:01:11,374, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:01:11,376, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:01:11,379, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:01:11,387, Compare.py -alarm 성공
+INFO, 2023-02-24 15:01:11,389, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:01:11,391, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:01:11,393, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:01:11,395, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:01:11,396, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:01:11,399, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:01:11,401, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:01:11,403, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:01:11,406, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:01:11,408, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:01:11,411, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:01:11,412, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:01:11,415, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:01:11,417, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:01:11,419, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:01:11,427, Compare.py -online 성공
+INFO, 2023-02-24 15:01:11,428, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:01:11,431, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:01:11,433, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:01:11,505, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:01:11,507, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:01:11,521, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:01:11,523, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:01:11,568, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:01:11,574, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:01:11,581, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:01:11,583, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:01:11,585, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:01:11,818, Insert VUL Process is finish 
+INFO, 2023-02-24 15:01:11,818, DB Data is Insert
+INFO, 2023-02-24 15:01:11,820, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:01:11,820, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:06:09 KST)" executed successfully
+INFO, 2023-02-24 15:01:11,995, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:01:12,000, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:01:12,063, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:01:12,065, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:01:12,066, Sesstion Key : 1-9841085-8d82c2e630976cbe03934431cdcf810eb239fba919e2534ab762ac9414ee69cb
+DEBUG, 2023-02-24 15:01:12,068, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:01:12,613, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57588
+INFO, 2023-02-24 15:01:12,632, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:01:12,632, Sensor ID : 4356
+INFO, 2023-02-24 15:01:12,633, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:01:12,633, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,633, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,633, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,633, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,633, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,634, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,634, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,634, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:01:12,681, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:01:12,681, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:01:12,682, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:01:12,698, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:01:12,707, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:01:12,707, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:01:12,708, Start the process : VUL 
+INFO, 2023-02-24 15:01:13,440, Insert VUL Process is finish 
+INFO, 2023-02-24 15:01:13,441, DB Data is Insert
+INFO, 2023-02-24 15:01:13,442, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:01:13,443, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:06:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:06:09,848, Looking for jobs to run
+DEBUG, 2023-02-24 15:06:09,850, Next wakeup is due at 2023-02-24 15:11:09.837558+09:00 (in 299.988421 seconds)
+INFO, 2023-02-24 15:06:09,850, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:11:09 KST)" (scheduled at 2023-02-24 15:06:09.837558+09:00)
+INFO, 2023-02-24 15:06:09,850, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:11:09 KST)" (scheduled at 2023-02-24 15:06:09.845691+09:00)
+DEBUG, 2023-02-24 15:06:09,857, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:06:09,858, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:06:10,008, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 15:06:10,008, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:06:10,009, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:06:10,012, Sesstion Key : 1-9841196-317fcabac96f324411f125b44025ffd003892d37a426998361039cd97546201a
+INFO, 2023-02-24 15:06:10,011, Tanium API Sesstion Key 호출 성공
+DEBUG, 2023-02-24 15:06:10,014, Starting new HTTPS connection (1): 1.223.168.93:49105
+INFO, 2023-02-24 15:06:10,014, Sesstion Key : 1-9841197-0ad84fdf5b24476fe39d7b5a79b06ad52c8269dc341b2286e224c2b30f008cb2
+DEBUG, 2023-02-24 15:06:10,017, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:06:10,630, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 192235
+INFO, 2023-02-24 15:06:10,671, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:06:10,672, Sensor ID : 4872
+INFO, 2023-02-24 15:06:10,678, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 15:06:10,735, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57037
+INFO, 2023-02-24 15:06:10,746, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:06:10,747, Sensor ID : 4356
+INFO, 2023-02-24 15:06:10,747, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:06:10,747, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,747, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,747, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,748, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,748, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,748, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,748, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,748, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:10,816, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:06:10,818, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:06:10,818, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:06:10,835, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:06:10,846, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:06:10,848, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:06:10,849, Start the process : VUL 
+INFO, 2023-02-24 15:06:10,944, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:06:11,022, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:06:11,024, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:06:11,053, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:06:11,055, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:06:11,058, Usage.py - 성공
+INFO, 2023-02-24 15:06:11,059, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:06:11,061, Compare.py -compare 성공
+INFO, 2023-02-24 15:06:11,062, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:06:11,068, Normal.py - 성공
+INFO, 2023-02-24 15:06:11,069, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:06:11,071, Count.py - 성공
+INFO, 2023-02-24 15:06:11,072, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:06:11,073, Merge.py - 성공
+INFO, 2023-02-24 15:06:11,074, Merge.py - 성공
+INFO, 2023-02-24 15:06:11,075, Merge.py - 성공
+INFO, 2023-02-24 15:06:11,162, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:06:11,352, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:06:11,429, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:06:11,431, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:06:11,432, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:06:11,434, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:06:11,436, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:06:11,438, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:06:11,440, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:06:11,441, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:06:11,443, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:06:11,453, Compare.py -alarm 성공
+INFO, 2023-02-24 15:06:11,454, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:06:11,456, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:06:11,458, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:06:11,461, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:06:11,464, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:06:11,466, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:06:11,468, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:06:11,471, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:06:11,473, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:06:11,475, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:06:11,477, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:06:11,480, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:06:11,482, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:06:11,485, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:06:11,487, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:06:11,493, Compare.py -online 성공
+INFO, 2023-02-24 15:06:11,494, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:06:11,498, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:06:11,500, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:06:11,579, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:06:11,581, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:06:11,596, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:06:11,597, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:06:11,641, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:06:11,648, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:06:11,654, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:06:11,657, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:06:11,659, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:06:11,840, Insert VUL Process is finish 
+INFO, 2023-02-24 15:06:11,840, DB Data is Insert
+INFO, 2023-02-24 15:06:11,842, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:06:11,842, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:11:09 KST)" executed successfully
+INFO, 2023-02-24 15:06:12,090, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:06:12,097, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:06:12,174, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:06:12,175, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:06:12,175, Sesstion Key : 1-9841199-71fe183c67adbe05a9395c98aaff5429fe39078a9487c53abb6b85152961d018
+DEBUG, 2023-02-24 15:06:12,176, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:06:12,703, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57038
+INFO, 2023-02-24 15:06:12,722, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:06:12,723, Sensor ID : 4356
+INFO, 2023-02-24 15:06:12,723, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:06:12,723, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,723, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,724, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,724, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,724, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,724, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,724, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,724, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:06:12,774, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:06:12,774, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:06:12,775, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:06:12,797, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:06:12,807, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:06:12,807, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:06:12,808, Start the process : VUL 
+INFO, 2023-02-24 15:06:13,535, Insert VUL Process is finish 
+INFO, 2023-02-24 15:06:13,535, DB Data is Insert
+INFO, 2023-02-24 15:06:13,536, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:06:13,537, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:11:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:11:09,845, Looking for jobs to run
+DEBUG, 2023-02-24 15:11:09,846, Next wakeup is due at 2023-02-24 15:16:09.837558+09:00 (in 299.991385 seconds)
+INFO, 2023-02-24 15:11:09,847, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:16:09 KST)" (scheduled at 2023-02-24 15:11:09.837558+09:00)
+INFO, 2023-02-24 15:11:09,847, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:16:09 KST)" (scheduled at 2023-02-24 15:11:09.845691+09:00)
+DEBUG, 2023-02-24 15:11:09,851, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:11:09,851, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:11:09,986, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 15:11:09,988, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:11:09,990, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:11:09,992, Sesstion Key : 1-9841309-41828caf92c9c89f9cde25985cc9a88677db74558b87a00e0a7f606070a0ec78
+INFO, 2023-02-24 15:11:09,992, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:11:09,994, Sesstion Key : 1-9841310-50a957bfecde4ad5c01a2e0979292f732fb450dd670bee9f893144733f0b1a2f
+DEBUG, 2023-02-24 15:11:09,995, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:11:09,997, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:11:10,653, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 194913
+INFO, 2023-02-24 15:11:10,687, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:11:10,687, Sensor ID : 4872
+INFO, 2023-02-24 15:11:10,694, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 15:11:10,838, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57353
+INFO, 2023-02-24 15:11:10,857, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:11:10,859, Sensor ID : 4356
+INFO, 2023-02-24 15:11:10,859, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:11:10,860, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,860, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,861, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,861, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,861, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,861, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,863, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,863, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:10,912, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:11:10,913, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:11:10,913, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:11:10,929, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:11:10,940, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:11:10,941, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:11:10,941, Start the process : VUL 
+INFO, 2023-02-24 15:11:10,946, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:11:11,037, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:11:11,039, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:11:11,070, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:11:11,072, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:11:11,076, Usage.py - 성공
+INFO, 2023-02-24 15:11:11,078, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:11:11,080, Compare.py -compare 성공
+INFO, 2023-02-24 15:11:11,081, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:11:11,086, Normal.py - 성공
+INFO, 2023-02-24 15:11:11,087, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:11:11,089, Count.py - 성공
+INFO, 2023-02-24 15:11:11,089, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:11:11,091, Merge.py - 성공
+INFO, 2023-02-24 15:11:11,093, Merge.py - 성공
+INFO, 2023-02-24 15:11:11,094, Merge.py - 성공
+INFO, 2023-02-24 15:11:11,190, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:11:11,272, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:11:11,354, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:11:11,355, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:11:11,356, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:11:11,359, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:11:11,362, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:11:11,364, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:11:11,366, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:11:11,368, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:11:11,371, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:11:11,382, Compare.py -alarm 성공
+INFO, 2023-02-24 15:11:11,382, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:11:11,385, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:11:11,387, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:11:11,390, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:11:11,393, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:11:11,396, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:11:11,398, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:11:11,400, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:11:11,403, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:11:11,405, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:11:11,407, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:11:11,410, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:11:11,413, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:11:11,415, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:11:11,417, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:11:11,424, Compare.py -online 성공
+INFO, 2023-02-24 15:11:11,425, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:11:11,428, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:11:11,430, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:11:11,524, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:11:11,527, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:11:11,543, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:11:11,544, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:11:11,600, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:11:11,609, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:11:11,615, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:11:11,617, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:11:11,644, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:11:12,061, Insert VUL Process is finish 
+INFO, 2023-02-24 15:11:12,062, DB Data is Insert
+INFO, 2023-02-24 15:11:12,063, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:11:12,063, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:16:09 KST)" executed successfully
+INFO, 2023-02-24 15:11:12,153, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:11:12,159, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:11:12,226, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:11:12,226, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:11:12,227, Sesstion Key : 1-9841311-6f15d80645165303468838b42ed501667561149974709ac93475d0caac5cddff
+DEBUG, 2023-02-24 15:11:12,228, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:11:12,752, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 57354
+INFO, 2023-02-24 15:11:12,772, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:11:12,772, Sensor ID : 4356
+INFO, 2023-02-24 15:11:12,773, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:11:12,773, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,773, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,773, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,774, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,774, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,774, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,774, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,774, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:11:12,822, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:11:12,822, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:11:12,823, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:11:12,840, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:11:12,848, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:11:12,848, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:11:12,848, Start the process : VUL 
+INFO, 2023-02-24 15:11:13,677, Insert VUL Process is finish 
+INFO, 2023-02-24 15:11:13,677, DB Data is Insert
+INFO, 2023-02-24 15:11:13,679, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:11:13,680, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:16:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:16:09,844, Looking for jobs to run
+DEBUG, 2023-02-24 15:16:09,846, Next wakeup is due at 2023-02-24 15:21:09.837558+09:00 (in 299.991364 seconds)
+INFO, 2023-02-24 15:16:09,846, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:21:09 KST)" (scheduled at 2023-02-24 15:16:09.837558+09:00)
+INFO, 2023-02-24 15:16:09,847, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:21:09 KST)" (scheduled at 2023-02-24 15:16:09.845691+09:00)
+DEBUG, 2023-02-24 15:16:09,854, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:16:09,855, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:16:09,995, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:16:09,998, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:16:09,999, Sesstion Key : 1-9841424-0abdcd1ba9e4679411e0be2302b5296319d3243752cca0a517828bb066a3c48b
+DEBUG, 2023-02-24 15:16:09,998, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 15:16:10,001, Starting new HTTPS connection (1): 1.223.168.93:49105
+INFO, 2023-02-24 15:16:10,003, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:16:10,004, Sesstion Key : 1-9841425-f666c88d7ea7714532e933f66da293a2f3ca069d3570c359b63f8975429dcc97
+DEBUG, 2023-02-24 15:16:10,006, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:16:10,654, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 179517
+INFO, 2023-02-24 15:16:10,690, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:16:10,690, Sensor ID : 4872
+INFO, 2023-02-24 15:16:10,696, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 15:16:10,778, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 53963
+INFO, 2023-02-24 15:16:10,800, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:16:10,801, Sensor ID : 4356
+INFO, 2023-02-24 15:16:10,802, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:16:10,802, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,802, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,802, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,804, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,804, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,804, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,804, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,804, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:10,805, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,806, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,806, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,807, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,807, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,807, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,807, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,807, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:10,851, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:16:10,853, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:16:10,853, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:16:10,870, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:16:10,881, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:16:10,883, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:16:10,883, Start the process : VUL 
+INFO, 2023-02-24 15:16:10,945, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:16:11,120, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:16:11,122, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:16:11,153, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:16:11,157, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:16:11,160, Usage.py - 성공
+INFO, 2023-02-24 15:16:11,162, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:16:11,164, Compare.py -compare 성공
+INFO, 2023-02-24 15:16:11,165, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:16:11,170, Normal.py - 성공
+INFO, 2023-02-24 15:16:11,172, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:16:11,174, Count.py - 성공
+INFO, 2023-02-24 15:16:11,175, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:16:11,176, Merge.py - 성공
+INFO, 2023-02-24 15:16:11,178, Merge.py - 성공
+INFO, 2023-02-24 15:16:11,179, Merge.py - 성공
+INFO, 2023-02-24 15:16:11,266, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:16:11,335, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:16:11,402, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:16:11,404, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:16:11,405, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:16:11,407, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:16:11,410, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:16:11,412, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:16:11,414, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:16:11,416, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:16:11,417, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:16:11,426, Compare.py -alarm 성공
+INFO, 2023-02-24 15:16:11,427, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:16:11,429, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:16:11,431, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:16:11,433, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:16:11,435, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:16:11,437, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:16:11,440, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:16:11,443, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:16:11,445, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:16:11,448, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:16:11,450, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:16:11,453, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:16:11,456, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:16:11,458, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:16:11,461, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:16:11,467, Compare.py -online 성공
+INFO, 2023-02-24 15:16:11,469, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:16:11,472, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:16:11,474, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:16:11,543, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:16:11,544, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:16:11,558, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:16:11,560, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:16:11,594, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:16:11,600, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:16:11,606, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:16:11,608, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:16:11,610, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:16:11,782, Insert VUL Process is finish 
+INFO, 2023-02-24 15:16:11,783, DB Data is Insert
+INFO, 2023-02-24 15:16:11,784, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:16:11,784, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:21:09 KST)" executed successfully
+INFO, 2023-02-24 15:16:11,972, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:16:11,977, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:16:12,052, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:16:12,053, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:16:12,053, Sesstion Key : 1-9841429-dfb3ef318c3e1b69baed4ff18c1586f98e7b5f9187a38c39f2a067405eb2c2c1
+DEBUG, 2023-02-24 15:16:12,054, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:16:12,597, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 53964
+INFO, 2023-02-24 15:16:12,609, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:16:12,609, Sensor ID : 4356
+INFO, 2023-02-24 15:16:12,610, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:16:12,610, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,610, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,610, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,610, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,611, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,611, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,611, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,611, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:16:12,611, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,611, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,612, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,612, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,612, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,612, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,612, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,612, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:16:12,654, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:16:12,654, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:16:12,654, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:16:12,670, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:16:12,677, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:16:12,678, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:16:12,679, Start the process : VUL 
+INFO, 2023-02-24 15:16:13,410, Insert VUL Process is finish 
+INFO, 2023-02-24 15:16:13,411, DB Data is Insert
+INFO, 2023-02-24 15:16:13,412, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:16:13,412, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:21:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:21:09,848, Looking for jobs to run
+DEBUG, 2023-02-24 15:21:09,848, Next wakeup is due at 2023-02-24 15:26:09.837558+09:00 (in 299.988644 seconds)
+INFO, 2023-02-24 15:21:09,848, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:26:09 KST)" (scheduled at 2023-02-24 15:21:09.837558+09:00)
+INFO, 2023-02-24 15:21:09,849, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:26:09 KST)" (scheduled at 2023-02-24 15:21:09.845691+09:00)
+DEBUG, 2023-02-24 15:21:09,851, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:21:09,851, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:21:09,997, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:21:09,998, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:21:09,999, Sesstion Key : 1-9841537-732af1a3443ea23e5609ebb5e82100142237b8e0fce2e0e1e975796db61cf49f
+DEBUG, 2023-02-24 15:21:10,001, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:21:10,063, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:21:10,065, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:21:10,065, Sesstion Key : 1-9841538-9b732423b242d33b9add3e9023138fbed1209b4c0af6d1983ebd5a179ff95d43
+DEBUG, 2023-02-24 15:21:10,067, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:21:10,793, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55961
+INFO, 2023-02-24 15:21:10,807, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:21:10,807, Sensor ID : 4356
+INFO, 2023-02-24 15:21:10,808, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:21:10,809, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,809, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,809, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,809, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,810, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,810, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,810, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,811, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:10,811, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:10,811, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:10,811, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:10,811, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:10,812, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:10,812, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:10,812, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:10,812, ComputerID :  258561666 has TSE-Error: Python is disabled
+DEBUG, 2023-02-24 15:21:10,832, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 182097
+INFO, 2023-02-24 15:21:10,870, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:21:10,871, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:21:10,871, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:21:10,897, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:21:10,907, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:21:10,908, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:21:10,908, Start the process : VUL 
+INFO, 2023-02-24 15:21:10,924, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:21:10,925, Sensor ID : 4872
+INFO, 2023-02-24 15:21:10,930, Asset/All.py -  API 성공
+INFO, 2023-02-24 15:21:11,150, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:21:11,258, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:21:11,260, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:21:11,298, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:21:11,301, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:21:11,307, Usage.py - 성공
+INFO, 2023-02-24 15:21:11,308, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:21:11,311, Compare.py -compare 성공
+INFO, 2023-02-24 15:21:11,312, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:21:11,320, Normal.py - 성공
+INFO, 2023-02-24 15:21:11,321, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:21:11,324, Count.py - 성공
+INFO, 2023-02-24 15:21:11,326, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:21:11,328, Merge.py - 성공
+INFO, 2023-02-24 15:21:11,331, Merge.py - 성공
+INFO, 2023-02-24 15:21:11,332, Merge.py - 성공
+INFO, 2023-02-24 15:21:11,463, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:21:11,561, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:21:11,673, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:21:11,676, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:21:11,678, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:21:11,683, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:21:11,687, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:21:11,689, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:21:11,693, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:21:11,698, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:21:11,701, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:21:11,717, Compare.py -alarm 성공
+INFO, 2023-02-24 15:21:11,719, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:21:11,724, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:21:11,729, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:21:11,734, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:21:11,737, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:21:11,742, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:21:11,747, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:21:11,749, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:21:11,753, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:21:11,757, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:21:11,760, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:21:11,764, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:21:11,767, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:21:11,770, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:21:11,774, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:21:11,784, Compare.py -online 성공
+INFO, 2023-02-24 15:21:11,786, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:21:11,791, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:21:11,795, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:21:11,887, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:21:11,890, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:21:11,907, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:21:11,909, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:21:11,949, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:21:11,957, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:21:11,966, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:21:11,969, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:21:11,993, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:21:12,304, Insert VUL Process is finish 
+INFO, 2023-02-24 15:21:12,304, DB Data is Insert
+INFO, 2023-02-24 15:21:12,306, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:21:12,306, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:26:09 KST)" executed successfully
+INFO, 2023-02-24 15:21:12,466, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:21:12,475, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:21:12,566, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:21:12,567, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:21:12,568, Sesstion Key : 1-9841542-70e5159f22fdd0875b7789818cec801da34ad455bcc57b3e0d221907e3c97b84
+DEBUG, 2023-02-24 15:21:12,571, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:21:13,437, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 55962
+INFO, 2023-02-24 15:21:13,453, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:21:13,453, Sensor ID : 4356
+INFO, 2023-02-24 15:21:13,454, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:21:13,454, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,454, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,454, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,455, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,455, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,455, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,455, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,455, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:21:13,455, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,455, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,455, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,455, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,456, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,456, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,456, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,456, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:21:13,504, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:21:13,504, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:21:13,505, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:21:13,525, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:21:13,535, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:21:13,535, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:21:13,536, Start the process : VUL 
+INFO, 2023-02-24 15:21:14,403, Insert VUL Process is finish 
+INFO, 2023-02-24 15:21:14,404, DB Data is Insert
+INFO, 2023-02-24 15:21:14,406, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:21:14,406, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:26:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:26:09,843, Looking for jobs to run
+DEBUG, 2023-02-24 15:26:09,845, Next wakeup is due at 2023-02-24 15:26:09.845691+09:00 (in 0.001684 seconds)
+INFO, 2023-02-24 15:26:09,845, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:31:09 KST)" (scheduled at 2023-02-24 15:26:09.837558+09:00)
+DEBUG, 2023-02-24 15:26:09,848, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:26:09,874, Looking for jobs to run
+DEBUG, 2023-02-24 15:26:09,875, Next wakeup is due at 2023-02-24 15:31:09.837558+09:00 (in 299.962279 seconds)
+INFO, 2023-02-24 15:26:09,875, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:31:09 KST)" (scheduled at 2023-02-24 15:26:09.845691+09:00)
+DEBUG, 2023-02-24 15:26:09,877, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:26:09,985, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 15:26:09,986, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:26:09,988, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:26:09,991, Sesstion Key : 1-9841654-e1445b4ccb0d937db2a8fd5235b6d538b2a0887c7f5d4bc431c8a20bd66e8136
+INFO, 2023-02-24 15:26:09,991, Tanium API Sesstion Key 호출 성공
+DEBUG, 2023-02-24 15:26:09,995, Starting new HTTPS connection (1): 1.223.168.93:49105
+INFO, 2023-02-24 15:26:09,995, Sesstion Key : 1-9841655-a9cf15b0685d5d3642b02a3b7708ead5929941316c741db3510546a95eb668fe
+DEBUG, 2023-02-24 15:26:09,999, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:26:10,580, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 179661
+INFO, 2023-02-24 15:26:10,612, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:26:10,612, Sensor ID : 4872
+INFO, 2023-02-24 15:26:10,618, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 15:26:10,704, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54356
+INFO, 2023-02-24 15:26:10,726, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:26:10,726, Sensor ID : 4356
+INFO, 2023-02-24 15:26:10,727, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:26:10,727, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,727, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,727, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,728, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,728, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,728, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,728, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,728, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:10,729, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,729, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,729, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,729, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,729, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,729, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,730, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,730, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:10,771, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:26:10,772, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:26:10,772, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:26:10,788, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:26:10,800, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:26:10,801, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:26:10,801, Start the process : VUL 
+INFO, 2023-02-24 15:26:10,899, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:26:10,972, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:26:10,974, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:26:11,000, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:26:11,002, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:26:11,006, Usage.py - 성공
+INFO, 2023-02-24 15:26:11,007, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:26:11,009, Compare.py -compare 성공
+INFO, 2023-02-24 15:26:11,010, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:26:11,015, Normal.py - 성공
+INFO, 2023-02-24 15:26:11,016, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:26:11,018, Count.py - 성공
+INFO, 2023-02-24 15:26:11,019, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:26:11,020, Merge.py - 성공
+INFO, 2023-02-24 15:26:11,022, Merge.py - 성공
+INFO, 2023-02-24 15:26:11,023, Merge.py - 성공
+INFO, 2023-02-24 15:26:11,108, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:26:11,180, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:26:11,250, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:26:11,252, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:26:11,254, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:26:11,256, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:26:11,258, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:26:11,260, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:26:11,262, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:26:11,263, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:26:11,265, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:26:11,273, Compare.py -alarm 성공
+INFO, 2023-02-24 15:26:11,275, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:26:11,277, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:26:11,279, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:26:11,281, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:26:11,283, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:26:11,286, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:26:11,289, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:26:11,291, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:26:11,293, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:26:11,294, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:26:11,297, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:26:11,297, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:26:11,300, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:26:11,302, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:26:11,304, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:26:11,311, Compare.py -online 성공
+INFO, 2023-02-24 15:26:11,312, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:26:11,314, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:26:11,316, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:26:11,388, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:26:11,389, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:26:11,403, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:26:11,404, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:26:11,439, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:26:11,445, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:26:11,451, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:26:11,454, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:26:11,456, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:26:11,729, Insert VUL Process is finish 
+INFO, 2023-02-24 15:26:11,729, DB Data is Insert
+INFO, 2023-02-24 15:26:11,731, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:26:11,731, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:31:09 KST)" executed successfully
+INFO, 2023-02-24 15:26:11,848, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:26:11,854, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:26:11,912, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:26:11,914, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:26:11,914, Sesstion Key : 1-9841656-a0e04846f6da411df0710f6529814b402c7be256140de933e577054d428efc96
+DEBUG, 2023-02-24 15:26:11,916, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:26:12,569, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54356
+INFO, 2023-02-24 15:26:12,580, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:26:12,580, Sensor ID : 4356
+INFO, 2023-02-24 15:26:12,580, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:26:12,581, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,581, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,581, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,581, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,581, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,581, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,581, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,582, ComputerID :  55396160 has [current result unavailable]
+INFO, 2023-02-24 15:26:12,582, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,582, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,582, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,582, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,582, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,583, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,583, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,583, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:26:12,626, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:26:12,627, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:26:12,627, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:26:12,645, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:26:12,657, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:26:12,658, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:26:12,658, Start the process : VUL 
+INFO, 2023-02-24 15:26:13,363, Insert VUL Process is finish 
+INFO, 2023-02-24 15:26:13,364, DB Data is Insert
+INFO, 2023-02-24 15:26:13,365, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:26:13,365, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:31:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:31:09,843, Looking for jobs to run
+DEBUG, 2023-02-24 15:31:09,844, Next wakeup is due at 2023-02-24 15:31:09.845691+09:00 (in 0.001282 seconds)
+INFO, 2023-02-24 15:31:09,844, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:36:09 KST)" (scheduled at 2023-02-24 15:31:09.837558+09:00)
+DEBUG, 2023-02-24 15:31:09,847, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:31:09,876, Looking for jobs to run
+DEBUG, 2023-02-24 15:31:09,877, Next wakeup is due at 2023-02-24 15:36:09.837558+09:00 (in 299.960237 seconds)
+INFO, 2023-02-24 15:31:09,877, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:36:09 KST)" (scheduled at 2023-02-24 15:31:09.845691+09:00)
+DEBUG, 2023-02-24 15:31:09,879, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:31:09,946, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:31:09,947, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:31:09,948, Sesstion Key : 1-9841769-7f3a9928185685a585a4f3cada7b091430e3eda48db1c93e3a199f8dc1925665
+DEBUG, 2023-02-24 15:31:09,949, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 15:31:09,950, Starting new HTTPS connection (1): 1.223.168.93:49105
+INFO, 2023-02-24 15:31:09,952, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:31:09,953, Sesstion Key : 1-9841768-a0a62801084c8edff15c38b641394aeeb32d3667ddf747a8ae8418d88c42051d
+DEBUG, 2023-02-24 15:31:09,954, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:31:10,582, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54916
+INFO, 2023-02-24 15:31:10,596, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:31:10,596, Sensor ID : 4356
+INFO, 2023-02-24 15:31:10,596, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:31:10,597, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,597, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,597, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,597, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,597, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,597, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,598, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,598, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:10,598, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,598, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,598, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,598, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,599, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,599, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,599, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,599, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:10,643, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:31:10,643, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:31:10,644, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:31:10,659, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:31:10,667, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:31:10,667, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:31:10,668, Start the process : VUL 
+DEBUG, 2023-02-24 15:31:10,793, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 179052
+INFO, 2023-02-24 15:31:10,827, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:31:10,828, Sensor ID : 4872
+INFO, 2023-02-24 15:31:10,833, Asset/All.py -  API 성공
+INFO, 2023-02-24 15:31:11,000, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:31:11,073, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:31:11,075, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:31:11,101, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:31:11,104, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:31:11,107, Usage.py - 성공
+INFO, 2023-02-24 15:31:11,108, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:31:11,111, Compare.py -compare 성공
+INFO, 2023-02-24 15:31:11,113, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:31:11,118, Normal.py - 성공
+INFO, 2023-02-24 15:31:11,119, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:31:11,121, Count.py - 성공
+INFO, 2023-02-24 15:31:11,122, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:31:11,124, Merge.py - 성공
+INFO, 2023-02-24 15:31:11,125, Merge.py - 성공
+INFO, 2023-02-24 15:31:11,126, Merge.py - 성공
+INFO, 2023-02-24 15:31:11,215, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:31:11,286, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:31:11,360, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:31:11,361, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:31:11,362, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:31:11,364, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:31:11,366, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:31:11,368, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:31:11,370, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:31:11,372, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:31:11,375, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:31:11,383, Compare.py -alarm 성공
+INFO, 2023-02-24 15:31:11,385, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:31:11,388, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:31:11,390, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:31:11,392, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:31:11,394, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:31:11,396, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:31:11,398, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:31:11,401, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:31:11,405, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:31:11,407, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:31:11,409, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:31:11,411, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:31:11,413, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:31:11,415, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:31:11,417, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:31:11,424, Compare.py -online 성공
+INFO, 2023-02-24 15:31:11,425, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:31:11,428, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:31:11,429, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:31:11,502, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:31:11,504, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:31:11,515, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:31:11,516, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:31:11,549, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:31:11,557, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:31:11,563, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:31:11,565, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:31:11,589, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:31:11,757, Insert VUL Process is finish 
+INFO, 2023-02-24 15:31:11,757, DB Data is Insert
+INFO, 2023-02-24 15:31:11,758, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:31:11,759, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:36:09 KST)" executed successfully
+INFO, 2023-02-24 15:31:12,002, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:31:12,007, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:31:12,071, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:31:12,073, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:31:12,073, Sesstion Key : 1-9841770-cf687fe3ec22e43b71c562fc44a65c5c6307084d39ad43f3b845633d68357cff
+DEBUG, 2023-02-24 15:31:12,074, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:31:12,672, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54915
+INFO, 2023-02-24 15:31:12,685, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:31:12,685, Sensor ID : 4356
+INFO, 2023-02-24 15:31:12,685, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:31:12,686, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,686, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,686, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,686, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,686, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,686, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,686, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,687, ComputerID :  1638849551 has [current result unavailable]
+INFO, 2023-02-24 15:31:12,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,688, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,688, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,688, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:31:12,730, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:31:12,731, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:31:12,731, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:31:12,746, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:31:12,754, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:31:12,754, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:31:12,755, Start the process : VUL 
+INFO, 2023-02-24 15:31:13,452, Insert VUL Process is finish 
+INFO, 2023-02-24 15:31:13,453, DB Data is Insert
+INFO, 2023-02-24 15:31:13,454, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:31:13,454, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:36:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:36:09,839, Looking for jobs to run
+DEBUG, 2023-02-24 15:36:09,840, Next wakeup is due at 2023-02-24 15:36:09.845691+09:00 (in 0.005231 seconds)
+INFO, 2023-02-24 15:36:09,840, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:41:09 KST)" (scheduled at 2023-02-24 15:36:09.837558+09:00)
+DEBUG, 2023-02-24 15:36:09,846, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:36:09,874, Looking for jobs to run
+DEBUG, 2023-02-24 15:36:09,877, Next wakeup is due at 2023-02-24 15:41:09.837558+09:00 (in 299.960027 seconds)
+INFO, 2023-02-24 15:36:09,877, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:41:09 KST)" (scheduled at 2023-02-24 15:36:09.845691+09:00)
+DEBUG, 2023-02-24 15:36:09,879, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:36:09,940, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:36:09,941, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:36:09,941, Sesstion Key : 1-9841881-a3dfb2ddb1d57b53a4fc8eb978e5f95236c5eec8bccb5e315a17501be98cebb1
+DEBUG, 2023-02-24 15:36:09,943, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:36:09,970, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:36:09,972, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:36:09,973, Sesstion Key : 1-9841882-c75695e3daa784e383b94fe5755d5f7596d4577c06ceb68fc133034b7f232382
+DEBUG, 2023-02-24 15:36:09,974, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:36:10,549, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 175189
+INFO, 2023-02-24 15:36:10,583, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:36:10,584, Sensor ID : 4872
+INFO, 2023-02-24 15:36:10,589, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 15:36:10,670, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54071
+INFO, 2023-02-24 15:36:10,683, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:36:10,685, Sensor ID : 4356
+INFO, 2023-02-24 15:36:10,685, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:36:10,685, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,687, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,688, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,689, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:10,734, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:36:10,736, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:36:10,737, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:36:10,754, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:36:10,765, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:36:10,767, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:36:10,767, Start the process : VUL 
+INFO, 2023-02-24 15:36:10,826, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:36:10,900, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:36:10,902, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:36:10,928, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:36:10,931, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:36:10,934, Usage.py - 성공
+INFO, 2023-02-24 15:36:10,936, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:36:10,938, Compare.py -compare 성공
+INFO, 2023-02-24 15:36:10,939, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:36:10,944, Normal.py - 성공
+INFO, 2023-02-24 15:36:10,945, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:36:10,947, Count.py - 성공
+INFO, 2023-02-24 15:36:10,948, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:36:10,949, Merge.py - 성공
+INFO, 2023-02-24 15:36:10,950, Merge.py - 성공
+INFO, 2023-02-24 15:36:10,952, Merge.py - 성공
+INFO, 2023-02-24 15:36:11,064, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:36:11,164, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:36:11,261, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:36:11,263, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:36:11,264, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:36:11,267, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:36:11,269, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:36:11,271, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:36:11,273, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:36:11,275, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:36:11,278, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:36:11,289, Compare.py -alarm 성공
+INFO, 2023-02-24 15:36:11,290, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:36:11,293, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:36:11,295, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:36:11,299, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:36:11,301, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:36:11,304, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:36:11,306, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:36:11,309, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:36:11,311, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:36:11,314, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:36:11,316, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:36:11,319, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:36:11,321, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:36:11,323, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:36:11,325, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:36:11,333, Compare.py -online 성공
+INFO, 2023-02-24 15:36:11,334, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:36:11,337, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:36:11,339, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:36:11,424, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:36:11,426, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:36:11,438, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:36:11,440, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:36:11,486, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:36:11,493, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:36:11,500, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:36:11,503, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:36:11,505, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:36:11,907, Insert VUL Process is finish 
+INFO, 2023-02-24 15:36:11,908, DB Data is Insert
+INFO, 2023-02-24 15:36:11,909, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:36:11,910, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:41:09 KST)" executed successfully
+INFO, 2023-02-24 15:36:12,021, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:36:12,026, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:36:12,086, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:36:12,087, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:36:12,087, Sesstion Key : 1-9841884-3f047c7a76ddd9e3e7b738c3f24407a3b9566ba3c909ffce972d01e00dcfd99b
+DEBUG, 2023-02-24 15:36:12,088, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:36:12,592, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 54071
+INFO, 2023-02-24 15:36:12,603, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:36:12,603, Sensor ID : 4356
+INFO, 2023-02-24 15:36:12,604, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:36:12,604, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,604, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,604, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,605, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,605, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,605, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,606, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,606, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:36:12,657, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:36:12,658, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:36:12,658, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:36:12,678, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:36:12,687, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:36:12,687, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:36:12,688, Start the process : VUL 
+INFO, 2023-02-24 15:36:13,681, Insert VUL Process is finish 
+INFO, 2023-02-24 15:36:13,682, DB Data is Insert
+INFO, 2023-02-24 15:36:13,684, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:36:13,684, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:41:09 KST)" executed successfully
+DEBUG, 2023-02-24 15:41:09,839, Looking for jobs to run
+DEBUG, 2023-02-24 15:41:09,841, Next wakeup is due at 2023-02-24 15:41:09.845691+09:00 (in 0.004168 seconds)
+INFO, 2023-02-24 15:41:09,841, Running job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:46:09 KST)" (scheduled at 2023-02-24 15:41:09.837558+09:00)
+DEBUG, 2023-02-24 15:41:09,848, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:41:09,855, Looking for jobs to run
+DEBUG, 2023-02-24 15:41:09,908, Next wakeup is due at 2023-02-24 15:46:09.837558+09:00 (in 299.929103 seconds)
+INFO, 2023-02-24 15:41:09,909, Running job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:46:09 KST)" (scheduled at 2023-02-24 15:41:09.845691+09:00)
+DEBUG, 2023-02-24 15:41:09,912, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:41:10,044, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:41:10,048, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:41:10,049, Sesstion Key : 1-9841996-5ee9de22edd8c19edb73252b6d33d730c560bfc03b9a23cc2097e36a4adc0906
+DEBUG, 2023-02-24 15:41:10,052, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+DEBUG, 2023-02-24 15:41:10,053, Starting new HTTPS connection (1): 1.223.168.93:49105
+INFO, 2023-02-24 15:41:10,057, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:41:10,058, Sesstion Key : 1-9841997-35456cf93c4e3603df9f4d6b29a1e51024f3e0c97eba477190dc858d07ce8acd
+DEBUG, 2023-02-24 15:41:10,062, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:41:10,742, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4872 HTTP/1.1" 200 171090
+INFO, 2023-02-24 15:41:10,801, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:41:10,803, Sensor ID : 4872
+INFO, 2023-02-24 15:41:10,817, Asset/All.py -  API 성공
+DEBUG, 2023-02-24 15:41:10,906, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 52564
+INFO, 2023-02-24 15:41:10,923, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:41:10,925, Sensor ID : 4356
+INFO, 2023-02-24 15:41:10,925, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:41:10,925, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:10,925, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:10,925, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:10,926, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:10,929, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:10,929, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:10,929, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:10,929, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:11,076, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:41:11,080, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:41:11,081, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:41:11,131, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:41:11,161, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:41:11,166, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:41:11,172, Start the process : VUL 
+INFO, 2023-02-24 15:41:11,233, Asset Table INSERT connection - minutely 성공
+INFO, 2023-02-24 15:41:11,320, Asset Table Select connection - minutely_daily_asset성공
+INFO, 2023-02-24 15:41:11,324, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:41:11,381, Preprocessing.py - minutely_daily_asset 성공
+INFO, 2023-02-24 15:41:11,386, Asset/Part.py -  DB/minutely_daily_asset 성공
+INFO, 2023-02-24 15:41:11,394, Usage.py - 성공
+INFO, 2023-02-24 15:41:11,397, Statistics/Part.py -  minutely_statistics_list/usage 성공
+INFO, 2023-02-24 15:41:11,403, Compare.py -compare 성공
+INFO, 2023-02-24 15:41:11,405, Statistics/Part.py -  minutely_statistics_list/compare 성공
+INFO, 2023-02-24 15:41:11,419, Normal.py - 성공
+INFO, 2023-02-24 15:41:11,423, Statistics/Part.py -  minutely_statistics_list/normal 성공
+INFO, 2023-02-24 15:41:11,428, Count.py - 성공
+INFO, 2023-02-24 15:41:11,431, Statistics/Part.py -  minutely_statistics_list/count 성공
+INFO, 2023-02-24 15:41:11,435, Merge.py - 성공
+INFO, 2023-02-24 15:41:11,438, Merge.py - 성공
+INFO, 2023-02-24 15:41:11,440, Merge.py - 성공
+INFO, 2023-02-24 15:41:11,533, Statistics List Table INSERT connection - minutely성공
+INFO, 2023-02-24 15:41:11,606, Statistics List Table Select connection - minutely 성공
+INFO, 2023-02-24 15:41:11,674, Statistics List Table Select connection - minutely_statistics_list_online 성공
+INFO, 2023-02-24 15:41:11,676, Statistics/All.py -  DB/minutely_statistics_list 성공
+INFO, 2023-02-24 15:41:11,677, Statistics/Part.py -  minutely_statistics_list_online/normal 성공
+INFO, 2023-02-24 15:41:11,680, GroupByCount.py -os 성공
+INFO, 2023-02-24 15:41:11,683, GroupByCount.py -operating_system 성공
+INFO, 2023-02-24 15:41:11,685, GroupByCount.py -virtual 성공
+INFO, 2023-02-24 15:41:11,688, GroupByCount.py -asset 성공
+INFO, 2023-02-24 15:41:11,690, GroupByCount.py -listen_port_count_change 성공
+INFO, 2023-02-24 15:41:11,693, GroupByCount.py -established_port_count_change 성공
+INFO, 2023-02-24 15:41:11,703, Compare.py -alarm 성공
+INFO, 2023-02-24 15:41:11,706, Statistics/Part.py -  minutely_statistics_list/alarm 성공
+INFO, 2023-02-24 15:41:11,709, GroupByCount.py -drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:41:11,714, GroupByCount.py -ram_usage_size_exceeded 성공
+INFO, 2023-02-24 15:41:11,722, GroupByCount.py -cpu_usage_size_exceeded 성공
+INFO, 2023-02-24 15:41:11,730, GroupByCount.py -last_reboot_exceeded 성공
+INFO, 2023-02-24 15:41:11,735, GroupByCount.py -group_ram_usage_exceeded 성공
+INFO, 2023-02-24 15:41:11,741, GroupByCount.py -group_cpu_usage_exceeded 성공
+INFO, 2023-02-24 15:41:11,748, GroupByCount.py -group_listen_port_count_change 성공
+INFO, 2023-02-24 15:41:11,753, GroupByCount.py -group_established_port_count_change 성공
+INFO, 2023-02-24 15:41:11,757, GroupByCount.py -group_running_service_count_exceeded 성공
+INFO, 2023-02-24 15:41:11,762, GroupByCount.py -group_last_reboot 성공
+INFO, 2023-02-24 15:41:11,768, GroupByCount.py -group_drive_usage_size_exceeded 성공
+INFO, 2023-02-24 15:41:11,773, GroupByCount.py -group_server_count 성공
+INFO, 2023-02-24 15:41:11,780, GroupByCount.py -manufacturer 성공
+INFO, 2023-02-24 15:41:11,786, GroupByCount.py -nvidia_smi 성공
+INFO, 2023-02-24 15:41:11,807, Compare.py -online 성공
+INFO, 2023-02-24 15:41:11,809, Statistics/Part.py -  minutely_statistics_list_online/count 성공
+INFO, 2023-02-24 15:41:11,815, GroupByCount.py -group_last_online_time_exceeded 성공
+INFO, 2023-02-24 15:41:11,820, GroupByCount.py -last_online_time_exceeded 성공
+INFO, 2023-02-24 15:41:12,003, Asset Table Select connection - minutely_asset_part성공
+INFO, 2023-02-24 15:41:12,005, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:41:12,027, Preprocessing.py - minutely_asset 성공
+INFO, 2023-02-24 15:41:12,028, Asset/Part.py -  DB/minutely_asset 성공
+INFO, 2023-02-24 15:41:12,101, GroupByCount.py -installed_applications 성공
+INFO, 2023-02-24 15:41:12,119, GroupByCount.py -running_service 성공
+INFO, 2023-02-24 15:41:12,136, GroupByCount.py -session_ip 성공
+INFO, 2023-02-24 15:41:12,141, GroupByCount.py -online_asset 성공
+INFO, 2023-02-24 15:41:12,147, Statistics/All.py -  DB/minutely_statistics 성공
+INFO, 2023-02-24 15:41:12,382, Insert VUL Process is finish 
+INFO, 2023-02-24 15:41:12,383, DB Data is Insert
+INFO, 2023-02-24 15:41:12,384, Minutely VUL Module Succesed!!
+INFO, 2023-02-24 15:41:12,384, Job "vul (trigger: interval[0:05:00], next run at: 2023-02-24 15:46:09 KST)" executed successfully
+INFO, 2023-02-24 15:41:12,577, Statistics Table INSERT connection - minutely성공
+DEBUG, 2023-02-24 15:41:12,583, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:41:12,658, https://1.223.168.93:49105 "POST /api/v2/session/login HTTP/1.1" 200 97
+INFO, 2023-02-24 15:41:12,662, Tanium API Sesstion Key 호출 성공
+INFO, 2023-02-24 15:41:12,663, Sesstion Key : 1-9841999-c266032b21fcf1c9282d57c16d245b2458ad87ac469dbe8f2e357cbc2b964fef
+DEBUG, 2023-02-24 15:41:12,667, Starting new HTTPS connection (1): 1.223.168.93:49105
+DEBUG, 2023-02-24 15:41:13,309, https://1.223.168.93:49105 "POST /api/v2/result_data/saved_question/4356 HTTP/1.1" 200 52565
+INFO, 2023-02-24 15:41:13,328, Tanium API Sensor 호출 성공
+INFO, 2023-02-24 15:41:13,329, Sensor ID : 4356
+INFO, 2023-02-24 15:41:13,331, recived SessionKey is  Succesed!!
+INFO, 2023-02-24 15:41:13,331, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,331, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,331, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,332, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,332, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,332, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,333, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,333, ComputerID :  258561666 has TSE-Error: Python is disabled
+INFO, 2023-02-24 15:41:13,404, Tanium VUL Data API Call Success
+INFO, 2023-02-24 15:41:13,405, recived VUL Data is  Succesed!!
+INFO, 2023-02-24 15:41:13,405, Tanium VUL Data Transform(Dataframe) Plug In Start
+INFO, 2023-02-24 15:41:13,449, Completing list operations for putting into a data frame
+INFO, 2023-02-24 15:41:13,460, Tanium VUL Data Transform(Dataframe) Plug In Finish
+INFO, 2023-02-24 15:41:13,461, Trans DataFrame is Successed!!
+INFO, 2023-02-24 15:41:13,463, Start the process : VUL 
+INFO, 2023-02-24 15:41:14,299, Insert VUL Process is finish 
+INFO, 2023-02-24 15:41:14,300, DB Data is Insert
+INFO, 2023-02-24 15:41:14,301, Minutely CMU Module Succesed!!
+INFO, 2023-02-24 15:41:14,301, Job "minutely (trigger: interval[0:05:00], next run at: 2023-02-24 15:46:09 KST)" executed successfully

@@ -1,0 +1,139 @@
+{
+  "PROJECT" : {
+    "CUSTOMER" : "X-FACTOR",
+    "TYPE" : "System",
+    "LOG" : {
+      "directory" : "log/",
+      "fileName" : "log_",
+      "fileFormat" : ".log"
+    },
+    "PROGRESSBAR" : "False",
+    "TEST" : {
+      "DAILY" : "false"
+    }
+  },
+  "CORE" : {
+    "Tanium" : {
+      "COREUSE" : "true",
+      "ONOFFTYPE" : "online",
+      "PROJECT" :{
+          "VUL" : {
+            "USE": "false"
+          }
+      },
+      "CYCLE" : {
+        "MINUTELY" : {
+          "USE" : "true",
+          "TIME" : 300
+        },
+        "DAILY" : {
+          "USE" : "true",
+          "TIME" : {
+            "hour" : "12",
+            "minute" : "41"
+          }
+        }
+      },
+      "SOURCE" : {
+        "MINUTELY" : {
+          "INPUT" : {
+            "API" : "true",
+            "DB" : {
+              "PS" : "false",
+              "MY" : "false"
+            }
+          },
+          "Transform" : "false",
+          "OUTPUT": {
+            "API" : "false",
+            "DB" : {
+              "PS" : "true",
+              "MY" : "false"
+            }
+          }
+        },
+        "DAILY" : {
+        }
+      },
+      "STATISTICS" : {
+        "COLLECTIONUSE" : "true",
+        "MINUTELY" : {
+          "INPUT" : {
+            "API" : "false",
+            "DB" : {
+              "PS" : "true",
+              "MY" : "false"
+            }
+          },
+          "Transform": "true",
+          "OUTPUT": {
+            "API" : "false",
+            "DB" : {
+              "PS" : "true",
+              "MY" : "false"
+            }
+          }
+        },
+        "DAILY" : {
+        }
+      },
+      "INPUT" : {
+        "API" : {
+          "URL": "https://192.168.5.100",
+          "PATH": {
+            "SessionKey": "/api/v2/session/login",
+            "Sensor": "/api/v2/result_data/saved_question/"
+          },
+          "username": "administrator",
+          "password": "xion123!",
+          "SensorID": {
+            "COMMON" : "455",
+            "VUL" : "4356",
+            "DISCOVER" : ""
+          }
+        },
+        "DB" : {
+          "PS" : {
+            "HOST": "localhost",
+            "PORT": "5432",
+            "NAME": "postgres",
+            "USER": "postgres",
+            "PWD": "psql",
+            "TNM": {
+              "MA" : "minutely_asset",
+              "DA": "daily_asset",
+              "MSL" : "minutely_statistics_list",
+              "DSL" : "daily_statistics_list",
+              "MS" : "minutely_statistics",
+              "DS" : "daily_statistics"
+            }
+          }
+        }
+      },
+      "OUTPUT" : {
+        "DB" : {
+          "PS" : {
+            "HOST": "localhost",
+            "PORT": "5432",
+            "NAME": "postgres",
+            "USER": "postgres",
+            "PWD": "psql",
+            "TNM": {
+              "MA" : "minutely_asset",
+              "DA": "daily_asset",
+              "MSL" : "minutely_statistics_list",
+              "DSL" : "daily_statistics_list",
+              "MS" : "minutely_statistics",
+              "DS" : "daily_statistics",
+              "VQ" : "vulnerability_list",
+              "VJ" : "vulnerability_judge"
+            }
+          }
+        }
+      }
+    },
+    "Zabbix" : {
+
+    }
+  }
+}

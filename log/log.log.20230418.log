@@ -1,0 +1,4 @@
+WARNING, 2023-04-18 17:15:10,886, Minutely CMU Module Fail오류:  "wire" 칼럼은 "minutely_asset" 릴레이션(relation)에 없음
+LINE 18:                     nvidia_smi, online, wire, asset_collecti...
+                                                 ^
+
