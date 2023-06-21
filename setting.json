@@ -91,7 +91,8 @@
             "COMMON" : "596",
             "IDLE" : "597",
             "VUL" : "4356",
-            "DISCOVER" : "2"
+            "DISCOVER" : "2",
+            "CERTIFICATE" : "598"
           }
         },
         "DB" : {

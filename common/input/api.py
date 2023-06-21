@@ -26,7 +26,7 @@ def top_donut() :
             id
             computerID
             sensorReadings(
-              sensors: [{name: "Computer Name"},{name: "Computer ID"},{name:"Disk Used Percentage#2"},{name:"Memory Consumption#2"},{name:"CPU Consumption#2"},{name:"OS Platform"},{name:"Is Virtual#3"},{name:"wired/wireless 2"}]
+              sensors: [{name: "Computer Name"},{name: "Computer ID"},{name:"Disk Used Percentage#3"},{name:"Memory Consumption#2"},{name:"CPU Consumption#2"},{name:"OS Platform"},{name:"Is Virtual#3"},{name:"wired/wireless 2"}]
             ) {
               columns {
                 name
