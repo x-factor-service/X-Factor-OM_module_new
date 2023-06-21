@@ -82,14 +82,15 @@
           "URL": "https://192.168.5.100",
           "PATH": {
             "SessionKey": "/api/v2/session/login",
-            "Sensor": "/api/v2/result_data/saved_question/"
+            "Sensor": "/api/v2/result_data/saved_question/",
+            "Connect": "/plugin/products/connect/v1/connections/"
           },
           "username": "administrator",
           "password": "xion123!",
           "SensorID": {
             "COMMON" : "455",
             "VUL" : "4356",
-            "DISCOVER" : ""
+            "DISCOVER" : "2"
           }
         },
         "DB" : {

@@ -3,6 +3,7 @@ import importlib
 import json
 from common.core.transform import  transform_pieData, transform_donutData
 from common.output.db import plug_in as outputDb
+from common.module.Input.DiscoverInput import plug_in as DisInput
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 with open("setting.json", encoding="UTF-8") as f:
@@ -37,6 +38,14 @@ def minutely_plug_in():
     # -----------------------------상단 물리/가상 파이차트 ------------------------------------
     virtual_pieData = transform_pieData('Is Virtual#3')
     outputDb(virtual_pieData, 'minutely')
+
+
+    # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
+    DisInput()
+
+
+
+
 
     try:
         from CSPM.CORE.Dashboard import minutely_plug_in as CSPM_minutely_plug_in
