@@ -87,7 +87,8 @@
           "username": "administrator",
           "password": "xion123!",
           "SensorID": {
-            "COMMON" : "455",
+            "COMMON" : "596",
+            "IDLE" : "597",
             "VUL" : "4356",
             "DISCOVER" : ""
           }
@@ -105,7 +106,8 @@
               "MSL" : "minutely_statistics_list",
               "DSL" : "daily_statistics_list",
               "MS" : "minutely_statistics",
-              "DS" : "daily_statistics"
+              "DS" : "daily_statistics",
+              "IE" : "idle_asset"
             }
           }
         }
@@ -126,7 +128,8 @@
               "MS" : "minutely_statistics",
               "DS" : "daily_statistics",
               "VQ" : "vulnerability_list",
-              "VJ" : "vulnerability_judge"
+              "VJ" : "vulnerability_judge",
+              "IE" : "idle_asset"
             }
           }
         }
