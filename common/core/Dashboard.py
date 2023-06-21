@@ -5,9 +5,7 @@ from common.core.transform import  transform_pieData, transform_donutData
 from common.output.db import plug_in as outputDb
 from common.module.Input.DiscoverInput import plug_in as DisInput
 from common.module.Output.idleAssetOutput import plug_in as IdleOut
-
 from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
-
 from common.input.Session import plug_in as session
 from common.module.Input.idleAssetInput import plug_in_DB
 from common.module.Transform.CertificateDataframe import plug_in as CrtDF
