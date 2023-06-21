@@ -4,6 +4,14 @@ import json
 from common.core.transform import  transform_pieData, transform_donutData
 from common.output.db import plug_in as outputDb
 from common.module.Input.DiscoverInput import plug_in as DisInput
+from common.module.Output.idleAssetOutput import plug_in as IdleOut
+
+from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
+
+from common.input.Session import plug_in as session
+from common.module.Input.idleAssetInput import plug_in_DB
+
+# from common.module.Transform.IdleAssetDataframe import plug_in as idle
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 with open("setting.json", encoding="UTF-8") as f:
@@ -80,3 +88,11 @@ def daily_plug_in():
         SM_daily_plug_in()
     except (ImportError, NameError) :
         pass
+    # -----------------------------예상/유휴자산 ------------------------------------
+    # SK = session()
+    # a = idle(SK)
+    # pprint(a)
+    idleOutputData=IdleDF()
+    IdleOut(idleOutputData, 'asset')
+    idleInputData = plug_in_DB()
+    IdleOut(idleInputData, 'statistics')
