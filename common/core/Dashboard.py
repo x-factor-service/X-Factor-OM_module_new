@@ -20,7 +20,7 @@ STMOPODBPU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['OUTPUT']['DB']
 
 def minutely_plug_in():
     # ------------------------------상단 디스크 사용률 도넛 차트------------------------
-    disk_donutData = transform_donutData('Disk Used Percentage#2')
+    disk_donutData = transform_donutData('Disk Used Percentage#3')
     outputDb(disk_donutData, 'minutely')
     # -----------------------------상단 메모리 사용률 도넛 차트------------------------------
     memory_donutData = transform_donutData('Memory Consumption#2')
@@ -56,6 +56,12 @@ def minutely_plug_in():
 
 
 def daily_plug_in():
+    # -----------------------------인증서 목록  ------------------------------------
+    certificate_Data = CrtDF()
+    CrtOut(certificate_Data, 'list')
+    CrtOut(certificate_Data,'statistics')
+
+
     try:
         from CSPM.CORE.Dashboard import daily_plug_in as CSPM_daily_plug_in
         CSPM_daily_plug_in()

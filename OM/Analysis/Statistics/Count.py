@@ -18,7 +18,7 @@ def plug_in(data):
 
         for c in DATA_list:
         # for c in range(len(data.computer_id)):
-            if len(data['running_service'][c]) > 1:
+            if len(data['running_service'][c]) > 0:
                 running_service_count = len(data['running_service'][c])
             else:
                 if data['running_service']== 'unconfirmed' :
@@ -26,7 +26,7 @@ def plug_in(data):
                 else:
                     running_service_count = 1
 
-            if len(data['session_ip'][c][0]) > 1:
+            if len(data['session_ip'][c][0]) > 0:
                 session_ip_count = len(data['session_ip'][c][0])
 
             else:

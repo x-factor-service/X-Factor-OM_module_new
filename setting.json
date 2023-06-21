@@ -87,9 +87,10 @@
           "username": "administrator",
           "password": "xion123!",
           "SensorID": {
-            "COMMON" : "455",
+            "COMMON" : "596",
             "VUL" : "4356",
-            "DISCOVER" : ""
+            "DISCOVER" : "",
+            "CERTIFICATE" : "598"
           }
         },
         "DB" : {
