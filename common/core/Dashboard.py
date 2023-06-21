@@ -10,6 +10,8 @@ from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
 
 from common.input.Session import plug_in as session
 from common.module.Input.idleAssetInput import plug_in_DB
+from common.module.Transform.CertificateDataframe import plug_in as CrtDF
+from common.module.Output.CertificateOutput import plug_in as CrtOut
 
 # from common.module.Transform.IdleAssetDataframe import plug_in as idle
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)

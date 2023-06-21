@@ -131,7 +131,8 @@
               "DS" : "daily_statistics",
               "VQ" : "vulnerability_list",
               "VJ" : "vulnerability_judge",
-              "IE" : "idle_asset"
+              "IE" : "idle_asset",
+              "CRT": "certificate_asset"
             }
           }
         }
