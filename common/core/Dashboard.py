@@ -6,6 +6,8 @@ from common.output.db import plug_in as outputDb
 from common.module.Input.DiscoverInput import plug_in as DisInput
 from common.module.Output.idleAssetOutput import plug_in as IdleOut
 from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
+from common.module.Transform.SbomDataframe import plug_in as SbomDF
+from common.module.Output.SBOMOutput import plug_in as SbomOut
 from common.input.Session import plug_in as session
 from common.module.Input.idleAssetInput import plug_in_DB
 from common.module.Transform.CertificateDataframe import plug_in as CrtDF
@@ -51,6 +53,9 @@ def minutely_plug_in():
     # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
     DisInput()
 
+    # ------------------------------------- SBOM -----------------------------------------
+    sbomOutputData = SbomDF()
+    SbomOut(sbomOutputData, 'sbom_list')
 
 
 
@@ -102,3 +107,4 @@ def daily_plug_in():
     IdleOut(idleOutputData, 'asset')
     idleInputData = plug_in_DB()
     IdleOut(idleInputData, 'statistics')
+

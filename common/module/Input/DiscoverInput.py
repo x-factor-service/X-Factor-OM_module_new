@@ -34,7 +34,7 @@ def plug_in():
             logger.info('Sensor ID: ' + str(DISCOVER_RUN_ID))
             if source_row_count != 0:
                 break
-        #print(DISCOVER_RESULT)
+        # print(DISCOVER_RESULT)
         return DISCOVER_RESULT
 
     except:
