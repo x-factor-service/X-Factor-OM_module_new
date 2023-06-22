@@ -3,7 +3,8 @@ import importlib
 import json
 from common.core.transform import  transform_pieData, transform_donutData
 from common.output.db import plug_in as outputDb
-from common.module.Input.DiscoverInput import plug_in as DisInput
+from common.module.Input.DiscoverInput import plug_in as disInput
+from common.module.Output.DiscoverOutput import plug_in as disOut
 from common.module.Output.idleAssetOutput import plug_in as IdleOut
 from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
 from common.input.Session import plug_in as session
@@ -48,8 +49,7 @@ def minutely_plug_in():
     outputDb(virtual_pieData, 'minutely')
 
 
-    # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
-    DisInput()
+
 
 
 
@@ -102,3 +102,7 @@ def daily_plug_in():
     IdleOut(idleOutputData, 'asset')
     idleInputData = plug_in_DB()
     IdleOut(idleInputData, 'statistics')
+
+    # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
+    disOriginData = disInput()
+    disOut(disOriginData)

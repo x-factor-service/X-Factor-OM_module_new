@@ -24,3 +24,10 @@ def transform_pieData(sensorName):
             item_count = count
             transformPieData.append([statistics_unique, classification, item, item_count])
     return transformPieData
+
+def transform_disLineData(data):
+    transformDisLineData = []
+    classification = 'discover_unmanaged'
+    item = 'count'
+    item_count = data
+    transformDisLineData.append([classification, item, item_count])

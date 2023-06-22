@@ -27,17 +27,16 @@ def plug_in():
 
         while True:
             DISCOVER_GET = requests.get(DISCOVER_GET_URL, headers=SESSION_KEY, verify=False)
-            DISCOVER_RESULT = DISCOVER_GET.content.decode('utf-8')
-            source_row_count = json.loads(DISCOVER_RESULT)['sourceRowCount']
+            DISCOVER_VALUE = DISCOVER_GET.content.decode('utf-8')
+            source_row_count = json.loads(DISCOVER_VALUE)['sourceRowCount']
 
             logger.info('Tanium API Sensor 호출 성공')
             logger.info('Sensor ID: ' + str(DISCOVER_RUN_ID))
             if source_row_count != 0:
                 break
-        #print(DISCOVER_RESULT)
+        DISCOVER_RESULT = str(json.loads(DISCOVER_VALUE)['sourceRowCount'])
         return DISCOVER_RESULT
 
     except:
         logger.warning('Tanium API Sensor 호출 Error 발생')
         logger.warning('Sensor ID : ' + str(DISCOVER_ID))
-
