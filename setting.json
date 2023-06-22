@@ -92,7 +92,8 @@
             "IDLE" : "597",
             "VUL" : "4356",
             "DISCOVER" : "2",
-            "CERTIFICATE" : "598"
+            "CERTIFICATE" : "598",
+            "SBOM" : "666"
           }
         },
         "DB" : {
@@ -109,7 +110,8 @@
               "DSL" : "daily_statistics_list",
               "MS" : "minutely_statistics",
               "DS" : "daily_statistics",
-              "IE" : "idle_asset"
+              "IE" : "idle_asset",
+              "SL" : "sbom_list"
             }
           }
         }
@@ -132,7 +134,8 @@
               "VQ" : "vulnerability_list",
               "VJ" : "vulnerability_judge",
               "IE" : "idle_asset",
-              "CRT": "certificate_asset"
+              "CRT": "certificate_asset",
+              "SL" : "sbom_list"
             }
           }
         }

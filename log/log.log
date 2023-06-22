@@ -7912,3 +7912,51 @@ WARNING, 2023-06-07 14:40:16,976, Minutely CMU module Fail'core'
 WARNING, 2023-06-07 14:45:16,362, Minutely CMU module Fail'core'
 WARNING, 2023-06-07 17:42:06,421, Tanium API Sensor 호출 Error 발생
 WARNING, 2023-06-07 17:42:06,422, Sensor ID : 455
+WARNING, 2023-06-21 10:12:30,924, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-06-21 10:12:30,924, Sensor ID : 2
+WARNING, 2023-06-21 10:20:17,619, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-06-21 10:20:17,620, Sensor ID : 2
+WARNING, 2023-06-21 10:25:17,223, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-06-21 10:25:17,224, Sensor ID : 2
+WARNING, 2023-06-21 10:30:16,816, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-06-21 10:30:16,817, Sensor ID : 2
+WARNING, 2023-06-21 10:35:16,512, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-06-21 10:35:16,512, Sensor ID : 2
+WARNING, 2023-06-21 13:48:52,974, Idleasset Table INSERT connection 실패
+WARNING, 2023-06-21 13:48:52,975, Error : 'SL'
+WARNING, 2023-06-21 13:50:27,581, Idleasset Table INSERT connection 실패
+WARNING, 2023-06-21 13:50:27,582, Error : 'SL'
+WARNING, 2023-06-21 13:53:11,792, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 13:53:11,792, Error : 'SL'
+WARNING, 2023-06-21 13:53:56,946, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 13:53:56,947, Error : 'SL'
+WARNING, 2023-06-21 13:56:17,066, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 13:56:17,067, Error : 'SL'
+WARNING, 2023-06-21 14:05:39,842, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:05:39,843, Error : 'SL'
+WARNING, 2023-06-21 14:07:34,630, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:07:34,631, Error : 'SL'
+WARNING, 2023-06-21 14:12:17,416, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:12:17,416, Error : 'SL'
+WARNING, 2023-06-21 14:28:48,823, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:28:48,823, Error : 'SL'
+WARNING, 2023-06-21 14:29:58,050, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:29:58,051, Error : 'SL'
+WARNING, 2023-06-21 14:33:00,329, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:33:00,330, Error : 'SL'
+WARNING, 2023-06-21 14:33:26,150, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:33:26,150, Error : 'SL'
+WARNING, 2023-06-21 14:35:12,858, Tanium API Sensor 호출 Error 발생
+WARNING, 2023-06-21 14:35:12,859, Sensor ID : 2
+WARNING, 2023-06-21 14:35:13,387, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:35:13,388, Error : 'SL'
+WARNING, 2023-06-21 14:43:46,433, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:43:46,433, Error : 'SL'
+WARNING, 2023-06-21 14:44:54,033, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:44:54,034, Error : 'SL'
+WARNING, 2023-06-21 14:46:38,757, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:46:38,757, Error : 'SL'
+WARNING, 2023-06-21 14:47:32,717, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:47:32,717, Error : 'SL'
+WARNING, 2023-06-21 14:48:38,981, sbom_list Table INSERT connection 실패
+WARNING, 2023-06-21 14:48:38,981, Error : 'SL'
