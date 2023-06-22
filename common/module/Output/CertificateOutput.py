@@ -60,7 +60,7 @@ def plug_in(data, type):
                 'crt_expire_date': CED
                 })
             DFG = DF.groupby(['crt_name','crt_expire_date']).size().reset_index(name='counts')
-            DFGS = DFG.sort_values(by='crt_expire_date', ascending=True).head(10)
+            DFGS = DFG.sort_values(by='crt_expire_date', ascending=True).head(20)
             IQ = """
                 INSERT INTO """ + DST + """ (
                    classification, item, item_count, statistics_collection_date

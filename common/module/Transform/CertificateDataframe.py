@@ -10,7 +10,7 @@ def plug_in() :
     DFC = [
         'computer_id', 'computer_name', 'os', 'ip', 'crt_name', 'crt_expire_date']
     for d in data:
-        if d[4][0]['text'] == '[no results]' or d[4][0]['text'] == '[current result unavailable]' :
+        if d[4][0]['text'] == '[no results]' or d[4][0]['text'] == '[current result unavailable]':
             pass
         else:
             for i in range(len(d[4])):
@@ -18,7 +18,10 @@ def plug_in() :
                 CN = d[1][0]['text']
                 OS = d[2][0]['text']
                 IP = d[3][0]['text']
-                CRTN = d[4][i]['text']
+                if d[4][i]['text']== 'Root ':
+                    continue
+                else :
+                    CRTN = d[4][i]['text']
                 CRTED = d[5][i]['text']
                 DFL.append([CI, CN, OS, IP, CRTN, CRTED])
         DF = pd.DataFrame(DFL, columns=DFC)
