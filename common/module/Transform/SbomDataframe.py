@@ -24,3 +24,4 @@ def plug_in():
     df = pd.DataFrame(df_data, columns=columns)
     pd.set_option('display.expand_frame_repr', False)
     return df
+
