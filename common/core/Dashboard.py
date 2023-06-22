@@ -50,10 +50,6 @@ def minutely_plug_in():
     virtual_pieData = transform_pieData('Is Virtual#3')
     outputDb(virtual_pieData, 'minutely')
 
-
-    # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
-    DisInput()
-
     # ------------------------------------- SBOM -----------------------------------------
     sbomOutputData = SbomDF()
     SbomOut(sbomOutputData, 'sbom_list')

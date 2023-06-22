@@ -38,7 +38,7 @@ def minutely_plug_in():                                                         
 
     # SOURCE
     if SOMIPAPIU == 'true':     # (Source Data MINUTELY input plug in API 사용 여부 확인 - 사용함.)
-        SK = CIATSPI() # Session Key (Tanium Sesstion Key 호출)
+        SK = CIATSPI() # Session Key (Tanium Session Key 호출)
         SDIPDL = CIATSCPI(SK, 'DSB')['dataList']                             # Source Data InPut Data List (Tanium API Sensor Data 호출)
     # input plug in 이 API 외의 것들 구현 예정
     SODDFT = CTDAAPI(SDIPDL, 'API')                                                         # Source Data Data Frame Transform (호출한 데이터를 Data Frame 형태로 변형)

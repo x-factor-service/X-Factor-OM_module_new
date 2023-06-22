@@ -21,7 +21,7 @@ def minutely() :
             print('\rminutely', end ="")
             print(now)
             CTMPI()
-            logger.info('Minutely CMU module Succesed!!')
+            logger.info('Minutely CMU module Succeeded!')
         else:
             logger.info('Tanium Minutely cycle 사용여부  : ' + CMU)
     except Exception as e:
@@ -36,7 +36,7 @@ def daily():
             print('\rdaily', end ="")
             print(now)
             CTDPI()
-            logger.info('Daily CDU module Succesed!!')
+            logger.info('Daily CDU module Succeeded!')
         else:
             logger.info('Tanium Daily cycle 사용여부  : ' + CDU)
     except Exception as e:
