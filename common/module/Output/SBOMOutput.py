@@ -15,7 +15,6 @@ def plug_in(data, type):
         DBNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['NAME']
         DBUNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['USER']
         DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
-        print("111111111111111")
         DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['SL']
 
         yesterday = (datetime.today() - timedelta(1)).strftime("%Y-%m-%d")

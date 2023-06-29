@@ -24,3 +24,21 @@ def plug_in():
     df = pd.DataFrame(df_data, columns=columns)
     pd.set_option('display.expand_frame_repr', False)
     return df
+
+
+#----------------전부쌓는로직------------------
+# def plug_in():
+#     SK = session()
+#     data = idle(SK)
+#     columns = [col["name"] for col in data["data"]["result_sets"][0]["columns"]]
+#     rows_data = data["data"]["result_sets"][0]["rows"]
+#     df_data = []
+#     for row in rows_data:
+#         row_data = []
+#         for item in row["data"]:
+#             values = [entry["text"] for entry in item]  # Extract all 'text' values from each item
+#             row_data.append(', '.join(values))  # Join the extracted values with ', '
+#         df_data.append(row_data)
+#     df = pd.DataFrame(df_data, columns=columns)
+#     pd.set_option('display.expand_frame_repr', False)
+#     return df

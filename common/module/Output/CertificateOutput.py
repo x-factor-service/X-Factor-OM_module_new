@@ -40,7 +40,7 @@ def plug_in(data, type):
                 CN = data.computer_name[i]
                 OS = data.os[i]
                 IPA = data.ip[i]
-                CRTN = data.crt_name[i]
+                CRTN = data.crt_name[i].strip()
                 CRTED = data.crt_expire_date[i]
                 dataList = CI, CN, OS, IPA, CRTN, CRTED
                 insertCur.execute(IQ, (dataList))
