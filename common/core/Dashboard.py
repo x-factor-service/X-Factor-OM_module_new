@@ -1,20 +1,20 @@
 import urllib3
-import importlib
 import json
 from common.core.transform import  transform_pieData, transform_donutData
 from common.output.db import plug_in as outputDb
 from common.module.Input.DiscoverInput import plug_in as disInput
+from common.input.Session import plug_in as session
+from common.module.Input.HighCpuProcInput import plug_in as highCpuProcInput
 from common.module.Output.DiscoverOutput import plug_in as disOut
 from common.module.Output.idleAssetOutput import plug_in as IdleOut
 from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
 from common.module.Transform.SbomDataframe import plug_in as SbomDF
+from common.module.Transform.HighCpuProcTransform import plug_in as highCpuProc_transform
 from common.module.Output.SBOMOutput import plug_in as SbomOut
-from common.input.Session import plug_in as session
 from common.module.Input.idleAssetInput import plug_in_DB
 from common.module.Transform.CertificateDataframe import plug_in as CrtDF
 from common.module.Output.CertificateOutput import plug_in as CrtOut
-
-# from common.module.Transform.IdleAssetDataframe import plug_in as idle
+from common.module.Output.HighCpuProcOutput import plug_in as highCpuProcOutput
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 with open("setting.json", encoding="UTF-8") as f:
@@ -26,7 +26,7 @@ STCU = SETTING['CORE']['Tanium']['STATISTICS']['COLLECTIONUSE'].lower()  # (통�
 STMIPIDBPU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['INPUT']['DB']['PS'].lower()  # (통계 Data MINUTELY input plug in postgresql DB 사용 여부 설정)
 STMTPIU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['Transform'].lower()  # (통계 Data MINUTELY Transform(preprocessing) plug in 사용 여부 설정)
 STMOPODBPU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['OUTPUT']['DB']['PS'].lower()  # (통계 Data MINUTELY Output plug in postgresql DB 사용 여부 설정)
-
+SK = session()
 
 
 
@@ -54,11 +54,13 @@ def minutely_plug_in():
     sbomOutputData = SbomDF()
     SbomOut(sbomOutputData, 'sbom_list')
 
-
-
+    # ------------------------------------- 하단 최대 CPU 프로세스 --------------------------
+    highCpuProcessInputData = highCpuProcInput(SK)
+    highCpuProcDF = highCpuProc_transform(highCpuProcessInputData)
+    highCpuProcOutput(highCpuProcDF)
 
     try:
-        from CSPM.CORE.Dashboard import minutely_plug_in as CSPM_minutely_plug_in
+        from CSPM.CORE.Dashboard import minutely_plug_in as CSPM_minutzely_plug_in
         CSPM_minutely_plug_in()
     except (ImportError, NameError):
         pass
@@ -78,7 +80,7 @@ def daily_plug_in():
     # -----------------------------인증서 목록  ------------------------------------
     certificate_Data = CrtDF()
     CrtOut(certificate_Data, 'list')
-    CrtOut(certificate_Data,'statistics')
+    CrtOut(certificate_Data, 'statistics')
 
 
     try:

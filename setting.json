@@ -93,7 +93,8 @@
             "VUL" : "4356",
             "DISCOVER" : "2",
             "CERTIFICATE" : "598",
-            "SBOM" : "666"
+            "SBOM" : "666",
+            "HIGHCPUPROC" : "711"
           }
         },
         "DB" : {
@@ -135,7 +136,8 @@
               "VJ" : "vulnerability_judge",
               "IE" : "idle_asset",
               "CRT": "certificate_asset",
-              "SL" : "sbom_list"
+              "SL" : "sbom_list",
+              "HP" : "high_cpu_proc"
             }
           }
         }
