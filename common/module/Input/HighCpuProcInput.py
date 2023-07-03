@@ -1,7 +1,7 @@
 import requests
 import json
 import logging
-
+from common.input.Session import plug_in as session
 with open("setting.json", encoding="UTF-8") as f:
     SETTING = json.loads(f.read())
 
@@ -11,11 +11,12 @@ CSP = SETTING['CORE']['Tanium']['INPUT']['API']['PATH']['Sensor']
 PROGRESS = SETTING['PROJECT']['PROGRESSBAR'].lower()
 
 
-def plug_in(sessionKey):
+def plug_in():
     logger = logging.getLogger(__name__)
     try:
+        SK = session()
         CSID = SETTING['CORE']['Tanium']['INPUT']['API']['SensorID']['HIGHCPUPROC']
-        CSH = {'session': sessionKey}
+        CSH = {'session': SK}
         CSU = APIURL + CSP + CSID
         CSR = requests.post(CSU, headers=CSH, verify=False)
         CSRT = CSR.content.decode('utf-8')

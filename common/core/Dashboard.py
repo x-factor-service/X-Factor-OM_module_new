@@ -3,7 +3,6 @@ import json
 from common.core.transform import  transform_pieData, transform_donutData
 from common.output.db import plug_in as outputDb
 from common.module.Input.DiscoverInput import plug_in as disInput
-from common.input.Session import plug_in as session
 from common.module.Input.HighCpuProcInput import plug_in as highCpuProcInput
 from common.module.Output.DiscoverOutput import plug_in as disOut
 from common.module.Output.idleAssetOutput import plug_in as IdleOut
@@ -26,7 +25,6 @@ STCU = SETTING['CORE']['Tanium']['STATISTICS']['COLLECTIONUSE'].lower()  # (통�
 STMIPIDBPU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['INPUT']['DB']['PS'].lower()  # (통계 Data MINUTELY input plug in postgresql DB 사용 여부 설정)
 STMTPIU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['Transform'].lower()  # (통계 Data MINUTELY Transform(preprocessing) plug in 사용 여부 설정)
 STMOPODBPU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['OUTPUT']['DB']['PS'].lower()  # (통계 Data MINUTELY Output plug in postgresql DB 사용 여부 설정)
-SK = session()
 
 
 
@@ -55,7 +53,7 @@ def minutely_plug_in():
     SbomOut(sbomOutputData, 'sbom_list')
 
     # ------------------------------------- 하단 최대 CPU 프로세스 --------------------------
-    highCpuProcessInputData = highCpuProcInput(SK)
+    highCpuProcessInputData = highCpuProcInput()
     highCpuProcDF = highCpuProc_transform(highCpuProcessInputData)
     highCpuProcOutput(highCpuProcDF)
 
@@ -99,9 +97,6 @@ def daily_plug_in():
     except (ImportError, NameError) :
         pass
     # -----------------------------예상/유휴자산 ------------------------------------
-    # SK = session()
-    # a = idle(SK)
-    # pprint(a)
     idleOutputData=IdleDF()
     IdleOut(idleOutputData, 'asset')
     idleInputData = plug_in_DB()
