@@ -353,7 +353,7 @@ def plug_in(data, dataType):
         logger.info('Preprocessing.py - ' + dataType + ' 성공')
         return DL
     except Exception as e:
-        logger.warning('Preprocessing_Dashboard.py - Error 발생')
+        logger.warning('Preprocessing_OM.py - Error 발생')
         logger.warning('Error : ' + str(e))
 
 

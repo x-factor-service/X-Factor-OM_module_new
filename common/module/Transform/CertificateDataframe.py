@@ -10,7 +10,7 @@ def plug_in() :
     DFC = [
         'computer_id', 'computer_name', 'os', 'ip', 'crt_name', 'crt_expire_date']
     for d in data:
-        if d[4][0]['text'] == '[no results]' or d[4][0]['text'] == '[current result unavailable]':
+        if d[4][0]['text'] == '[no results]' or d[4][0]['text'] == '[current result unavailable]' or d[4][0]['text'] == '[results currently unavailable]':
             pass
         else:
             for i in range(len(d[4])):

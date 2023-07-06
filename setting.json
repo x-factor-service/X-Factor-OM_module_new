@@ -88,13 +88,13 @@
           "username": "administrator",
           "password": "xion123!",
           "SensorID": {
-            "COMMON" : "596",
-            "IDLE" : "597",
+            "COMMON" : "800",
+            "IDLE" : "789",
             "VUL" : "4356",
-            "DISCOVER" : "2",
-            "CERTIFICATE" : "598",
-            "SBOM" : "666",
-            "HIGHCPUPROC" : "711"
+            "DISCOVER" : "1",
+            "CERTIFICATE" : "796",
+            "SBOM" : "794",
+            "HIGHCPUPROC" : "798"
           }
         },
         "DB" : {
