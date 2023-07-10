@@ -36,12 +36,14 @@ def plug_in(data, type):
             datalen = len(data.computer_id)
             DATA_list = range(datalen)
             for i in DATA_list:
+                CRTED = data.crt_expire_date[i]
+                if CRTED == "[results currently unavailable]":
+                    continue  # Skip this entry if the date is unavailable
                 CI = data.computer_id[i]
                 CN = data.computer_name[i]
                 OS = data.os[i]
                 IPA = data.ip[i]
                 CRTN = data.crt_name[i].strip()
-                CRTED = data.crt_expire_date[i]
                 dataList = CI, CN, OS, IPA, CRTN, CRTED
                 insertCur.execute(IQ, (dataList))
         elif type == 'statistics':
@@ -50,7 +52,10 @@ def plug_in(data, type):
             CN = []
             CED = []
             for i in DATA_list:
-                crt_expire_date = datetime.strptime(data.crt_expire_date[i], ' %m/%d/%Y %H')
+                crt_expire_date = data.crt_expire_date[i]
+                if crt_expire_date == "[results currently unavailable]":
+                    continue  # Skip this entry if the date is unavailable
+                crt_expire_date = datetime.strptime(crt_expire_date, ' %m/%d/%Y %H')
                 crt_expire_date_formatted = crt_expire_date.strftime('%Y/%m/%d')
                 if crt_expire_date_formatted > yesterday:
                     CN.append(data.crt_name[i])

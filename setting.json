@@ -94,7 +94,8 @@
             "DISCOVER" : "1",
             "CERTIFICATE" : "796",
             "SBOM" : "794",
-            "HIGHCPUPROC" : "798"
+            "HIGHCPUPROC" : "798",
+            "MAINCARD" : "893"
           }
         },
         "DB" : {
@@ -112,7 +113,8 @@
               "MS" : "minutely_statistics",
               "DS" : "daily_statistics",
               "IE" : "idle_asset",
-              "SL" : "sbom_list"
+              "SL" : "sbom_list",
+              "MC" : "main_card"
             }
           }
         }
@@ -137,7 +139,8 @@
               "IE" : "idle_asset",
               "CRT": "certificate_asset",
               "SL" : "sbom_list",
-              "HP" : "high_cpu_proc"
+              "HP" : "high_cpu_proc",
+              "MC" : "main_card"
             }
           }
         }
