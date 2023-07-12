@@ -4,11 +4,14 @@ from common.core.transform import  transform_pieData, transform_donutData
 from common.output.db import plug_in as outputDb
 from common.module.Input.DiscoverInput import plug_in as disInput
 from common.module.Input.HighCpuProcInput import plug_in as highCpuProcInput
+from common.module.Input.ReportInput import plug_in as reportInput
 from common.module.Output.DiscoverOutput import plug_in as disOut
 from common.module.Output.idleAssetOutput import plug_in as IdleOut
+from common.module.Output.ReportOutput import plug_in as reportOut
 from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
 from common.module.Transform.SbomDataframe import plug_in as SbomDF
 from common.module.Transform.HighCpuProcTransform import plug_in as highCpuProc_transform
+from common.module.Transform.ReportTransform import plug_in as report_transform
 from common.module.Output.SBOMOutput import plug_in as SbomOut
 from common.module.Input.idleAssetInput import plug_in_DB
 from common.module.Transform.CertificateDataframe import plug_in as CrtDF
@@ -73,7 +76,6 @@ def minutely_plug_in():
     except (ImportError, NameError) :
         pass
 
-
 def daily_plug_in():
     # -----------------------------인증서 목록  ------------------------------------
     certificate_Data = CrtDF()
@@ -105,3 +107,12 @@ def daily_plug_in():
     # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
     disOriginData = disInput()
     disOut(disOriginData)
+
+    # ----------------------------- 하단 OM Report -----------------------------------------
+    reportInputData = reportInput()
+    reportTransformDiscover = report_transform(reportInputData, 'DISCOVER_RESULT')
+    reportTransformIdle = report_transform(reportInputData, 'IDLE_RESULT')
+    reportTransformSubnetIsvm = report_transform(reportInputData, 'SUBNET_ISVM_RESULT')
+    reportOut(reportTransformDiscover, 'DISCOVER_RESULT')
+    reportOut(reportTransformIdle, 'IDLE_RESULT')
+    reportOut(reportTransformSubnetIsvm, 'SUBNET_ISVM_RESULT')
