@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 def main_cardDF(data):
     DFL = []
     DFC = ['computer_id', 'computer_name', 'disk_gb3', 'disk_used_space', 'disk_free_space', 'used_memory', 'total_memory', 'os_platform', 'wired', 'is_virtual', 'cpu_consumption']
@@ -90,3 +89,11 @@ def plug_in(data):
     WC = wired_counts(DF)
     VI = virtual_counts(DF)
     return DF, DU, MU, ON, WC, VI
+
+def daily_os(data):
+    counts = {}
+    for item in data:
+        count = counts.get(item[0], 0)
+        counts[item[0]] = count + 1
+    result = pd.DataFrame(list(counts.items()), columns=['Value', 'Count'])
+    return result

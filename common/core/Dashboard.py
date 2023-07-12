@@ -16,9 +16,9 @@ from common.module.Input.idleAssetInput import plug_in_DB
 from common.module.Transform.CertificateDataframe import plug_in as CrtDF
 from common.module.Output.CertificateOutput import plug_in as CrtOut
 from common.module.Output.HighCpuProcOutput import plug_in as highCpuProcOutput
-from common.module.Input.MainCardInput import plug_in as mcInput
-from common.module.Output.MainCardOutput import plug_in
-from common.module.Transform.MainCardDataframe import main_cardDF, disk_usage ,memory_usage, os_counts, wired_counts, virtual_counts
+from common.module.Input.MainCardInput import plug_in as mcInput, plug_in_DB as mcInputDB
+from common.module.Output.MainCardOutput import plug_in as mcOutput, plug_in_DB as mcOutputDB
+from common.module.Transform.MainCardDataframe import main_cardDF, disk_usage ,memory_usage, os_counts, wired_counts, virtual_counts, daily_os
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -51,10 +51,8 @@ def minutely_plug_in():
     ON = os_counts(maincardDF)
     WC = wired_counts(maincardDF)
     VI = virtual_counts(maincardDF)
-    plug_in(maincardDF, 'asset')  # asset data 처리
-    plug_in(None, 'statistics', DU, MU, ON, WC, VI)
-
-
+    mcOutput(maincardDF, 'asset')  # asset data 처리
+    mcOutput(None, 'statistics', DU, MU, ON, WC, VI)
 
     try:
         from CSPM.CORE.Dashboard import minutely_plug_in as CSPM_minutzely_plug_in
@@ -78,6 +76,25 @@ def daily_plug_in():
     CrtOut(certificate_Data, 'list')
     CrtOut(certificate_Data, 'statistics')
 
+    # -----------------------------예상/유휴자산 ------------------------------------
+    idleOutputData=IdleDF()
+    IdleOut(idleOutputData, 'asset')
+    idleInputData = plug_in_DB()
+    IdleOut(idleInputData, 'statistics')
+    # -----------------------------중앙 관리 라인차트 ----------------------------------
+    osOriginData = mcInputDB()
+    mcOutputDB(osOriginData)
+    # -----------------------------중앙 미관리 라인차트 ----------------------------------
+    disOriginData = disInput()
+    disOut(disOriginData)
+    # ----------------------------- 하단 OM Report -----------------------------------------
+    reportInputData = reportInput()
+    reportTransformDiscover = report_transform(reportInputData, 'DISCOVER_RESULT')
+    reportTransformIdle = report_transform(reportInputData, 'IDLE_RESULT')
+    reportTransformSubnetIsvm = report_transform(reportInputData, 'SUBNET_ISVM_RESULT')
+    reportOut(reportTransformDiscover, 'DISCOVER_RESULT')
+    reportOut(reportTransformIdle, 'IDLE_RESULT')
+    reportOut(reportTransformSubnetIsvm, 'SUBNET_ISVM_RESULT')
 
     try:
         from CSPM.CORE.Dashboard import daily_plug_in as CSPM_daily_plug_in
@@ -94,20 +111,3 @@ def daily_plug_in():
         SM_daily_plug_in()
     except (ImportError, NameError) :
         pass
-    # -----------------------------예상/유휴자산 ------------------------------------
-    idleOutputData=IdleDF()
-    IdleOut(idleOutputData, 'asset')
-    idleInputData = plug_in_DB()
-    IdleOut(idleInputData, 'statistics')
-    # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
-    disOriginData = disInput()
-    disOut(disOriginData)
-
-    # ----------------------------- 하단 OM Report -----------------------------------------
-    reportInputData = reportInput()
-    reportTransformDiscover = report_transform(reportInputData, 'DISCOVER_RESULT')
-    reportTransformIdle = report_transform(reportInputData, 'IDLE_RESULT')
-    reportTransformSubnetIsvm = report_transform(reportInputData, 'SUBNET_ISVM_RESULT')
-    reportOut(reportTransformDiscover, 'DISCOVER_RESULT')
-    reportOut(reportTransformIdle, 'IDLE_RESULT')
-    reportOut(reportTransformSubnetIsvm, 'SUBNET_ISVM_RESULT')

@@ -3,20 +3,19 @@ import psycopg2
 import json
 import logging
 
+logger = logging.getLogger(__name__)
+
+with open("setting.json", encoding="UTF-8") as f:
+    SETTING = json.loads(f.read())
+DBHOST = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['HOST']
+DBPORT = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PORT']
+DBNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['NAME']
+DBUNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['USER']
+DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
+DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['MC']
+MST = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['MS']
 
 def plug_in(data, type, disk_statistics=None, memory_statistics=None, os_counts=None, wired_counts=None,virtual_counts=None):
-    logger = logging.getLogger(__name__)
-
-    with open("setting.json", encoding="UTF-8") as f:
-        SETTING = json.loads(f.read())
-    DBHOST = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['HOST']
-    DBPORT = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PORT']
-    DBNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['NAME']
-    DBUNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['USER']
-    DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
-    DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['MC']
-    MST = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['MS']
-
     today = datetime.today().strftime("%Y-%m-%d %H:%M:%S")
     insertDate = datetime.today().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -67,7 +66,6 @@ def plug_in(data, type, disk_statistics=None, memory_statistics=None, os_counts=
 
     elif type == 'statistics':
         try:
-            # Disk usage data
             insertConn = psycopg2.connect(
                 'host={0} port={1} dbname={2} user={3} password={4}'.format(DBHOST, DBPORT, DBNM, DBUNM, DBPWD))
             insertCur = insertConn.cursor()
@@ -130,3 +128,39 @@ def plug_in(data, type, disk_statistics=None, memory_statistics=None, os_counts=
             logger.warning('maincard2 INSERT connection 실패')
             logger.warning('Error : ' + str(e))
 
+def plug_in_DB(data):
+    logger = logging.getLogger(__name__)
+    try:
+        with open("setting.json", encoding="UTF-8") as f:
+            SETTING = json.loads(f.read())
+        DBHOST = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['HOST']
+        DBPORT = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PORT']
+        DBNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['NAME']
+        DBUNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['USER']
+        DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
+        DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['DS']
+        yesterday = (datetime.today() - timedelta(1)).strftime("%Y-%m-%d")
+        insertDate = yesterday + " 23:59:59"
+        insertConn = psycopg2.connect(
+            'host={0} port={1} dbname={2} user={3} password={4}'.format(DBHOST, DBPORT, DBNM, DBUNM, DBPWD))
+        insertCur = insertConn.cursor()
+        IQ = """
+                    INSERT INTO """ + DBTNM + """ (
+                        classification,
+                        item,
+                        item_count,
+                        statistics_collection_date
+                    ) VALUES (
+                        %s, %s, %s, %s
+                    )
+                    """
+        classification = 'mainCard_os'
+        item = 'mainCard_os'
+        item_count = data
+        insertCur.execute(IQ, (classification, item, item_count, insertDate))
+        insertConn.commit()
+        insertConn.close()
+        logger.info('MainCardOutput.py - daily_statistics Table INSERT connection - ' + '성공')
+    except Exception as e:
+        logger.warning('MainCardOutput.py - daily_statistics Table INSERT connection 실패')
+        logger.warning('Error : ' + str(e))
