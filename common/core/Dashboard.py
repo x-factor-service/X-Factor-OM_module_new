@@ -1,7 +1,6 @@
 import urllib3
 import json
-from common.core.transform import  transform_pieData, transform_donutData
-from common.output.db import plug_in as outputDb
+
 from common.module.Input.DiscoverInput import plug_in as disInput
 from common.module.Input.HighCpuProcInput import plug_in as highCpuProcInput
 from common.module.Input.ReportInput import plug_in as reportInput
@@ -17,6 +16,10 @@ from common.module.Input.idleAssetInput import plug_in_DB
 from common.module.Transform.CertificateDataframe import plug_in as CrtDF
 from common.module.Output.CertificateOutput import plug_in as CrtOut
 from common.module.Output.HighCpuProcOutput import plug_in as highCpuProcOutput
+from common.module.Input.MainCardInput import plug_in as mcInput
+from common.module.Output.MainCardOutput import plug_in
+from common.module.Transform.MainCardDataframe import main_cardDF, disk_usage ,memory_usage, os_counts, wired_counts, virtual_counts
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 with open("setting.json", encoding="UTF-8") as f:
@@ -32,25 +35,6 @@ STMOPODBPU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['OUTPUT']['DB']
 
 
 def minutely_plug_in():
-    # ------------------------------상단 디스크 사용률 도넛 차트------------------------
-    disk_donutData = transform_donutData('Disk Used Percentage#3')
-    outputDb(disk_donutData, 'minutely')
-    # -----------------------------상단 메모리 사용률 도넛 차트------------------------------
-    memory_donutData = transform_donutData('Memory Consumption#2')
-    outputDb(memory_donutData, 'minutely')
-    # -----------------------------상단 씨피유 사용률 도넛 차트------------------------------
-    cpu_donutData = transform_donutData('CPU Consumption#2')
-    outputDb(cpu_donutData, 'minutely')
-    # -----------------------------상단 오에스 파이차트 ------------------------------------
-    os_pieData = transform_pieData('OS Platform')
-    outputDb(os_pieData, 'minutely')
-    # -----------------------------상단 유/무선(와이어) 파이차트 ------------------------------------
-    wire_pieData = transform_pieData('wired/wireless 2')
-    outputDb(wire_pieData, 'minutely')
-    # -----------------------------상단 물리/가상 파이차트 ------------------------------------
-    virtual_pieData = transform_pieData('Is Virtual#3')
-    outputDb(virtual_pieData, 'minutely')
-
     # ------------------------------------- SBOM -----------------------------------------
     sbomOutputData = SbomDF()
     SbomOut(sbomOutputData, 'sbom_list')
@@ -59,6 +43,18 @@ def minutely_plug_in():
     highCpuProcessInputData = highCpuProcInput()
     highCpuProcDF = highCpuProc_transform(highCpuProcessInputData)
     highCpuProcOutput(highCpuProcDF)
+    # ------------------- 상단 메인 카드 -----------------------
+    mainCardInputData = mcInput()
+    maincardDF = main_cardDF(mainCardInputData)
+    DU = disk_usage(maincardDF)
+    MU = memory_usage(maincardDF)
+    ON = os_counts(maincardDF)
+    WC = wired_counts(maincardDF)
+    VI = virtual_counts(maincardDF)
+    plug_in(maincardDF, 'asset')  # asset data 처리
+    plug_in(None, 'statistics', DU, MU, ON, WC, VI)
+
+
 
     try:
         from CSPM.CORE.Dashboard import minutely_plug_in as CSPM_minutzely_plug_in
@@ -103,7 +99,6 @@ def daily_plug_in():
     IdleOut(idleOutputData, 'asset')
     idleInputData = plug_in_DB()
     IdleOut(idleInputData, 'statistics')
-
     # -----------------------------중앙 관리/미관리 라인차트 ----------------------------------
     disOriginData = disInput()
     disOut(disOriginData)

@@ -24,7 +24,7 @@ def plug_in(data, dataType):
             pattern = re.compile('[A-Za-z]')
             CID = data['computer_id'][c]
             IANM = []
-            if not data['installed_applications_name'][c].startswith('{"[current') and not data['installed_applications_name'][c].startswith('{"TSE-Error') and not data['installed_applications_name'][c].startswith('{"Unknown') and not data['installed_applications_name'][c]== ' '   and not data['installed_applications_name'][c].startswith('[hash'):
+            if not data['installed_applications_name'][c].startswith('{"[current') and not data['installed_applications_name'][c].startswith('{"TSE-Error') and not data['installed_applications_name'][c].startswith('{"Unknown') and not data['installed_applications_name'][c]== ' '   and not data['installed_applications_name'][c].startswith('[hash') and not data['installed_applications_name'][c].startswith('[results'):
                 for d in data.installed_applications_name[c].replace('"', '').replace('{', '').replace('}', '').split('!'):
                     if d.startswith(','):
                         d = d.lstrip(',').replace('"','')
@@ -36,7 +36,7 @@ def plug_in(data, dataType):
                 IANM.append('unconfirmed')
 
 
-            if not data['running_service'][c].startswith('{"[current') and not data['running_service'][c].startswith('{"TSE-Error') and not data['running_service'][c].startswith('Unknown') and not data['running_service'][c] == ' '  and not data['running_service'][c].startswith('[hash'):
+            if not data['running_service'][c].startswith('{"[current') and not data['running_service'][c].startswith('{"TSE-Error') and not data['running_service'][c].startswith('Unknown') and not data['running_service'][c] == ' '  and not data['running_service'][c].startswith('[hash') and not data['running_service'][c].startswith('[results'):
                 if data['running_service'][c][1] == '"':
                     RS = data['running_service'][c].replace('"','').replace('{','').replace('}','').split(',')
                 else:
@@ -45,7 +45,7 @@ def plug_in(data, dataType):
                 RS= 'unconfirmed'
 
 
-            if not data['manufacturer'][c].startswith('[current') and not data['manufacturer'][c].startswith('TSE-Error') and not data['manufacturer'][c].startswith('Unknown') and not data['manufacturer'][c]== ' ' and not data['manufacturer'][c].startswith('[hash'):
+            if not data['manufacturer'][c].startswith('[current') and not data['manufacturer'][c].startswith('TSE-Error') and not data['manufacturer'][c].startswith('Unknown') and not data['manufacturer'][c]== ' ' and not data['manufacturer'][c].startswith('[hash') and not data['manufacturer'][c].startswith('[results'):
                 if data['manufacturer'][c] in ['HP', 'HPE']:
                     MF = 'HPE'
                 else:
@@ -57,7 +57,7 @@ def plug_in(data, dataType):
 
 
             # 세션ip 전처리 추가 예정(server별 session상위5개 ) 새로운 Sensor로 수정한부분
-            if not data['session_ip'][c].startswith('{"[current') and "TSE-Error" not in data['session_ip'][c] and not data['session_ip'][c].startswith('{"[Unknown') and not data['session_ip'][c] == ' ':
+            if not data['session_ip'][c].startswith('{"[current') and "TSE-Error" not in data['session_ip'][c] and not data['session_ip'][c].startswith('{"[Unknown') and not data['session_ip'][c] == ' ' and not data['session_ip'][c].startswith('[results'):
                 if data['session_ip'][c].startswith('{"[no result'):
                     SIP = ['no results']
                 elif data['session_ip'][c][2] == '(':
@@ -138,11 +138,11 @@ def plug_in(data, dataType):
 
             if dataType == 'minutely_daily_asset':
                 CNM = data['computer_name'][c]
-                if data['cup_details_cup_speed'][c] == '' or data['cup_details_cup_speed'][c].startswith('[current') or data['cup_details_cup_speed'][c].startswith('[hash'):
+                if data['cup_details_cup_speed'][c] == '' or data['cup_details_cup_speed'][c].startswith('[current') or data['cup_details_cup_speed'][c].startswith('[hash') and not data['cup_details_cup_speed'][c].startswith('[results'):
                     CDS = 'unconfirmed'
                 else:
                     CDS = data['cup_details_cup_speed'][c].split(' ')[0]
-                if not data['last_reboot'][c].startswith('[current') and not data['last_reboot'][c].startswith('TSE-Error') and not data['last_reboot'][c].startswith('Unknown') and not data['last_reboot'][c].startswith('[hash'):
+                if not data['last_reboot'][c].startswith('[current') and not data['last_reboot'][c].startswith('TSE-Error') and not data['last_reboot'][c].startswith('Unknown') and not data['last_reboot'][c].startswith('[hash') and not data['last_reboot'][c].startswith('[results'):
                     LR = datetime.strptime(data['last_reboot'][c].replace('-', '+').split(' +')[0], "%a, %d %b %Y %H:%M:%S")
                 else:
                     LR = 'unconfirmed'
@@ -151,7 +151,7 @@ def plug_in(data, dataType):
                 DTS_item = []
                 DTS_sum = 0
                 DTS_result = 0
-                if not data['disk_total_space'][c].startswith('{"[current') and not data['disk_total_space'][c].startswith('{"TSE-Error') and not data['disk_total_space'][c].startswith('{"Unknown') and not data['disk_total_space'][c].startswith('[hash'):
+                if not data['disk_total_space'][c].startswith('{"[current') and not data['disk_total_space'][c].startswith('{"TSE-Error') and not data['disk_total_space'][c].startswith('{"Unknown') and not data['disk_total_space'][c].startswith('[hash') and not data['disk_total_space'][c].startswith('[results'):
                     if data['disk_total_space'][c] == None:
                         data['disk_total_space'][c] = 0
                     else:
@@ -195,7 +195,7 @@ def plug_in(data, dataType):
                 DUS_item = []
                 DUS_sum = 0
                 DUS_result = 0
-                if not data['disk_used_space'][c].startswith('{"[current') and not data['disk_used_space'][c].startswith('{"TSE-Error') and not data['disk_used_space'][c].startswith('{"Unknown') and not data['disk_used_space'][c].startswith('[hash'):
+                if not data['disk_used_space'][c].startswith('{"[current') and not data['disk_used_space'][c].startswith('{"TSE-Error') and not data['disk_used_space'][c].startswith('{"Unknown') and not data['disk_used_space'][c].startswith('[hash') and not data['disk_used_space'][c].startswith('[results'):
                     if data['disk_used_space'][c] == None:
                         data['disk_used_space'][c] = 0
                     else:
@@ -235,73 +235,73 @@ def plug_in(data, dataType):
                 else:
                     DUS.append('unconfirmed')
 
-                if not data['os_platform'][c].startswith('[current') and not data['os_platform'][c].startswith('TSE-Error') and not data['os_platform'][c].startswith('Unknown')  and not data['os_platform'][c].startswith('[hash'):
+                if not data['os_platform'][c].startswith('[current') and not data['os_platform'][c].startswith('TSE-Error') and not data['os_platform'][c].startswith('Unknown')  and not data['os_platform'][c].startswith('[hash') and not data['os_platform'][c].startswith('[results'):
                     OP = data['os_platform'][c]
                 else:
                     OP = 'unconfirmed'
-                if not data['operating_system'][c].startswith('[current') and not data['operating_system'][c].startswith('TSE-Error') and not data['operating_system'][c].startswith('Unknown') and not data['operating_system'][c].startswith('[hash'):
+                if not data['operating_system'][c].startswith('[current') and not data['operating_system'][c].startswith('TSE-Error') and not data['operating_system'][c].startswith('Unknown') and not data['operating_system'][c].startswith('[hash') and not data['operating_system'][c].startswith('[results'):
                     OS = re.sub(r'\(core\)|\(Final\)', '', data['operating_system'][c])
                     OS = re.sub(r'(\.\d+)*', '', OS).strip()
                     #OS = data['operating_system'][c]
                 else:
                     OS = 'unconfirmed'
-                if not data['is_virtual'][c].startswith('[current') and not data['is_virtual'][c].startswith('TSE-Error') and not data['is_virtual'][c].startswith('Unknown') and not data['is_virtual'][c].startswith('[hash'):
+                if not data['is_virtual'][c].startswith('[current') and not data['is_virtual'][c].startswith('TSE-Error') and not data['is_virtual'][c].startswith('Unknown') and not data['is_virtual'][c].startswith('[hash')and not data['is_virtual'][c].startswith('[results'):
                     IV = data['is_virtual'][c]
                 else:
                     IV = 'unconfirmed'
-                if not data['chassis_type'][c].startswith('[current') and not data['chassis_type'][c].startswith('TSE-Error') and not data['chassis_type'][c].startswith('Unknown') and not data['chassis_type'][c].startswith('[hash'):
+                if not data['chassis_type'][c].startswith('[current') and not data['chassis_type'][c].startswith('TSE-Error') and not data['chassis_type'][c].startswith('Unknown') and not data['chassis_type'][c].startswith('[hash')and not data['chassis_type'][c].startswith('[results'):
                     CT = data['chassis_type'][c]
                 else:
                     CT = 'unconfirmed'
-                if not data['ipv_address'][c].startswith('[current') and not data['ipv_address'][c].startswith('TSE-Error') and not data['ipv_address'][c].startswith('Unknown') and not data['ipv_address'][c].startswith('[hash'):
+                if not data['ipv_address'][c].startswith('[current') and not data['ipv_address'][c].startswith('TSE-Error') and not data['ipv_address'][c].startswith('Unknown') and not data['ipv_address'][c].startswith('[hash') and not data['ipv_address'][c].startswith('[results'):
                     IPV = data['ipv_address'][c]
                 else:
                     IPV = 'unconfirmed'
 
-                if not data['today_listen_port_count'][c] == None and not data['today_listen_port_count'][c].startswith('[current') and not data['today_listen_port_count'][c].startswith('TSE-Error') and not data['today_listen_port_count'][c].startswith('Unknown') and not data['today_listen_port_count'][c].startswith('[hash'):
+                if not data['today_listen_port_count'][c] == None and not data['today_listen_port_count'][c].startswith('[current') and not data['today_listen_port_count'][c].startswith('TSE-Error') and not data['today_listen_port_count'][c].startswith('Unknown') and not data['today_listen_port_count'][c].startswith('[hash') and not data['today_listen_port_count'][c].startswith('[results'):
                     LPC = data['today_listen_port_count'][c]
                 else:
                     LPC = 'unconfirmed'
 
-                if not data['today_established_port_count'][c] == None and not data['today_established_port_count'][c].startswith('[current') and not data['today_established_port_count'][c].startswith('TSE-Error') and not data['today_established_port_count'][c].startswith('Unknown') and not data['today_established_port_count'][c].startswith('[hash'):
+                if not data['today_established_port_count'][c] == None and not data['today_established_port_count'][c].startswith('[current') and not data['today_established_port_count'][c].startswith('TSE-Error') and not data['today_established_port_count'][c].startswith('Unknown') and not data['today_established_port_count'][c].startswith('[hash') and not data['today_established_port_count'][c].startswith('[results'):
                     EPC = data['today_established_port_count'][c]
                 else:
                     EPC = 'unconfirmed'
 
-                if not data['yesterday_listen_port_count'][c] == None and not data['yesterday_listen_port_count'][c].startswith('[current') and not data['yesterday_listen_port_count'][c].startswith('TSE-Error') and not data['yesterday_listen_port_count'][c].startswith('Unknown') and not data['yesterday_listen_port_count'][c].startswith('[hash'):
+                if not data['yesterday_listen_port_count'][c] == None and not data['yesterday_listen_port_count'][c].startswith('[current') and not data['yesterday_listen_port_count'][c].startswith('TSE-Error') and not data['yesterday_listen_port_count'][c].startswith('Unknown') and not data['yesterday_listen_port_count'][c].startswith('[hash') and not data['yesterday_listen_port_count'][c].startswith('[results'):
                     YLPC = data['yesterday_listen_port_count'][c]
                 else:
                     YLPC = 'unconfirmed'
 
-                if not data['yesterday_established_port_count'][c] == None and not data['yesterday_established_port_count'][c].startswith('[current') and not data['yesterday_established_port_count'][c].startswith('TSE-Error') and not data['yesterday_established_port_count'][c].startswith('Unknown') and not data['yesterday_established_port_count'][c].startswith('[hash'):
+                if not data['yesterday_established_port_count'][c] == None and not data['yesterday_established_port_count'][c].startswith('[current') and not data['yesterday_established_port_count'][c].startswith('TSE-Error') and not data['yesterday_established_port_count'][c].startswith('Unknown') and not data['yesterday_established_port_count'][c].startswith('[hash') and not data['yesterday_established_port_count'][c].startswith('[results'):
                     YEPC = data['yesterday_established_port_count'][c]
                 else:
                     YEPC = 'unconfirmed'
 
-                if not data['ram_use_size'][c].startswith('[current') and not data['ram_use_size'][c].startswith('TSE-Error') and not data['ram_use_size'][c].startswith('Unknown') and not data['ram_use_size'][c].startswith('[hash'):
+                if not data['ram_use_size'][c].startswith('[current') and not data['ram_use_size'][c].startswith('TSE-Error') and not data['ram_use_size'][c].startswith('Unknown') and not data['ram_use_size'][c].startswith('[hash') and not data['ram_use_size'][c].startswith('[results'):
                     RUS = data['ram_use_size'][c].split(' ')[0]
                 else:
                     RUS = 'unconfirmed'
 
-                if not data['ram_total_size'][c].startswith('[current') and not data['ram_total_size'][c].startswith('TSE-Error') and not data['ram_total_size'][c].startswith('Unknown') and not data['ram_total_size'][c].startswith('[hash'):
+                if not data['ram_total_size'][c].startswith('[current') and not data['ram_total_size'][c].startswith('TSE-Error') and not data['ram_total_size'][c].startswith('Unknown') and not data['ram_total_size'][c].startswith('[hash') and not data['ram_total_size'][c].startswith('[results'):
                     RTS = data['ram_total_size'][c].split(' ')[0]
                 else:
                     RTS = 'unconfirmed'
 
-                if not data['cup_consumption'][c].startswith('[current') and not data['cup_consumption'][c].startswith('TSE-Error') and not data['cup_consumption'][c].startswith('[hash'):
+                if not data['cup_consumption'][c].startswith('[current') and not data['cup_consumption'][c].startswith('TSE-Error') and not data['cup_consumption'][c].startswith('[hash') and not data['cup_consumption'][c].startswith('[results'):
                     CPUC = float(data['cup_consumption'][c].split(' ')[0])
                 else:
                     CPUC = data['cup_consumption'][c]
 
                 if not data['online'][c].startswith('[current') and not data['online'][c].startswith(
-                        'TSE-Error') and not data['online'][c].startswith('Unknown') and not data['online'][c].startswith('[hash'):
+                        'TSE-Error') and not data['online'][c].startswith('Unknown') and not data['online'][c].startswith('[hash') and not data['online'][c].startswith('[results'):
                     OL = data['online'][c]
                 else:
                     OL = 'unconfirmed'
 
 
                 if not data['tanium_client_subnet'][c].startswith('[current') and not data['tanium_client_subnet'][c].startswith(
-                        'TSE-Error') and not data['tanium_client_subnet'][c].startswith('Unknown') and not data['tanium_client_subnet'][c].startswith('Can not determine') and not data['tanium_client_subnet'][c].startswith('[hash'):
+                        'TSE-Error') and not data['tanium_client_subnet'][c].startswith('Unknown') and not data['tanium_client_subnet'][c].startswith('Can not determine') and not data['tanium_client_subnet'][c].startswith('[hash') and not data['tanium_client_subnet'][c].startswith('[results'):
                     if '0.0.0.0' in data['tanium_client_subnet'][c]:
                         TCS = 'unconfirmed'
                     elif data['tanium_client_subnet'][c] == '192.168.0.0/20' or data['tanium_client_subnet'][c] == '172.18.112.0/21':
@@ -329,7 +329,7 @@ def plug_in(data, dataType):
 
                 NS= []
                 if data['nvidia_smi'][c].startswith('{"[current') or data['nvidia_smi'][c].startswith(
-                        '{"TSE-Error') or data['nvidia_smi'][c].startswith('{"[Unknown') or data['nvidia_smi'][c] == ' ' or data['nvidia_smi'][c].startswith('[hash'):
+                        '{"TSE-Error') or data['nvidia_smi'][c].startswith('{"[Unknown') or data['nvidia_smi'][c] == ' ' or data['nvidia_smi'][c].startswith('[hash') or data['nvidia_smi'][c].startswith('[no result'):
                     NS = 'unconfirmed'
                 elif data['nvidia_smi'][c].startswith('{"[no result'):
                     NS = 'no results'
