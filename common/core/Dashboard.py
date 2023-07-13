@@ -36,8 +36,10 @@ STMOPODBPU = SETTING['CORE']['Tanium']['STATISTICS']['MINUTELY']['OUTPUT']['DB']
 
 def minutely_plug_in():
     # ------------------------------------- SBOM -----------------------------------------
-    sbomOutputData = SbomDF()
+    sbomOutputData = SbomDF('list')
     SbomOut(sbomOutputData, 'sbom_list')
+    sbomOutputDataDetail = SbomDF('detail')
+    SbomOut(sbomOutputDataDetail, 'sbom_detail')
 
     # ------------------------------------- 하단 최대 CPU 프로세스 --------------------------
     highCpuProcessInputData = highCpuProcInput()
