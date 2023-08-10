@@ -58,7 +58,7 @@ def plug_in_DB() :
                     from  
                         """ + DBTNM + """ 
                     where 
-                        DATE(collection_date) < '"""+yesterday+"""'"""
+                        DATE(collection_date) >= '"""+yesterday+"""'"""
         selectCur.execute(SQ)
         selectRS = selectCur.fetchall()
         DL = []
