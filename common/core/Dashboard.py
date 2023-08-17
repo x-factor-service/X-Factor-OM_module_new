@@ -22,7 +22,7 @@ from common.module.Transform.MainCardDataframe import main_cardDF, disk_usage ,m
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-with open("setting.json", encoding="UTF-8") as f:
+with open("setting.json", encoding="UTF-8", errors="ignore") as f:
     SETTING = json.loads(f.read())
 SOMIPAPIU = SETTING['CORE']['Tanium']['SOURCE']['MINUTELY']['INPUT']['API'].lower()  # (Source Data MINUTELY input plug in API 사용 여부 설정)
 SOMTPIU = SETTING['CORE']['Tanium']['SOURCE']['MINUTELY']['Transform'].lower()  # (Source Data MINUTELY Transform(preprocessing) plug in 사용 여부 설정)

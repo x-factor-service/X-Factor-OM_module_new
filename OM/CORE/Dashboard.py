@@ -21,6 +21,8 @@ from OM.Analysis.Statistics.Count import plug_in as CASCOPI
 from OM.Output.DB.AssetOrgOutput import plug_in as CODBPTAOPI
 from OM.Output.DB.StatisticsListOutput import plug_in as CODBPTSLPI
 from OM.Output.DB.StatisticsOutput import plug_in as CODBPTAPI
+from OM.Output.DB.StatisticsOutput import delete as CODBPD
+from OM.Output.DB.StatisticsOutput import session_ip_select as CODBPS
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -139,12 +141,15 @@ def minutely_plug_in():                                                         
         ONAGBC = CASGBCPI(IPMALSDDFT, 'online_asset','')                                    # 서버전체수량 Statistic Table 적재
         WIREGBC = CASGBCPI(IPMALSDDFT, 'wire', 'WIRE')
 
-        MSTD = OSGBS + OSVGBS + IVGBS + CTGBS + LPCGBS + EPCGBS + IAGBS + RSGBS + LRBGBS + DUSGBS + RUSGBS + CPUGBS + GRUGBS + GCUGBS + GLPCGBS + GEPCGBS + GRSCGBS + GRPLRGBS + GDUSGBS + GLOTGBS + GSCGBS + ONGBS + MFGBS + GPUCGBS + SIPGBS + ONAGBC + WIREGBC # Minutely Statistics Total Data (minutely_statistics Table에 넣을 모든 통계데이터)
+        MSTD = OSGBS + OSVGBS + IVGBS + CTGBS + LPCGBS + EPCGBS + IAGBS + RSGBS + LRBGBS + DUSGBS + RUSGBS + CPUGBS + GRUGBS + GCUGBS + GLPCGBS + GEPCGBS + GRSCGBS + GRPLRGBS + GDUSGBS + GLOTGBS + GSCGBS + ONGBS + MFGBS + GPUCGBS + ONAGBC + WIREGBC # Minutely Statistics Total Data (minutely_statistics Table에 넣을 모든 통계데이터)
         SDDFT = CTDSAPI(MSTD, 'DB', 'minutely_statistics')                                  # Statistics Data Data Frame Transform (Statistics 데이터를 Data Frame 형태로 변형)
+        SDDFTJ = CTDSAPI(SIPGBS, 'DB', 'minutely_statistics_session_ip')                    # session ip 테이블 분리
 
         if STMOPODBPU == 'true':                                                            # (통계 Data MINUTELY Output plug in postgresql DB 사용 여부 확인 - 사용함.)
             CODBPTAPI(SDDFT, 'minutely')
-
+            CODBPD('minutely_sessionIP_delete')
+            CODBPTAPI(SDDFTJ, 'minutely_session_ip')
+            CODBPS()
 
 def daily_plug_in():                                                                        # 변수 명 Full Name : Full Name에서 대문자로 명시한 것들을 뽑아서 사용 (괄호 안의 내용은 설명)
     CSMDL = CIDBPTAOPI('minutely_asset_all')                                                # common Sensor Minutely Data List (Module로 DB에 수집한 데이터 호출 : minutely_asset Table )
@@ -158,6 +163,10 @@ def daily_plug_in():                                                            
     MSIPDL = CIDBPTSPI('minutely')                                                          # InPut Data List (Module로 DB에 수집한 데이터 호출 : minutely_statistics Table)
     MSDFT = CTDSPPI(MSIPDL, 'DB', 'minutely_statistics', '')                                # Data Frame Transform (호출한 데이터를 Data Frame 형태로 변형)
     CODBPTAPI(MSDFT, 'daily')                                                               # (daily_statistics Table에 수집)
+
+    CODBPD('minutely_delete')
+    CODBPD('daily_delete')
+
 
 
 

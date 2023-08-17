@@ -7,7 +7,7 @@ from tqdm import tqdm
 def plug_in(data, cycle) :
     logger = logging.getLogger(__name__)
     try :
-        with open("setting.json", encoding="UTF-8") as f:
+        with open("setting.json", encoding="UTF-8", errors='ignore') as f:
             SETTING = json.loads(f.read())
         DBHOST = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['HOST']
         DBPORT = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PORT']

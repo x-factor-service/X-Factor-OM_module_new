@@ -18,6 +18,9 @@ def plug_in(data, inputPlugin, dataType) :
                        'ram_use_size', 'ram_total_size', 'cup_details_cup_speed', 'disk_used_space', 'disk_total_space', 'wire']
             elif dataType == 'minutely_statistics' :
                 DFC = ['minutely_statistics_unique', 'classification', 'item', 'item_count']
+
+            elif dataType == 'minutely_statistics_session_ip' :
+                DFC = ['minutely_statistics_session_ip_unique', 'classification', 'item', 'item_count']
             DFL = []
 
             if PROGRESS == 'true' :
@@ -61,6 +64,13 @@ def plug_in(data, inputPlugin, dataType) :
                     item = d[2]
                     IC = d[3]
                     DFL.append([MSU, classification, item, IC])
+                elif dataType == 'minutely_statistics_session_ip':
+                    MSU = d[0]
+                    classification = d[1]
+                    item = d[2]
+                    IC = d[3]
+                    DFL.append([MSU, classification, item, IC])
+
         DF = pd.DataFrame(DFL, columns=DFC)
         logger.info('Statistics/AllAsset.py -  ' + inputPlugin+'/'+dataType+ ' 성공')
         return DF

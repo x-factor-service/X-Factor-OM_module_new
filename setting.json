@@ -145,7 +145,8 @@
               "SD" : "sbom_detail",
               "HP" : "high_cpu_proc",
               "RP" : "report_statistics",
-              "MC" : "main_card"
+              "MC" : "main_card",
+              "MSSI" : "minutely_statistics_session_ip"
             }
           }
         }
