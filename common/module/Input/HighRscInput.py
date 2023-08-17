@@ -15,11 +15,11 @@ def plug_in():
     logger = logging.getLogger(__name__)
     try:
         SK = session()
-        CSID = SETTING['CORE']['Tanium']['INPUT']['API']['SensorID']['HIGHCPUPROC']
+        CSID = SETTING['CORE']['Tanium']['INPUT']['API']['SensorID']['HIGH_RSC']
         CSH = {'session': SK}
         CSU = APIURL + CSP + CSID
         CSR = requests.post(CSU, headers=CSH, verify=False)
-        CSRT = CSR.content.decode('utf-8')
+        CSRT = CSR.content.decode('utf-8', errors='ignore')
         CSRJ = json.loads(CSRT)
         CSRJD = CSRJ['data']
         dataList = []

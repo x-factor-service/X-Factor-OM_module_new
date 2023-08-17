@@ -95,7 +95,7 @@
             "CERTIFICATE" : "796",
             "SBOM" : "794",
             "SBOM_DETAIL" : "877",
-            "HIGHCPUPROC" : "798",
+            "HIGH_RSC" : "1132",
             "OM_REPORT" : "909",
             "MAINCARD" : "893"
           }
@@ -143,7 +143,7 @@
               "CRT": "certificate_asset",
               "SL" : "sbom_list",
               "SD" : "sbom_detail",
-              "HP" : "high_cpu_proc",
+              "HR" : "high_resource",
               "RP" : "report_statistics",
               "MC" : "main_card",
               "MSSI" : "minutely_statistics_session_ip"

@@ -21,13 +21,13 @@ def plug_in():
         SESSION_KEY = {'session': SK}
         DISCOVER_POST_URL = APIURL + CSP + DISCOVER_ID + '/runs/'
         DISCOVER_POST = requests.post(DISCOVER_POST_URL, headers=SESSION_KEY, verify=False)
-        DISCOVER_DECODE = DISCOVER_POST.content.decode('utf-8')
+        DISCOVER_DECODE = DISCOVER_POST.content.decode('utf-8', errors='ignore')
         DISCOVER_RUN_ID = json.loads(DISCOVER_DECODE)['id']
         DISCOVER_GET_URL = DISCOVER_POST_URL + str(DISCOVER_RUN_ID)
 
         while True:
             DISCOVER_GET = requests.get(DISCOVER_GET_URL, headers=SESSION_KEY, verify=False)
-            DISCOVER_VALUE = DISCOVER_GET.content.decode('utf-8')
+            DISCOVER_VALUE = DISCOVER_GET.content.decode('utf-8', errors='ignore')
             source_row_count = json.loads(DISCOVER_VALUE)['sourceRowCount']
 
             logger.info('Tanium API Sensor 호출 성공')

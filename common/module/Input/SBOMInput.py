@@ -26,7 +26,7 @@ def plug_in(sessionKey, type):
             CSU = APIURL + CSP + CSID
             CSR = requests.post(CSU, headers=CSH, verify=False)
             CSRC = CSR.status_code
-            CSRT = CSR.content.decode('utf-8')
+            CSRT = CSR.content.decode('utf-8', errors='ignore')
             CSRJ = json.loads(CSRT)
             # CSRJD = CSRJ['data']
             # dataList = []
@@ -39,7 +39,7 @@ def plug_in(sessionKey, type):
             CSU = APIURL + CSP + CSID
             CSR = requests.post(CSU, headers=CSH, verify=False)
             CSRC = CSR.status_code
-            CSRT = CSR.content.decode('utf-8')
+            CSRT = CSR.content.decode('utf-8', errors='ignore')
             CSRJ = json.loads(CSRT)
             CSRJD = CSRJ['data']
             dataList = []

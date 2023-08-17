@@ -31,13 +31,13 @@ def plug_in():
             DISCOVER_ID = SETTING['CORE']['Tanium']['INPUT']['API']['SensorID']['DISCOVER']
             DISCOVER_POST_URL = APIURL + CONNECT_CSP + DISCOVER_ID + '/runs/'
             DISCOVER_POST = requests.post(DISCOVER_POST_URL, headers=SK, verify=False)
-            DISCOVER_DECODE = DISCOVER_POST.content.decode('utf-8')
+            DISCOVER_DECODE = DISCOVER_POST.content.decode('utf-8', errors='ignore')
             DISCOVER_RUN_ID = json.loads(DISCOVER_DECODE)['id']
             DISCOVER_GET_URL = DISCOVER_POST_URL + str(DISCOVER_RUN_ID)
 
             while True:
                 DISCOVER_GET = requests.get(DISCOVER_GET_URL, headers=SK, verify=False)
-                DISCOVER_VALUE = DISCOVER_GET.content.decode('utf-8')
+                DISCOVER_VALUE = DISCOVER_GET.content.decode('utf-8', errors='ignore')
                 source_row_count = json.loads(DISCOVER_VALUE)['sourceRowCount']
 
                 logger.info('Tanium API Sensor 호출 성공')
@@ -73,7 +73,7 @@ def plug_in():
             ORID = SETTING['CORE']['Tanium']['INPUT']['API']['SensorID']['OM_REPORT']
             ORU = APIURL + SENSOR_CSP + ORID
             ORR = requests.post(ORU, headers=SK, verify=False)
-            ORRT = ORR.content.decode('utf-8')
+            ORRT = ORR.content.decode('utf-8', errors='ignore')
             SUBNET_ISVM_RESULT = json.loads(ORRT)
         except:
             logger.warning('Report OM SUBNET ISVM API Sensor 호출 Error 발생')

@@ -16,7 +16,7 @@ def plug_in() :
         SKURL = APIURL + SKP
         SKR = requests.post(SKURL, data=SKH, verify=False)
         SKRC = SKR.status_code
-        SKRT = SKR.content.decode('utf-8')
+        SKRT = SKR.content.decode('utf-8', errors='ignore')
         SKRJ = json.loads(SKRT)
         SK = SKRJ['data']['session']
         dataList = [SK]
