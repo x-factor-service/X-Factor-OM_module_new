@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 import psycopg2
 import json
 import logging
@@ -14,7 +14,7 @@ def plug_in(data):
         DBNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['NAME']
         DBUNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['USER']
         DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
-        DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['HP']
+        DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['HR']
 
         today = datetime.today().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -25,26 +25,28 @@ def plug_in(data):
             INSERT INTO """ + DBTNM + """ (
                 computer_id,
                 computer_name,
+                resource,
                 os,
                 ip,
-                proc_name,
+                task_name,
                 collection_date
             ) VALUES (
-                %s, %s, %s, %s, %s, '""" + today + """' ) """
+                %s, %s, %s, %s, %s, %s, '""" + today + """' ) """
         datalen = len(data.computer_id)
         DATA_list = range(datalen)
         for i in DATA_list:
             CI = data['computer_id'][i]
             CN = data['computer_name'][i]
+            RSC = data['resource'][i]
             OS = data['os'][i]
             IPA = data['ip'][i]
-            HCPN = data['proc_name'][i].strip()
-            dataList = CI, CN, OS, IPA, HCPN
+            TN = data['task_name'][i].strip()
+            dataList = CI, CN, RSC, OS, IPA, TN
             insertCur.execute(IQ, dataList)
         insertConn.commit()
         insertConn.close()
     except Exception as e:
-        logger.warning('high_cpu_proc Table INSERT connection 실패')
+        logger.warning('high_resource Table INSERT connection 실패')
         logger.warning('Error : ' + str(e))
 
 

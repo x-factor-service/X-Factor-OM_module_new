@@ -49,7 +49,6 @@ def parse_memory(memory_str):
         memory = None
     return memory
 
-
 def memory_usage(DF):
     memory_df = DF[['used_memory', 'total_memory']].copy()
     memory_df['used_memory'] = memory_df['used_memory'].apply(parse_memory)
@@ -68,8 +67,9 @@ def os_counts(DF):
     return os_counts_df
 
 def wired_counts(DF):
-    DF = DF[DF['wired'] != '[current result unavailable]']
-    wired_counts = DF['wired'].value_counts().reset_index()
+    mask = ~DF['wired'].str.contains('result|Error', case=False, na=False)
+    DF_filtered = DF[mask].copy()
+    wired_counts = DF_filtered['wired'].value_counts().reset_index()
     wired_counts.columns = ['wired', 'count']
     return wired_counts
 
@@ -80,6 +80,12 @@ def virtual_counts(DF):
     virtual_counts_df.columns = ['is_virtual', 'count']
     return virtual_counts_df
 
+def cpu_usage(DF):
+    mask = ~DF['cpu_consumption'].str.contains('result|Error', case=False, na=False)
+    DF_filtered = DF[mask].copy()
+    DF_filtered.loc[:, 'cpu_percentage'] = DF_filtered['cpu_consumption'].str.replace('%', '').astype(float)
+    cpu_usage_count = DF_filtered[DF_filtered['cpu_percentage'] >= 95].shape[0]
+    return cpu_usage_count
 
 def plug_in(data):
     DF = main_cardDF(data)
@@ -88,7 +94,8 @@ def plug_in(data):
     ON = os_counts(DF)
     WC = wired_counts(DF)
     VI = virtual_counts(DF)
-    return DF, DU, MU, ON, WC, VI
+    CPU_USAGE = cpu_usage(DF)
+    return DF, DU, MU, ON, WC, VI, CPU_USAGE
 
 def daily_os(data):
     counts = {}

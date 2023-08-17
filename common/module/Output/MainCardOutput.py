@@ -15,7 +15,7 @@ DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
 DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['MC']
 MST = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['MS']
 
-def plug_in(data, type, disk_statistics=None, memory_statistics=None, os_counts=None, wired_counts=None,virtual_counts=None):
+def plug_in(data, type, disk_statistics=None, memory_statistics=None, cpu_statistics=None, os_counts=None, wired_counts=None,virtual_counts=None):
     today = datetime.today().strftime("%Y-%m-%d %H:%M:%S")
     insertDate = datetime.today().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -96,6 +96,13 @@ def plug_in(data, type, disk_statistics=None, memory_statistics=None, os_counts=
             classification = 'memory_usage'
             item = 'memory95'
             item_count = int(memory_statistics)
+            insertCur.execute(IQ, (minutely_statistics_unique, classification, item, item_count))
+
+            # CPU usage data
+            minutely_statistics_unique = 'donut_cpu_95'
+            classification = 'cpu_usage'
+            item = 'cpu95'
+            item_count = int(cpu_statistics)
             insertCur.execute(IQ, (minutely_statistics_unique, classification, item, item_count))
 
             # OS counts data
