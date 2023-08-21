@@ -23,6 +23,8 @@ from OM.Output.DB.StatisticsListOutput import plug_in as CODBPTSLPI
 from OM.Output.DB.StatisticsOutput import plug_in as CODBPTAPI
 from OM.Output.DB.StatisticsOutput import delete as CODBPD
 from OM.Output.DB.StatisticsOutput import session_ip_select as CODBPS
+from OM.Transform.functionOM import om as OD
+from OM.Output.DB.OMoutput import plug_in as OOP
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -150,7 +152,7 @@ def minutely_plug_in():                                                         
             CODBPD('minutely_sessionIP_delete')
             CODBPTAPI(SDDFTJ, 'minutely_session_ip')
             CODBPS()
-
+            OOP(OD())
 def daily_plug_in():                                                                        # 변수 명 Full Name : Full Name에서 대문자로 명시한 것들을 뽑아서 사용 (괄호 안의 내용은 설명)
     CSMDL = CIDBPTAOPI('minutely_asset_all')                                                # common Sensor Minutely Data List (Module로 DB에 수집한 데이터 호출 : minutely_asset Table )
     MSDDFT = CTDAAPI(CSMDL, 'DB')                                                           # minutely Source Data Data Frame Transform (호출한 데이터를 Data Frame 형태로 변형)
