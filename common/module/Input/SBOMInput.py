@@ -56,7 +56,7 @@ def plug_in(sessionKey, type):
         logger.warning('Tanium API Sensor 호출 Error 발생')
         logger.warning('Sensor ID : ' + str(CSID))
 
-def plug_in_DB() :
+def plug_in_DB(type) :
     logger = logging.getLogger(__name__)
     try:
         with open("setting.json", encoding="UTF-8") as f:
@@ -66,25 +66,73 @@ def plug_in_DB() :
         DBNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['NAME']
         DBUNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['USER']
         DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
-        DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['IE']
+        DBLIST = SETTING['CORE']['Tanium']['INPUT']['DB']['PS']['TNM']['SL']
+        DBCVE = SETTING['CORE']['Tanium']['INPUT']['DB']['PS']['TNM']['CVE']
 
         yesterday = (datetime.today() - timedelta(1)).strftime("%Y-%m-%d")
         selectConn = psycopg2.connect(
             'host={0} port={1} dbname={2} user={3} password={4}'.format(DBHOST, DBPORT, DBNM, DBUNM, DBPWD))
         selectCur = selectConn.cursor()
-        SQ = """
-                    select 
-                        collection_date
-                    from  
-                        """ + DBTNM + """ 
-                    where 
-                        DATE(collection_date) < '"""+yesterday+"""'"""
+        if type == 'cve_in_sbom':
+            SQ = """
+                    SELECT 
+                        comp_name, 
+                        comp_ver, 
+                        cve_id, 
+                        score, 
+                        vuln_last_reported, 
+                        number, 
+                        note, 
+                        solution,
+                        COALESCE(
+                            (SELECT SUM(CAST(count AS INTEGER)) 
+                             FROM """ + DBLIST + """
+                             WHERE
+                             (
+                                 name ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%') 
+                                 OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%')
+                             )
+                             AND
+                             (
+                                 name ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%') 
+                                 OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%')
+                             )
+                            ), 0) as total_matching_count
+                    FROM """ + DBCVE + """
+                    WHERE EXISTS 
+                        (SELECT 1
+                         FROM """ + DBLIST + """
+                         WHERE
+                         (
+                             name ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%') 
+                             OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%')
+                         )
+                         AND
+                         (
+                             name ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%') 
+                             OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%')
+                         )
+                        )
+                """
+        if type == 'sbom_in_cve':
+            SQ = """
+                    SELECT name, version, cpe, type, count
+                    FROM """ + DBLIST + """
+                    WHERE EXISTS (
+                        SELECT 1
+                        FROM """ + DBCVE + """
+                        WHERE
+                        (
+                            (""" + DBLIST + """.name ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%') OR """ + DBLIST + """.version ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%'))
+                            AND
+                            (""" + DBLIST + """.name ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%') OR """ + DBLIST + """.version ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%'))
+                        )
+                    )
+                """
+
         selectCur.execute(SQ)
         selectRS = selectCur.fetchall()
-        DL = []
-        for row in selectRS:
-            DL.append(row)
-        return len(DL)
+        return selectRS
     except Exception as e:
-        logger.warning('Idleasset Table INSERT connection 실패')
+        logger.warning(type, 'Select connection 실패')
         logger.warning('Error : ' + str(e))

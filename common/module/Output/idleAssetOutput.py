@@ -51,7 +51,7 @@ def plug_in(data, type):
                     last_logged_in_date = excluded.last_logged_in_date,
                     collection_date = CASE 
                         WHEN (
-                            ABS(excluded.disk_total_used_space::integer - """ + DBTNM + """.disk_total_used_space::integer) >= 100 OR 
+                            ABS(excluded.disk_total_used_space::integer - """ + DBTNM + """.disk_total_used_space::integer) >= 100 AND 
                             """ + DBTNM + """.last_logged_in_date <> excluded.last_logged_in_date
                         ) THEN '""" + insertDate + """'
                         ELSE """ + DBTNM + """.collection_date

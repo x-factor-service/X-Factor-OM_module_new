@@ -49,6 +49,7 @@ def plug_in_DB() :
         DBTNM = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['IE']
 
         yesterday = (datetime.today() - timedelta(1)).strftime("%Y-%m-%d")
+        monthAgo = (datetime.today() - timedelta(30)).strftime("%Y-%m-%d")
         selectConn = psycopg2.connect(
             'host={0} port={1} dbname={2} user={3} password={4}'.format(DBHOST, DBPORT, DBNM, DBUNM, DBPWD))
         selectCur = selectConn.cursor()
@@ -58,7 +59,7 @@ def plug_in_DB() :
                     from  
                         """ + DBTNM + """ 
                     where 
-                        DATE(collection_date) >= '"""+yesterday+"""'"""
+                        DATE(collection_date) < '"""+monthAgo+"""'"""
         selectCur.execute(SQ)
         selectRS = selectCur.fetchall()
         DL = []

@@ -116,6 +116,7 @@
               "DS" : "daily_statistics",
               "IE" : "idle_asset",
               "SL" : "sbom_list",
+              "CVE": "sbom_cve",
               "SD" : "sbom_detail",
               "MC" : "main_card"
             }

@@ -45,3 +45,38 @@ def plug_in(type):
         df = pd.DataFrame(DFL, columns=columns)
     pd.set_option('display.expand_frame_repr', False)
     return df
+
+def plug_in_statistics(type, data):
+    df_list = []
+    if type == 'cve_in_sbom':
+        for row in data:
+            df_row = {}
+            df_row['minutely_statistics_unique'] = row[2]
+            df_row['classification'] = 'sbom_cve'
+            df_row['item'] = {
+                'comp_name': row[0],
+                'comp_ver': row[1],
+                'note': row[6],
+                'number': row[5],
+                'score': row[3],
+                'solution': row[7],
+                'vuln_last_reported': row[4]
+            }
+            df_row['count'] = row[8]
+            df_list.append(df_row)
+    if type == 'sbom_in_cve':
+        for row in data:
+            df_row = {}
+            df_row['minutely_statistics_unique'] = row[2]
+            df_row['classification'] = 'sbom_cpe'
+            df_row['item'] = {
+                'name': row[0],
+                'type': row[3],
+                'version': row[1]
+            }
+            df_row['count'] = row[4]
+            df_list.append(df_row)
+    df = pd.DataFrame(df_list)
+    #컬럼의 너비를 최대로 설정
+    #pd.set_option('display.max_colwidth', None)
+    return df

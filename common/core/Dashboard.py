@@ -8,9 +8,10 @@ from common.module.Output.DiscoverOutput import plug_in as disOut
 from common.module.Output.idleAssetOutput import plug_in as IdleOut
 from common.module.Output.ReportOutput import plug_in as reportOut
 from common.module.Transform.IdleAssetDataframe import plug_in as IdleDF
-from common.module.Transform.SbomDataframe import plug_in as SbomDF
+from common.module.Transform.SbomDataframe import plug_in as SbomDF, plug_in_statistics as SbomStatistics
 from common.module.Transform.HighRscTransform import plug_in as highRsc_transform
 from common.module.Transform.ReportTransform import plug_in as report_transform
+from common.module.Input.SBOMInput import plug_in_DB as SbomIn
 from common.module.Output.SBOMOutput import plug_in as SbomOut
 from common.module.Input.idleAssetInput import plug_in_DB
 from common.module.Transform.CertificateDataframe import plug_in as CrtDF
@@ -41,6 +42,14 @@ def minutely_plug_in():
     sbomOutputDataDetail = SbomDF('detail')
     SbomOut(sbomOutputDataDetail, 'sbom_detail')
 
+    cveStatisticsIn = SbomIn('cve_in_sbom')
+    cveStatisticsDF = SbomStatistics('cve_in_sbom', cveStatisticsIn)
+
+    sbomStatisticsIn = SbomIn('sbom_in_cve')
+    sbomStatisticsDF = SbomStatistics('sbom_in_cve', sbomStatisticsIn)
+
+    SbomOut(cveStatisticsDF, 'cve_statistics')
+    SbomOut(sbomStatisticsDF, 'sbom_statistics')
     # ------------------------------------- 최대 CPU/MEM 프로세스, DISK 어플리케이션 목록-------
     highRscInputData = highRscInput()
     highRscDF = highRsc_transform(highRscInputData)
