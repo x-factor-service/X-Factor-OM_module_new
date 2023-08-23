@@ -1,11 +1,24 @@
 {
   "PROJECT" : {
+    "CORE": "Tanium",
     "CUSTOMER" : "X-FACTOR",
     "TYPE" : "System",
     "LOG" : {
       "directory" : "log/",
       "fileName" : "log_",
       "fileFormat" : ".log"
+    },
+    "Alarm": {
+      "RamUsage": 60,
+      "Case": {
+        "First": "Drive Size No Change",
+        "Second": "No Login History",
+        "Third": "RAM Usage Exceeded",
+        "Fourth": "Listen Port No Change",
+        "Fifth": "Established Port No Change",
+        "Six": "CPU Consumption is Excess",
+        "Seven": "Running Process is Exceeded"
+      }
     },
     "PROGRESSBAR" : "False",
     "TEST" : {
@@ -107,6 +120,7 @@
             "NAME": "postgres",
             "USER": "postgres",
             "PWD": "psql",
+            "DBSelectTime": 11,
             "TNM": {
               "MA" : "minutely_asset",
               "DA": "daily_asset",
@@ -147,7 +161,8 @@
               "HR" : "high_resource",
               "RP" : "report_statistics",
               "MC" : "main_card",
-              "MSSI" : "minutely_statistics_session_ip"
+              "MSSI" : "minutely_statistics_session_ip",
+              "O" : "om"
             }
           }
         }
@@ -156,5 +171,24 @@
     "Zabbix" : {
 
     }
+  },
+  "FILE": {
+    "asset": {
+      "Storage": "data/asset/daily/",
+      "FileName": "Asset_",
+      "FileType": ".json"
+    },
+    "statistics": {
+      "Storage": "data/statistics/daily/",
+      "FileName": "Statistics_",
+      "FileType": ".json"
+    },
+    "RunningService_Except": {
+      "USE": "true",
+      "Location": "running services.xlsx"
+    }
+  },
+  "MODULE": {
+    "DataLoadingType": "DB"
   }
 }
