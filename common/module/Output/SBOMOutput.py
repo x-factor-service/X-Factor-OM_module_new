@@ -17,7 +17,7 @@ def plug_in(data, type):
         DBPWD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['PWD']
         DBTNML = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['SL']
         DBTNMD = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['SD']
-        DBMS = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['MS']
+        DBMS = SETTING['CORE']['Tanium']['OUTPUT']['DB']['PS']['TNM']['SS']
 
         yesterday = (datetime.today() - timedelta(1)).strftime("%Y-%m-%d")
         today = datetime.today().strftime("%Y-%m-%d")
@@ -79,40 +79,21 @@ def plug_in(data, type):
             insertCur.execute("DELETE FROM " + DBMS + " WHERE classification = 'sbom_cve'")
             for _, row in data.iterrows():
                 query = """
-                    INSERT INTO """ + DBMS + """ (minutely_statistics_unique, classification, item, item_count, statistics_collection_date) 
+                    INSERT INTO """ + DBMS + """ (sbom_statistics_unique, classification, item, item_count, statistics_collection_date) 
                     VALUES (%s, %s, %s, %s, %s)
                 """
-                insertCur.execute(query, (row['minutely_statistics_unique'], row['classification'], json.dumps(row['item'], ensure_ascii=False), row['count'], nowTime))
+                insertCur.execute(query, (row['sbom_statistics_unique'], row['classification'], json.dumps(row['item'], ensure_ascii=False), row['count'], nowTime))
         elif type == 'sbom_statistics':
             insertCur.execute("DELETE FROM " + DBMS + " WHERE classification = 'sbom_cpe'")
             for _, row in data.iterrows():
                 query = """
-                    INSERT INTO """ + DBMS + """ (minutely_statistics_unique, classification, item, item_count, statistics_collection_date) 
+                    INSERT INTO """ + DBMS + """ (sbom_statistics_unique, classification, item, item_count, statistics_collection_date) 
                     VALUES (%s, %s, %s, %s, %s)
                 """
-                insertCur.execute(query, (row['minutely_statistics_unique'], row['classification'], json.dumps(row['item'], ensure_ascii=False), row['count'], nowTime))
+                insertCur.execute(query, (row['sbom_statistics_unique'], row['classification'], json.dumps(row['item'], ensure_ascii=False), row['count'], nowTime))
         insertConn.commit()
         insertConn.close()
         logger.info('sbom statistics data INSERT connection - ' + '성공')
-    # elif type == 'statistics' :
-    #     IQ = """
-    #         INSERT INTO """ + DST + """ (
-    #             classification,
-    #             item,
-    #             item_count,
-    #             statistics_collection_date
-    #         ) VALUES (
-    #             %s, %s, %s, %s
-    #         )
-    #         """
-    #     classification = 'idle_asset'
-    #     item = 'collection_date'
-    #     item_count = data
-    #     #yesterday = (datetime.today() - timedelta(1)).strftime("%Y-%m-%d")
-    #     insertCur.execute(IQ, (classification, item, item_count, insertDate))
-    #     insertConn.commit()
-    #     insertConn.close()
-    #     logger.info('Idleasset Table INSERT connection - ' + '성공')
     except Exception as e:
         logger.warning(type + ' Table INSERT connection 실패')
         logger.warning('Error : ' + str(e))

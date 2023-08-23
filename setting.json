@@ -162,7 +162,8 @@
               "RP" : "report_statistics",
               "MC" : "main_card",
               "MSSI" : "minutely_statistics_session_ip",
-              "O" : "om"
+              "O" : "om",
+              "SS" : "sbom_statistics"
             }
           }
         }

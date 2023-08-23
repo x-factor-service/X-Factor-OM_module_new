@@ -51,7 +51,7 @@ def plug_in_statistics(type, data):
     if type == 'cve_in_sbom':
         for row in data:
             df_row = {}
-            df_row['minutely_statistics_unique'] = row[2]
+            df_row['sbom_statistics_unique'] = row[2]
             df_row['classification'] = 'sbom_cve'
             df_row['item'] = {
                 'comp_name': row[0],
@@ -67,7 +67,7 @@ def plug_in_statistics(type, data):
     if type == 'sbom_in_cve':
         for row in data:
             df_row = {}
-            df_row['minutely_statistics_unique'] = row[2]
+            df_row['sbom_statistics_unique'] = row[2]
             df_row['classification'] = 'sbom_cpe'
             df_row['item'] = {
                 'name': row[0],
