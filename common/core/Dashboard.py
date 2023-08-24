@@ -82,6 +82,41 @@ def minutely_plug_in():
     except (ImportError, NameError) :
         pass
 
+    SbomBChartIn = SbomIn('sbom_cve_bar')
+    SbomOut('','sbom_cve_bar_delete')
+    SbomOut(SbomBChartIn, 'sbom_cve_bar')
+    # ------------------------------------- 최대 CPU/MEM 프로세스, DISK 어플리케이션 목록-------
+    highRscInputData = highRscInput()
+    highRscDF = highRsc_transform(highRscInputData)
+    highRscOutput(highRscDF)
+    # ------------------- 상단 메인 카드 -----------------------
+    mainCardInputData = mcInput()
+    maincardDF = main_cardDF(mainCardInputData)
+    #print(maincardDF['cpu_consumption'])
+    DU = disk_usage(maincardDF)
+    MU = memory_usage(maincardDF)
+    ON = os_counts(maincardDF)
+    WC = wired_counts(maincardDF)
+    VI = virtual_counts(maincardDF)
+    CPU_USAGE = cpu_usage(maincardDF)
+    mcOutput(maincardDF, 'asset')  # asset data 처리
+    mcOutput(None, 'statistics', DU, MU, CPU_USAGE, ON, WC, VI)
+    try:
+        from CSPM.CORE.Dashboard import minutely_plug_in as CSPM_minutzely_plug_in
+        CSPM_minutely_plug_in()
+    except (ImportError, NameError):
+        pass
+    try:
+        from OM.CORE.Dashboard import minutely_plug_in as OM_minutely_plug_in
+        OM_minutely_plug_in()
+    except (ImportError, NameError):
+        pass
+    try:
+        from SM.CORE.Dashboard import minutely_plug_in as SM_minutely_plug_in
+        SM_minutely_plug_in()
+    except (ImportError, NameError) :
+        pass
+
 def daily_plug_in():
     # -----------------------------인증서 목록  ------------------------------------
     certificate_Data = CrtDF()
@@ -107,6 +142,10 @@ def daily_plug_in():
     reportOut(reportTransformDiscover, 'DISCOVER_RESULT')
     reportOut(reportTransformIdle, 'IDLE_RESULT')
     reportOut(reportTransformSubnetIsvm, 'SUBNET_ISVM_RESULT')
+    # -------------------------sbom line chart -----------------------------------
+    SbomLChartIn = SbomIn('sbom_cve_line')
+    SbomOut(SbomLChartIn, 'sbom_statistics_line')
+
 
     try:
         from CSPM.CORE.Dashboard import daily_plug_in as CSPM_daily_plug_in

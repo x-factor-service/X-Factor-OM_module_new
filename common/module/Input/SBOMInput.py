@@ -129,6 +129,50 @@ def plug_in_DB(type) :
                         )
                     )
                 """
+        if type == 'sbom_cve_line':
+            SQ = """
+                SELECT count(distinct ipv4_address)
+                    FROM sbom_detail
+                    JOIN (
+                        SELECT cpe
+                        FROM sbom_list
+                        WHERE EXISTS (
+                            SELECT 1
+                            FROM sbom_cve
+                            WHERE
+                            (
+                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_name, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_name, '%'))
+                                AND
+                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_ver, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_ver, '%'))
+                            )
+                        )
+                    ) AS matching_cpes ON sbom_detail.cpe = matching_cpes.cpe;
+                """
+        if type == 'sbom_cve_bar':
+            SQ = """
+                SELECT ipv4_address, COUNT(*) AS count
+                FROM (
+                    SELECT *
+                    FROM sbom_detail
+                    JOIN (
+                        SELECT cpe
+                        FROM sbom_list
+                        WHERE EXISTS (
+                            SELECT 1
+                            FROM sbom_cve
+                            WHERE
+                            (
+                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_name, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_name, '%'))
+                                AND
+                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_ver, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_ver, '%'))
+                            )
+                        )
+                    ) AS matching_cpes ON sbom_detail.cpe = matching_cpes.cpe
+                ) AS grouped_data
+                GROUP BY ipv4_address
+                order by count desc, ipv4_address asc
+                limit 5;
+            """
 
         selectCur.execute(SQ)
         selectRS = selectCur.fetchall()
