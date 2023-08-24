@@ -91,6 +91,29 @@ def plug_in(data, type):
                     VALUES (%s, %s, %s, %s, %s)
                 """
                 insertCur.execute(query, (row['sbom_statistics_unique'], row['classification'], json.dumps(row['item'], ensure_ascii=False), row['count'], nowTime))
+        elif type == 'sbom_statistics_line':
+
+            query = """
+                INSERT INTO """ + DBMS + """ (sbom_statistics_unique, classification, item, item_count, statistics_collection_date)
+                VALUES (%s, %s, %s, %s, %s)
+            """
+            insertCur.execute(query, (nowTime,'sbom_line_data','sbom_asset',data[0][0],insertDate))
+        elif type == 'sbom_cve_bar':
+
+            for i in range(len(data)):
+                query = """
+                    INSERT INTO """ + DBMS + """ (sbom_statistics_unique, classification, item, item_count, statistics_collection_date)
+                    VALUES (%s, %s, %s, %s, %s)
+                """
+                insertCur.execute(query, ('bar'+nowTime+str(i), 'sbom_bar_data', data[i][0], data[i][1], insertDate))
+        elif type == 'sbom_cve_bar_delete':
+            query = """
+                DELETE FROM sbom_statistics
+                WHERE classification = 'sbom_bar_data';
+            """
+            insertCur.execute(query)
+
+
         insertConn.commit()
         insertConn.close()
         logger.info('sbom statistics data INSERT connection - ' + '성공')
