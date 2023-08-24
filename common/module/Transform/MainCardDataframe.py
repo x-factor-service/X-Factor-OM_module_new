@@ -61,8 +61,9 @@ def memory_usage(DF):
 
 
 def os_counts(DF):
-    DF = DF[DF['os_platform'] != '[current result unavailable]']
-    os_counts_df = DF['os_platform'].value_counts().reset_index()
+    mask = ~DF['os_platform'].str.contains('result|Error', case=False, na=False)
+    DF_filtered = DF[mask].copy()
+    os_counts_df = DF_filtered['os_platform'].value_counts().reset_index()
     os_counts_df.columns = ['os_platform', 'count']
     return os_counts_df
 
@@ -75,8 +76,9 @@ def wired_counts(DF):
 
 
 def virtual_counts(DF):
-    DF = DF[DF['is_virtual'] != '[current result unavailable]']
-    virtual_counts_df = DF['is_virtual'].value_counts().reset_index()
+    mask = ~DF['is_virtual'].str.contains('result|Error', case=False, na=False)
+    DF_filtered = DF[mask].copy()
+    virtual_counts_df = DF_filtered['is_virtual'].value_counts().reset_index()
     virtual_counts_df.columns = ['is_virtual', 'count']
     return virtual_counts_df
 
