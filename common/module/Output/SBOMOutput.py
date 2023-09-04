@@ -56,10 +56,10 @@ def plug_in(data, type):
                     computer_name,
                     ipv4_address,
                     name,
+                    vendor,
                     version,
                     cpe,
                     type,
-                    path,
                     count,
                     sbom_collection_date
                 ) VALUES (
@@ -68,12 +68,12 @@ def plug_in(data, type):
                 CN = data.computer_name[i]
                 IP = data.ipv4_address[i]
                 NM = data.name[i]
+                VD = data.vendor[i]
                 VS = data.version[i]
                 CPE = data.cpe[i]
                 TY = data.type[i]
-                PA = data.path[i]
                 CO = '1'
-                dataList = CN, IP, NM, VS, CPE, TY, PA, CO
+                dataList = CN, IP, NM, VD, VS, CPE, TY, CO
                 insertCur.execute(IQ, dataList)
         elif type == 'cve_statistics':
             insertCur.execute("DELETE FROM " + DBMS + " WHERE classification = 'sbom_cve'")

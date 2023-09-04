@@ -27,7 +27,7 @@ def plug_in(type):
         SK = session()
         DFL = []
         data = sbom(SK, 'detail')
-        columns = ['computer_name', 'ipv4_address', 'name', 'version', 'cpe', 'type', 'path', 'count']
+        columns = ['computer_name', 'ipv4_address', 'name', 'vendor', 'version', 'cpe', 'type', 'count']
         for d in data:
             if d[2][0]['text'] == 'Not Scanned' or d[2][0]['text'] == 'No Packages Found':
                 continue
