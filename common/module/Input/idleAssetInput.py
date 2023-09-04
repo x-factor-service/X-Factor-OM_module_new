@@ -67,5 +67,5 @@ def plug_in_DB() :
             DL.append(row)
         return len(DL)
     except Exception as e:
-        logger.warning('Idleasset Table INSERT connection 실패')
+        logger.warning('Idleasset Table select connection 실패')
         logger.warning('Error : ' + str(e))

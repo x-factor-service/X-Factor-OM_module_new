@@ -42,8 +42,8 @@
         "DAILY" : {
           "USE" : "true",
           "TIME" : {
-            "hour" : "12",
-            "minute" : "41"
+            "hour" : "00",
+            "minute" : "03"
           }
         }
       },
@@ -106,7 +106,7 @@
             "VUL" : "4356",
             "DISCOVER" : "1",
             "CERTIFICATE" : "796",
-            "SBOM" : "794",
+            "SBOM" : "1334",
             "SBOM_DETAIL" : "877",
             "HIGH_RSC" : "1132",
             "OM_REPORT" : "909",
@@ -132,7 +132,8 @@
               "SL" : "sbom_list",
               "CVE": "sbom_cve",
               "SD" : "sbom_detail",
-              "MC" : "main_card"
+              "MC" : "main_card",
+              "AL" : "action_log"
             }
           }
         }

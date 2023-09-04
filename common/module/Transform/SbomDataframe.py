@@ -16,7 +16,7 @@ def plug_in(type):
             exclude_row = False  # Exclude this row from dataframe or not
             for item in row["data"]:
                 values = [entry["text"] for entry in item]  # Extract all 'text' values from each item
-                if '[current result unavailable]' in values or '[no results]' in values:
+                if 'result' in values or 'Error' in values or 'Not Scanned' in values or 'No Packages Found' in values:
                     exclude_row = True  # Set to exclude row if '[current' or '[no' is in values
                     break  # No need to process this row further, so break from inner loop
                 row_data.append(', '.join(values))  # Join the extracted values with ', '
