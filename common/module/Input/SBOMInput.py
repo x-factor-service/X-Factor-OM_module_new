@@ -89,13 +89,9 @@ def plug_in_DB(type) :
                              FROM """ + DBLIST + """
                              WHERE
                              (
-                                 name ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%') 
-                                 OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%')
-                             )
+                                 lower(name) = lower(""" + DBCVE + """.comp_name) 
                              AND
-                             (
-                                 name ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%') 
-                                 OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%')
+                                 lower(version) = lower(""" + DBCVE + """.comp_ver)
                              )
                             ), 0) as total_matching_count
                     FROM """ + DBCVE + """
@@ -104,13 +100,9 @@ def plug_in_DB(type) :
                          FROM """ + DBLIST + """
                          WHERE
                          (
-                             name ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%') 
-                             OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%')
-                         )
+                             lower(name) = (""" + DBCVE + """.comp_name) 
                          AND
-                         (
-                             name ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%') 
-                             OR version ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%')
+                             lower(version) = lower(""" + DBCVE + """.comp_ver)
                          )
                         )
                 """
@@ -123,9 +115,9 @@ def plug_in_DB(type) :
                         FROM """ + DBCVE + """
                         WHERE
                         (
-                            (""" + DBLIST + """.name ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%') OR """ + DBLIST + """.version ILIKE CONCAT('%', """ + DBCVE + """.comp_name, '%'))
+                            lower(""" + DBLIST + """.name) = lower(""" + DBCVE + """.comp_name)
                             AND
-                            (""" + DBLIST + """.name ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%') OR """ + DBLIST + """.version ILIKE CONCAT('%', """ + DBCVE + """.comp_ver, '%'))
+                            lower(""" + DBLIST + """.version) = lower(""" + DBCVE + """.comp_ver)
                         )
                     )
                 """
@@ -141,9 +133,9 @@ def plug_in_DB(type) :
                             FROM sbom_cve
                             WHERE
                             (
-                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_name, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_name, '%'))
+                                lower(sbom_list.name) = lower(sbom_cve.comp_name)
                                 AND
-                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_ver, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_ver, '%'))
+                                lower(sbom_list.version) = lower(sbom_cve.comp_ver)
                             )
                         )
                     ) AS matching_cpes ON sbom_detail.cpe = matching_cpes.cpe;
@@ -162,9 +154,9 @@ def plug_in_DB(type) :
                             FROM sbom_cve
                             WHERE
                             (
-                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_name, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_name, '%'))
+                                lower(sbom_list.name) = lower(sbom_cve.comp_name)
                                 AND
-                                (sbom_list.name ILIKE CONCAT('%', sbom_cve.comp_ver, '%') OR sbom_list.version ILIKE CONCAT('%', sbom_cve.comp_ver, '%'))
+                                lower(sbom_list.version) = lower(sbom_cve.comp_ver)
                             )
                         )
                     ) AS matching_cpes ON sbom_detail.cpe = matching_cpes.cpe

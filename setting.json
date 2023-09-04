@@ -106,8 +106,8 @@
             "VUL" : "4356",
             "DISCOVER" : "1",
             "CERTIFICATE" : "796",
-            "SBOM" : "794",
-            "SBOM_DETAIL" : "877",
+            "SBOM" : "1334",
+            "SBOM_DETAIL" : "1345",
             "HIGH_RSC" : "1132",
             "OM_REPORT" : "909",
             "MAINCARD" : "893"
