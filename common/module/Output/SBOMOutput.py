@@ -35,17 +35,19 @@ def plug_in(data, type):
                     version,
                     cpe,
                     type,
+                    path,
                     count,
                     sbom_collection_date
                 ) VALUES (
-                    %s, %s, %s, %s, %s, '""" + today + """' ) """
+                    %s, %s, %s, %s, %s, %s, '""" + today + """' ) """
             for i in range(len(data)):
                 NM = data['Name'][i]
                 VS = data['Version'][i]
                 CPE = data['CPE'][i]
                 TY = data['Type'][i]
+                PA = data['Parent'][i]
                 CO = data['Count'][i]
-                dataList = NM, VS, CPE, TY, CO
+                dataList = NM, VS, CPE, TY, PA, CO
                 insertCur.execute(IQ, dataList)
             logger.info('sbom_list Table INSERT connection - ' + '성공')
         elif type == 'sbom_detail':
@@ -56,10 +58,10 @@ def plug_in(data, type):
                     computer_name,
                     ipv4_address,
                     name,
-                    vendor,
                     version,
                     cpe,
                     type,
+                    path,
                     count,
                     sbom_collection_date
                 ) VALUES (
@@ -68,12 +70,12 @@ def plug_in(data, type):
                 CN = data.computer_name[i]
                 IP = data.ipv4_address[i]
                 NM = data.name[i]
-                VD = data.vendor[i]
                 VS = data.version[i]
                 CPE = data.cpe[i]
                 TY = data.type[i]
+                PA = data.path[i]
                 CO = '1'
-                dataList = CN, IP, NM, VD, VS, CPE, TY, CO
+                dataList = CN, IP, NM, VS, CPE, TY, PA, CO
                 insertCur.execute(IQ, dataList)
         elif type == 'cve_statistics':
             insertCur.execute("DELETE FROM " + DBMS + " WHERE classification = 'sbom_cve'")
@@ -99,7 +101,6 @@ def plug_in(data, type):
             """
             insertCur.execute(query, (nowTime,'sbom_line_data','sbom_asset',data[0][0],insertDate))
         elif type == 'sbom_cve_bar':
-
             for i in range(len(data)):
                 query = """
                     INSERT INTO """ + DBMS + """ (sbom_statistics_unique, classification, item, item_count, statistics_collection_date)
@@ -112,8 +113,19 @@ def plug_in(data, type):
                 WHERE classification = 'sbom_bar_data';
             """
             insertCur.execute(query)
-
-
+        elif type == 'sbom_cve_pie':
+            delete_query = """
+                    DELETE FROM """ + DBMS + """ WHERE classification = 'sbom_pie_data'
+                """
+            insertCur.execute(delete_query)
+            for i in range(len(data)):
+                comp_name = "'comp_name' = " + data[i][0]
+                comp_ver = "'comp_ver' = " + data[i][1]
+                query = """
+                        INSERT INTO """ + DBMS + """ (sbom_statistics_unique, classification, item, item_count, statistics_collection_date)
+                        VALUES (%s, %s, %s, %s, %s)
+                    """
+                insertCur.execute(query, ('pie' + nowTime + str(i), 'sbom_pie_data', comp_name + ', ' + comp_ver, data[i][2], insertDate))
         insertConn.commit()
         insertConn.close()
         logger.info('sbom statistics data INSERT connection - ' + '성공')
