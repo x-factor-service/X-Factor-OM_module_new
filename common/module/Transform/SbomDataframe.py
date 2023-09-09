@@ -15,8 +15,8 @@ def plug_in(type):
             row_data = []
             exclude_row = False
             for item in row["data"]:
-                values = [entry["text"] for entry in item]
-                if any(any(substring in value for substring in ['result', 'Error']) for value in values):
+                values = [entry["text"].lower() for entry in item]
+                if any(any(substring in value for substring in ['result', 'error', 'tanium']) for value in values):
                     exclude_row = True
                     break
                 row_data.append(', '.join(values))
@@ -30,16 +30,20 @@ def plug_in(type):
         columns = ['computer_name', 'ipv4_address', 'name', 'version', 'cpe', 'type', 'path', 'count']
         for d in data:
             for i in range(len(d[4])):
-                CN = d[0][0]['text']
-                IP = d[1][0]['text']
-                NM = d[2][i]['text']
-                VS = d[4][i]['text']
-                if 'result' in NM.lower() or 'error' in NM.lower() or 'result' in VS.lower() or 'error' in VS.lower():
+                CN = d[0][0]['text'].lower()
+                IP = d[1][0]['text'].lower()
+                NM = d[2][i]['text'].lower()
+                VS = d[4][i]['text'].lower()
+                CPE = d[5][i]['text'].lower()
+                TY = d[6][i]['text'].lower()
+                PA = d[8][i]['text'].lower()
+                CO = d[10][0]['text'].lower()
+
+                if any('tanium' in col_value for col_value in [CN, IP, NM, VS, CPE, TY, PA, CO]):
                     continue
-                CPE = d[5][i]['text']
-                TY = d[6][i]['text']
-                PA = d[8][i]['text']
-                CO = d[10][0]['text']
+                if 'result' in NM or 'error' in NM or 'result' in VS or 'error' in VS:
+                    continue
+
                 DFL.append([CN, IP, NM, VS, CPE, TY, PA, CO])
         df = pd.DataFrame(DFL, columns=columns)
     pd.set_option('display.expand_frame_repr', False)

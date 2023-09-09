@@ -114,6 +114,8 @@ def plug_in_DB(type) :
                     ON sc.comp_name = sd.name AND sc.comp_ver = sd.version
                 GROUP BY
                     sd.ipv4_address
+                ORDER BY
+                    count DESC
                 LIMIT 5;
             """
 
