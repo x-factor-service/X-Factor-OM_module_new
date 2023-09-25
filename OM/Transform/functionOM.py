@@ -238,7 +238,7 @@ def om():
                     logger.warning('Error - vendorChartList')
 
                 # IP 대역별 총 알람 수 차트
-                colorList = ["#934903", "#b76306", "#db7f08", "#ff9f0c", "#ffbe48"]
+                colorList = ["#009D83", "#33BFA5", "#A8D5BA", "#ff9f0c", "#FFB755"]
                 try:
                     Achart = PDPI('statistics', 'today', 'group_alarm')
                     for i in range(len(Achart)):
