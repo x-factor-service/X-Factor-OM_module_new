@@ -52,7 +52,7 @@ def om():
 
                 # 실행 중인 서비스 통계 차트
                 Rchart = PDPI('statistics', 'today', 'running')
-                colorList = ["#934903", "#b76306", "#db7f08", "#ff9f0c", "#ffbe48"]
+                colorList = ["#009D83", "#33BFA5", "#A8D5BA", "#ff9f0c", "#FFB755"]
                 try:
                     for i in range(len(Rchart)):
                         service_donutChartData.append({"name": Rchart[i][0], "value": int(Rchart[i][1]), "color": colorList[i]})
@@ -203,7 +203,7 @@ def om():
                     logger.warning('Error - server_LChartDataList')
 
                 # OS 버전별 서버 수 차트
-                colorList = ['#934903', '#b76306', '#db7f08', '#ff9f0c', '#ffbe48', '#ffd16d', '#ffe49d', '#fff3ce']
+                colorList = ['#009D83', '#33BFA5', '#A8D5BA', '#ff9f0c', '#FFB755', '#FFD1A1', '#FFE6CC', '#C7B299']
                 try:
                     Ochart = PDPI('statistics', 'today', 'os_version')
                     try:
